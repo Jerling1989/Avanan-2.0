@@ -12348,7 +12348,7 @@ img.img-shadow,
     letter-spacing: .05625rem;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 1.0625rem;
+    font-size: 0.75rem;
 }
 
 .extra-nav > ul > li > a > .menu-item-span {
@@ -12972,7 +12972,8 @@ img.img-shadow,
 
 .module-cover {
     position: relative;
-    padding: 200px 0 200px;
+    padding: 150px 0 250px;
+    height: 550px;
 }
 
 .module-cover,
