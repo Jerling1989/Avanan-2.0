@@ -10571,9 +10571,9 @@ a.text-dark:focus {
 
 .owl-carousel .owl-dots .owl-dot {
     position: relative;
-    border: 1px solid transparent;
+    border: none;
     border-radius: 100%;
-    display: inline-block;
+    display: none;
     padding: 4px;
     margin: 0 4px;
     transition: all .3s ease-in-out;
@@ -10582,7 +10582,7 @@ a.text-dark:focus {
 .owl-carousel .owl-dots .owl-dot > span {
     border-radius: 100%;
     background: #5385bd;
-    display: block;
+    display: none;
     height: 4px;
     width: 4px;
 }
