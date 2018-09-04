@@ -21,7 +21,7 @@
     --brand: #505cfd;
     --new-gray: #d8d8d8;
     --new-white: #fff;
-    --primary: #007bff;
+    --primary: #5385bd;
     --secondary: #6c757d;
     --success: #28a745;
     --info: #17a2b8;
@@ -3022,14 +3022,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #5385bd;
+    border-color: #5385bd;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0069d9;
+    background-color: #5a8fc4;
+    border-color: #5a8fc4;
 }
 
 .btn-primary:focus,
@@ -11325,7 +11325,7 @@ img.img-shadow,
 .icon-box .icon-box-icon {
     font-size: 2.375rem;
     margin: 0 0 10px;
-    color: #257df6;
+    color: #5385bd;
     transition: all .3s ease-in-out;
 }
 
@@ -11382,11 +11382,22 @@ img.img-shadow,
 }
 
 .number-box .number-box-number {
-    font-size: 1.875rem;
+    font-size: 2.525rem;
+}
+
+.number-box .number-box-title {
+    font-size: 1.125rem;
 }
 
 .number-box .number-box-content > *:last-child {
     margin-bottom: 0;
+}
+
+.number-box .foo {
+    width: 265px;
+    height: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .modal-video-container {
@@ -11698,7 +11709,7 @@ img.img-shadow,
 
 .review-slides .review-icons {
     margin: 0 auto 10px;
-    width: 80px;
+    width: 120px;
 }
 
 .review-slides .review-icons img {
@@ -14252,7 +14263,7 @@ body.off-canvas-sidebar-open:after {
 }
 
 .more-info {
-  border: 2px solid #257df6;
+  border: 2px solid #5385bd;
   height: 225px;
   padding: 20px 10px;
   margin-bottom: 15px;

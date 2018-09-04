@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2000 1195" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g transform="matrix(1.19976,0,0,1.19976,1000,603.479)">
+        <g transform="matrix(1,0,0,1,-833.5,-503)">
+            <g id="Group-3">
+                <rect id="Rectangle" x="248" y="0" width="1419" height="1006" style="fill:rgb(242,242,242);"/>
+                <rect id="Rectangle1" serif:id="Rectangle" x="296" y="684" width="1321" height="293" style="fill:white;"/>
+                <g id="Group-2">
+                    <rect id="Rectangle-2" x="289" y="45" width="434" height="37" style="fill:rgb(39,49,61);"/>
+                    <g id="EVENTS-BY-SEVERITY" transform="matrix(1,0,0,1,312,70)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;fill:white;">E</text>
+                        <g transform="matrix(1,0,0,1,9.972,0)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;fill:white;">VENTS BY SEVERITY</text>
+                        </g>
+                    </g>
+                    <g id="SEARCH-SECURITY-EVEN" transform="matrix(1,0,0,1,296,405)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:24px;fill:rgb(23,36,50);">S</text>
+                        <g transform="matrix(1,0,0,1,13.31,0)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:24px;fill:rgb(23,36,50);">EARCH SECURITY EVENTS</text>
+                        </g>
+                    </g>
+                    <rect id="Rectangle-21" serif:id="Rectangle-2" x="751" y="45" width="434" height="37" style="fill:rgb(39,49,61);"/>
+                    <g id="EVENTS-BY-STATE" transform="matrix(1,0,0,1,771,70)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;fill:white;">E</text>
+                        <g transform="matrix(1,0,0,1,9.972,0)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;fill:white;">VENTS BY STATE</text>
+                        </g>
+                    </g>
+                    <rect id="Rectangle-22" serif:id="Rectangle-2" x="751" y="82" width="434" height="267" style="fill:white;"/>
+                    <rect id="Rectangle-23" serif:id="Rectangle-2" x="1211" y="45" width="434" height="37" style="fill:rgb(39,49,61);"/>
+                    <g id="EVENTS-BY-SAAS" transform="matrix(1,0,0,1,1233,69)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;fill:white;">E</text>
+                        <g transform="matrix(1,0,0,1,9.972,0)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;fill:white;">VENTS BY SAAS</text>
+                        </g>
+                    </g>
+                    <rect id="Rectangle-24" serif:id="Rectangle-2" x="1211" y="83" width="434" height="267" style="fill:white;"/>
+                    <rect id="Rectangle-25" serif:id="Rectangle-2" x="289" y="82" width="434" height="267" style="fill:white;"/>
+                    <g id="Rectangle2" serif:id="Rectangle" transform="matrix(-1,0,0,1,248,0)">
+                        <rect x="0" y="0" width="248" height="1006" style="fill:rgb(1,10,20);"/>
+                    </g>
+                    <g id="Group-8" transform="matrix(1,0,0,1,47,53)">
+                        <path id="Fill-1" d="M35.836,37.276L37.692,32.249L37.735,31.894L41.102,22.901L44.703,13.136C44.067,11.909 42.95,10.89 41.504,10.358C39.286,9.554 36.922,10.136 35.477,11.651C35.34,9.558 33.903,7.593 31.688,6.788C29.879,6.128 27.977,6.397 26.547,7.339C32.149,1.101 40.981,-1.614 49.305,0.976L50.078,0.269C50.317,0.136 50.582,0.233 50.672,0.491L50.836,1.515C59.024,4.741 64.188,12.468 64.594,20.874C64.036,19.386 62.809,18.116 61.133,17.507C58.914,16.698 56.555,17.28 55.106,18.8C54.969,16.702 53.536,14.741 51.317,13.933C49.778,13.374 48.168,13.483 46.844,14.108L43.004,24.55L42.903,24.882L41.426,28.835L39.703,33.511C39.672,33.589 39.637,33.663 39.598,33.733L34.321,47.854C34.157,48.284 33.922,48.612 33.621,48.843C33.321,49.069 32.95,49.187 32.508,49.187C32.067,49.187 31.7,49.077 31.41,48.854C31.121,48.632 30.895,48.3 30.731,47.854L22.149,24.882L22.047,24.55C22.02,24.437 22.004,24.327 22,24.214C22.012,23.827 22.137,23.542 22.375,23.351C22.614,23.163 22.899,23.065 23.223,23.069C23.465,23.065 23.684,23.136 23.875,23.288C24.067,23.437 24.219,23.683 24.332,24.03L29.215,37.163L32.473,46.265L35.836,37.276Z" style="fill:white;fill-rule:nonzero;"/>
+                        <path id="Combined-Shape" d="M0.122,47.601L8.958,24.367C9.29,23.449 9.954,22.992 10.954,23C11.993,22.992 12.685,23.449 13.024,24.367L21.821,47.566C22.005,48.105 21.981,48.523 21.747,48.816C21.517,49.113 21.196,49.262 20.786,49.266C20.513,49.269 20.278,49.191 20.083,49.027C19.892,48.863 19.731,48.598 19.603,48.23L17.165,41.941L4.778,41.941L2.341,48.269C2.196,48.633 2.024,48.894 1.829,49.043C1.63,49.199 1.396,49.269 1.122,49.266C0.731,49.266 0.423,49.121 0.192,48.836C-0.038,48.551 -0.061,48.14 0.122,47.601ZM10.915,25.363L5.446,39.984L16.462,39.984L11.063,25.363L10.915,25.363Z" style="fill:white;fill-rule:nonzero;"/>
+                        <path id="Combined-Shape1" serif:id="Combined-Shape" d="M43.123,47.601L51.955,24.367C52.291,23.449 52.955,22.992 53.951,23C54.994,22.992 55.685,23.449 56.021,24.367L64.822,47.566C65.002,48.105 64.978,48.523 64.748,48.816C64.513,49.113 64.193,49.262 63.787,49.266C63.51,49.269 63.275,49.191 63.084,49.027C62.888,48.863 62.732,48.598 62.603,48.23L60.162,41.941L47.779,41.941L45.338,48.269C45.193,48.633 45.025,48.894 44.826,49.043C44.631,49.199 44.392,49.269 44.119,49.266C43.728,49.266 43.42,49.121 43.189,48.836C42.963,48.551 42.939,48.14 43.123,47.601ZM53.916,25.363L48.443,39.984L59.459,39.984L54.064,25.363L53.916,25.363Z" style="fill:white;fill-rule:nonzero;"/>
+                        <path id="Fill-8" d="M87.5,36.43L87.609,45.418L87.535,45.418L72.992,23.926C72.832,23.676 72.633,23.461 72.395,23.282C72.156,23.102 71.836,23.008 71.438,23C70.992,23 70.641,23.137 70.387,23.407C70.133,23.676 70.004,24.071 70,24.59L70,47.86C70.008,48.301 70.117,48.621 70.336,48.825C70.551,49.024 70.82,49.121 71.141,49.118C71.5,49.121 71.793,49.024 72.016,48.825C72.238,48.621 72.356,48.301 72.363,47.86L72.363,35.614L72.25,26.66L72.324,26.66L86.684,48.008C86.867,48.313 87.086,48.575 87.352,48.785C87.613,49 87.945,49.11 88.348,49.118C88.816,49.118 89.184,48.981 89.453,48.703C89.719,48.426 89.859,48.008 89.863,47.453L89.863,24.258C89.856,23.832 89.742,23.516 89.527,23.309C89.309,23.102 89.039,23 88.719,23C88.359,23 88.07,23.102 87.844,23.309C87.621,23.516 87.508,23.832 87.5,24.258L87.5,36.43Z" style="fill:white;fill-rule:nonzero;"/>
+                        <path id="Combined-Shape2" serif:id="Combined-Shape" d="M95.122,47.601L103.958,24.367C104.29,23.449 104.954,22.992 105.954,23C106.993,22.992 107.684,23.449 108.024,24.367L116.821,47.566C117.004,48.105 116.981,48.523 116.747,48.816C116.516,49.113 116.196,49.262 115.786,49.266C115.512,49.269 115.278,49.191 115.083,49.027C114.891,48.863 114.731,48.598 114.602,48.23L112.165,41.941L99.782,41.941L97.34,48.269C97.196,48.633 97.024,48.894 96.829,49.043C96.633,49.199 96.395,49.269 96.122,49.266C95.731,49.266 95.422,49.121 95.192,48.836C94.962,48.551 94.938,48.14 95.122,47.601ZM105.915,25.363L100.446,39.984L111.462,39.984L106.063,25.363L105.915,25.363Z" style="fill:white;fill-rule:nonzero;"/>
+                        <path id="Fill-11" d="M139.5,36.43L139.614,45.418L139.54,45.418L124.993,23.926C124.832,23.676 124.633,23.461 124.395,23.282C124.157,23.102 123.84,23.008 123.438,23C122.993,23 122.641,23.137 122.387,23.407C122.133,23.676 122.004,24.071 122,24.59L122,47.86C122.008,48.301 122.122,48.621 122.336,48.825C122.551,49.024 122.825,49.121 123.145,49.118C123.504,49.121 123.793,49.024 124.016,48.825C124.243,48.621 124.356,48.301 124.364,47.86L124.364,35.614L124.254,26.66L124.329,26.66L138.688,48.008C138.868,48.313 139.09,48.575 139.352,48.785C139.618,49 139.95,49.11 140.352,49.118C140.817,49.118 141.184,48.981 141.454,48.703C141.723,48.426 141.86,48.008 141.864,47.453L141.864,24.258C141.856,23.832 141.743,23.516 141.528,23.309C141.313,23.102 141.043,23 140.719,23C140.364,23 140.071,23.102 139.848,23.309C139.625,23.516 139.508,23.832 139.5,24.258L139.5,36.43Z" style="fill:white;fill-rule:nonzero;"/>
+                    </g>
+                    <rect id="Rectangle-3" x="43" y="160" width="159" height="26" style="fill:white;"/>
+                    <rect id="Rectangle-31" serif:id="Rectangle-3" x="297" y="497" width="181" height="37" style="fill:white;"/>
+                    <g id="Rectangle-4" transform="matrix(1,0,0,1,0,-15)">
+                        <rect x="0" y="299" width="247" height="71" style="fill:rgb(39,49,61);fill-opacity:0.882353;"/>
+                    </g>
+                    <g id="DASHBOARD-EVENTS-POL">
+                        <g transform="matrix(1,0,0,1,47,242)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:16px;fill:white;">DASHBOARD</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,47,326)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:16px;fill:white;">EVENTS</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,47,410)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:16px;fill:white;">POLICY</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,47,494)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:16px;fill:white;">ANALYTICS</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,47,578)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:16px;fill:white;">SECURITY STACK</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,47,662)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:16px;fill:white;">QUARANTINE</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,47,746)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:16px;fill:white;">CONFIGURATION</text>
+                        </g>
+                    </g>
+                    <path id="Shape" d="M312,217.912C312,157.762 361.579,109 422.738,109C452.107,109 480.274,120.475 501.041,140.9C521.808,161.325 533.475,189.027 533.475,217.912C533.475,278.063 483.896,326.825 422.738,326.825C361.579,326.825 312,278.063 312,217.912ZM338.557,217.912C338.557,263.735 376.246,300.881 422.738,300.881C469.229,300.881 506.918,263.735 506.918,217.912C506.918,172.09 469.229,134.944 422.738,134.944C376.246,134.944 338.557,172.09 338.557,217.912Z" style="fill:rgb(0,255,0);"/>
+                    <path id="Shape1" serif:id="Shape" d="M774,217.912C774,157.762 823.579,109 884.738,109C914.107,109 942.274,120.475 963.041,140.9C983.808,161.325 995.475,189.027 995.475,217.912C995.475,278.063 945.896,326.825 884.738,326.825C823.579,326.825 774,278.063 774,217.912ZM802.577,217.912C802.577,262.645 839.362,298.908 884.738,298.908C930.114,298.908 966.898,262.645 966.898,217.912C966.898,173.18 930.114,136.917 884.738,136.917C839.362,136.917 802.577,173.18 802.577,217.912Z" style="fill:rgb(147,196,125);"/>
+                    <path id="Shape2" serif:id="Shape" d="M356,130.317C385.371,108.973 423.553,103.244 458.06,115.003L449.324,139.801C423.141,130.84 394.158,135.204 371.883,151.46L356,130.317Z" style="fill:rgb(255,255,0);"/>
+                    <path id="Shape3" serif:id="Shape" d="M498.682,139.004C532.561,170.397 542.863,219.277 524.462,261.329C506.062,303.38 462.888,329.626 416.416,327.01C369.945,324.394 330.098,293.475 316.696,249.633C303.294,205.791 319.199,158.387 356.499,131L373.077,152.841C345.188,173.411 333.316,208.97 343.363,241.846C353.409,274.721 383.23,297.901 418.005,299.864C452.78,301.826 485.09,282.154 498.878,250.623C512.665,219.093 504.989,182.43 479.663,158.857L498.682,139.004Z" style="fill:rgb(255,0,0);"/>
+                    <path id="Shape4" serif:id="Shape" d="M966.809,290.399C938.526,321.103 894.98,333.366 854.461,322.037C813.941,310.708 783.466,277.75 775.835,237.004C768.205,196.259 784.74,154.785 818.496,130L835.074,151.841C809.822,170.465 797.477,201.6 803.224,232.167C808.971,262.734 831.815,287.44 862.16,295.907C892.505,304.375 925.096,295.138 946.244,272.075L966.809,290.399Z" style="fill:rgb(221,126,107);"/>
+                    <path id="Shape5" serif:id="Shape" d="M1232,216.912C1232,156.762 1281.58,108 1342.74,108C1372.11,108 1400.27,119.475 1421.04,139.9C1441.81,160.325 1453.48,188.027 1453.48,216.912C1453.48,277.063 1403.9,325.825 1342.74,325.825C1281.58,325.825 1232,277.063 1232,216.912ZM1260.58,216.912C1260.58,261.645 1297.36,297.908 1342.74,297.908C1388.11,297.908 1424.9,261.645 1424.9,216.912C1424.9,172.18 1388.11,135.917 1342.74,135.917C1297.36,135.917 1260.58,172.18 1260.58,216.912Z" style="fill:rgb(182,215,168);"/>
+                    <path id="Shape6" serif:id="Shape" d="M1424.81,290.399C1396.53,321.103 1352.98,333.366 1312.46,322.037C1271.94,310.708 1241.47,277.749 1233.84,237.004C1226.2,196.259 1242.74,154.785 1276.5,130L1293.07,151.841C1267.82,170.465 1255.48,201.6 1261.22,232.167C1266.97,262.734 1289.82,287.44 1320.16,295.907C1350.51,304.375 1383.1,295.138 1404.24,272.075L1424.81,290.399Z" style="fill:rgb(7,55,99);"/>
+                    <path id="Shape7" serif:id="Shape" d="M1276,129.708C1318.21,98.643 1376.84,101.158 1416.15,135.719L1397.71,156.004C1368.24,129.973 1324.22,128.08 1292.56,151.481L1276,129.708Z" style="fill:rgb(0,151,167);"/>
+                    <rect id="Rectangle-5" x="567" y="139" width="31" height="31" style="fill:rgb(255,0,0);"/>
+                    <rect id="Rectangle-51" serif:id="Rectangle-5" x="567" y="187" width="31" height="31" style="fill:rgb(255,255,0);"/>
+                    <rect id="Rectangle-52" serif:id="Rectangle-5" x="567" y="233" width="31" height="31" style="fill:rgb(0,255,0);"/>
+                    <rect id="Rectangle-53" serif:id="Rectangle-5" x="1027" y="132" width="31" height="31" style="fill:rgb(221,126,107);"/>
+                    <rect id="Rectangle-54" serif:id="Rectangle-5" x="1027" y="180" width="31" height="31" style="fill:rgb(147,196,125);"/>
+                    <rect id="Rectangle-55" serif:id="Rectangle-5" x="1483" y="124" width="31" height="31" style="fill:rgb(7,55,99);"/>
+                    <rect id="Rectangle-56" serif:id="Rectangle-5" x="1483" y="172" width="31" height="31" style="fill:rgb(0,151,167);"/>
+                    <rect id="Rectangle-57" serif:id="Rectangle-5" x="1483" y="218" width="31" height="31" style="fill:rgb(182,215,168);"/>
+                    <g id="CRITICAL" transform="matrix(1,0,0,1,609,158)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;">CRITICAL</text>
+                    </g>
+                    <g id="NEW" transform="matrix(1,0,0,1,1065,155)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;">NEW</text>
+                    </g>
+                    <g id="REMEDIATED" transform="matrix(1,0,0,1,1065,200)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;">REMEDIATED</text>
+                    </g>
+                    <g id="OFFICE-365" transform="matrix(1,0,0,1,1519,144)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;">OFFICE 365</text>
+                    </g>
+                    <g id="GOOGLE-DRIVE">
+                        <g transform="matrix(1,0,0,1,1519,183)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;">GOOGLE</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,1519,200)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;">DRIVE</text>
+                        </g>
+                    </g>
+                    <g id="AMAZON-WEB-SERVICES">
+                        <g transform="matrix(1,0,0,1,1519,231)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;">AMAZON</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,1519,248)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;">WEB SERVICES</text>
+                        </g>
+                    </g>
+                    <g id="MEDIUM" transform="matrix(1,0,0,1,609,207)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;">MEDIUM</text>
+                    </g>
+                    <g id="LOW" transform="matrix(1,0,0,1,609,256)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;">LOW</text>
+                    </g>
+                    <rect id="whitesq" x="477" y="496" width="43" height="37" style="fill:rgb(208,217,218);"/>
+                    <g id="Triangle" transform="matrix(1,0,0,-1,0,1032)">
+                        <path d="M498,511L509,521L487,521L498,511Z" style="fill:rgb(74,74,74);"/>
+                    </g>
+                    <rect id="Rectangle-32" serif:id="Rectangle-3" x="552" y="496" width="181" height="37" style="fill:white;"/>
+                    <rect id="whitesq1" serif:id="whitesq" x="732" y="495" width="43" height="37" style="fill:rgb(208,217,218);"/>
+                    <g id="Triangle1" serif:id="Triangle" transform="matrix(1,0,0,-1,0,1030)">
+                        <path d="M753,510L764,520L742,520L753,510Z" style="fill:rgb(74,74,74);"/>
+                    </g>
+                    <rect id="Rectangle-33" serif:id="Rectangle-3" x="808" y="496" width="181" height="37" style="fill:white;"/>
+                    <rect id="whitesq2" serif:id="whitesq" x="988" y="495" width="43" height="37" style="fill:rgb(208,217,218);"/>
+                    <g id="Triangle2" serif:id="Triangle" transform="matrix(1,0,0,-1,0,1030)">
+                        <path d="M1008,510L1019,520L997,520L1008,510Z" style="fill:rgb(74,74,74);"/>
+                    </g>
+                    <rect id="Rectangle-34" serif:id="Rectangle-3" x="1066" y="495" width="216" height="37" style="fill:white;"/>
+                    <rect id="whitesq3" serif:id="whitesq" x="1278" y="495" width="43" height="37" style="fill:rgb(208,217,218);"/>
+                    <g id="Triangle3" serif:id="Triangle" transform="matrix(1,0,0,-1,0,1030)">
+                        <path d="M1299,510L1310,520L1288,520L1299,510Z" style="fill:rgb(74,74,74);"/>
+                    </g>
+                    <rect id="Rectangle-35" serif:id="Rectangle-3" x="1360" y="496" width="216" height="37" style="fill:white;"/>
+                    <rect id="Rectangle-36" serif:id="Rectangle-3" x="296" y="426" width="937" height="49" style="fill:white;"/>
+                    <rect id="Rectangle-37" serif:id="Rectangle-3" x="1074" y="426" width="159" height="49" style="fill:rgb(74,144,226);"/>
+                    <rect id="whitesq4" serif:id="whitesq" x="1572" y="495" width="43" height="37" style="fill:rgb(208,217,218);"/>
+                    <g id="Triangle4" serif:id="Triangle" transform="matrix(1,0,0,-1,0,1030)">
+                        <path d="M1593,510L1604,520L1582,520L1593,510Z" style="fill:rgb(74,74,74);"/>
+                    </g>
+                    <g id="State" transform="matrix(1,0,0,1,567,522)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;">State</text>
+                    </g>
+                    <g id="Type" transform="matrix(1,0,0,1,816,520)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;">Type</text>
+                    </g>
+                    <g id="Date" transform="matrix(1,0,0,1,315,524)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;">Date</text>
+                    </g>
+                    <g id="Type-keywords.." transform="matrix(1,0,0,1,307,456)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;fill:rgb(153,153,153);">Type keywords..</text>
+                    </g>
+                    <g id="Security-Level" transform="matrix(1,0,0,1,1077,521)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;">Security Level</text>
+                    </g>
+                    <g id="SaaS" transform="matrix(1,0,0,1,1369,520)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;">SaaS</text>
+                    </g>
+                    <g id="SEARCH" transform="matrix(1,0,0,1,1105,459)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:24px;fill:white;">S</text>
+                        <g transform="matrix(1,0,0,1,13.31,0)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:24px;fill:white;">EARCH</text>
+                        </g>
+                    </g>
+                    <rect id="Rectangle-26" serif:id="Rectangle-2" x="296" y="645" width="1321" height="37" style="fill:rgb(39,49,61);"/>
+                    <g id="TIME-STATE-SEVERITY" transform="matrix(1,0,0,1,375,670)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:16px;fill:white;">T</text>
+                        <g transform="matrix(1,0,0,1,10.288,0)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:16px;fill:white;">IME                STATE        SEVERITY       SAAS       TYPE                 EVENT DESCRIPTION                                WORKFLOW                    HISTORY</text>
+                        </g>
+                    </g>
+                    <g id="Malware" transform="matrix(1,0,0,1,785,830)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;">Malware</text>
+                    </g>
+                    <g id="DLP" transform="matrix(1,0,0,1,787,930)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;">DLP</text>
+                    </g>
+                    <g id="Phishing" transform="matrix(1,0,0,1,785,734)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;">Phishing</text>
+                    </g>
+                    <g id="Symantec-has-detecte">
+                        <g transform="matrix(1,0,0,1,916,919)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;fill:rgb(74,144,226);">Symantec</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,1003.75,919)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;">has detected a leak in</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,916,941)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;">‘324_docxaweord)used.json.gz’</text>
+                        </g>
+                    </g>
+                    <g id="LastLine-has-detecte" transform="matrix(1,0,0,1,2,3.70312)">
+                        <g transform="matrix(1,0,0,1,920,821)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;fill:rgb(74,144,226);">LastLine</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,996.547,821)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;">has detected malware in</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,920,843)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;">‘important_release.xlsm’</text>
+                        </g>
+                    </g>
+                    <g id="Check-Point-has-dete">
+                        <g transform="matrix(1,0,0,1,916,727)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;fill:rgb(74,144,226);">Check Point</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,1026.15,727)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;">has detected phishing in</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,916,749)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;">subject ‘need authorization’</text>
+                        </g>
+                    </g>
+                    <g id="ALERT-OWNER-QUARANTI">
+                        <g transform="matrix(1,0,0,1,1259,716)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;fill:rgb(74,144,226);">ALERT OWNER</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,1259,738)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;fill:rgb(74,144,226);">QUARANTINE</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,1259,760)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;fill:rgb(74,144,226);">BLOCK</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,1259,782)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;fill:rgb(74,144,226);">DELETE</text>
+                        </g>
+                    </g>
+                    <g id="BLOCK-DISMISS">
+                        <g transform="matrix(1,0,0,1,1259,823)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;fill:rgb(74,144,226);">BLOCK</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,1259,845)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;fill:rgb(74,144,226);">DISMISS</text>
+                        </g>
+                    </g>
+                    <g id="BLOCK-DISMISS1" serif:id="BLOCK-DISMISS">
+                        <g transform="matrix(1,0,0,1,1259,919)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;fill:rgb(74,144,226);">BLOCK</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,1259,941)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;fill:rgb(74,144,226);">DISMISS</text>
+                        </g>
+                    </g>
+                    <g id="Group" transform="matrix(1,0,0,1,378,724)">
+                        <g id="_10:24-PM-EST" serif:id="10:24-PM-EST" transform="matrix(1,0,0,1,0,14)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;">10:24 PM EST</text>
+                        </g>
+                        <g id="_10:24-PM-EST1" serif:id="10:24-PM-EST" transform="matrix(1,0,0,1,0,109)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;">10:24 PM EST</text>
+                        </g>
+                        <g id="_10:24-PM-EST2" serif:id="10:24-PM-EST" transform="matrix(1,0,0,1,0,209)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;">10:24 PM EST</text>
+                        </g>
+                    </g>
+                    <g id="Shape8" serif:id="Shape" transform="matrix(1,0,0,1,715,716)">
+                        <path d="M24,2.491L15.435,0L0.037,5.828L0,23.259L5.255,21.186L5.255,7.01L15.435,4.556L15.433,25.399L0.009,23.259L15.433,29L24,26.617L24,2.491Z" style="fill:rgb(255,38,0);fill-rule:nonzero;"/>
+                    </g>
+                    <g id="slack" transform="matrix(1,0,0,1,713,809)">
+                        <g id="Group-4" transform="matrix(1,0,0,1,4,0)">
+                            <path id="Fill-12" serif:id="Fill-1" d="M15.234,1.794C14.8,0.438 13.366,-0.305 12.03,0.136C10.695,0.577 9.964,2.034 10.398,3.39L16.973,23.935C17.424,25.203 18.772,25.915 20.066,25.537C21.415,25.142 22.238,23.686 21.807,22.34C21.791,22.289 15.234,1.794 15.234,1.794" style="fill:rgb(223,162,47);fill-rule:nonzero;"/>
+                            <path id="Fill-3" d="M5.047,5.156C4.613,3.8 3.178,3.057 1.843,3.498C0.507,3.939 -0.224,5.396 0.21,6.752L6.785,27.298C7.237,28.565 8.584,29.277 9.878,28.898C11.228,28.504 12.05,27.048 11.62,25.702C11.603,25.651 5.047,5.156 5.047,5.156" style="fill:rgb(60,177,135);fill-rule:nonzero;"/>
+                        </g>
+                        <path id="Fill-5" d="M27.259,19.111C28.582,18.664 29.306,17.186 28.876,15.81C28.446,14.435 27.025,13.682 25.702,14.129L5.661,20.902C4.425,21.367 3.73,22.755 4.099,24.088C4.484,25.478 5.904,26.325 7.217,25.882C7.267,25.865 27.259,19.111 27.259,19.111" style="fill:rgb(206,30,91);fill-rule:nonzero;"/>
+                        <path id="Fill-6" d="M9.717,25C11.156,24.533 13.01,23.93 15,23.284C14.533,21.845 13.93,19.99 13.283,18L8,19.717L9.717,25" style="fill:rgb(57,37,56);fill-rule:nonzero;"/>
+                        <g id="Group-10" transform="matrix(1,0,0,1,0,4)">
+                            <path id="Fill-7" d="M19.178,17.858C20.986,17.257 22.666,16.698 23.96,16.268C23.537,14.935 22.991,13.217 22.406,11.374L17.624,12.964L19.178,17.858" style="fill:rgb(187,36,42);fill-rule:nonzero;"/>
+                            <path id="Fill-9" d="M23.22,5.116C24.541,4.677 25.263,3.226 24.834,1.874C24.405,0.522 22.986,-0.217 21.665,0.222L1.658,6.876C0.424,7.332 -0.27,8.696 0.099,10.005C0.483,11.371 1.9,12.204 3.212,11.768C3.261,11.751 23.22,5.116 23.22,5.116" style="fill:rgb(114,197,205);fill-rule:nonzero;"/>
+                        </g>
+                        <path id="Fill-111" serif:id="Fill-11" d="M5.717,15C7.156,14.533 9.01,13.93 11,13.283C10.351,11.286 9.748,9.43 9.284,8L4,9.717L5.717,15" style="fill:rgb(35,140,115);fill-rule:nonzero;"/>
+                        <path id="Fill-121" serif:id="Fill-12" d="M16.717,11C18.714,10.351 20.571,9.748 22,9.283C21.351,7.286 20.748,5.43 20.283,4L15,5.717L16.717,11" style="fill:rgb(98,128,58);fill-rule:nonzero;"/>
+                    </g>
+                    <g id="Shape9" serif:id="Shape" transform="matrix(1,0,0,1,714,913)">
+                        <path d="M13.971,0.319L5.188,3.862L13.324,7.128L22.757,3.862L13.971,0.319ZM0.768,4.747L0.473,20.686L13.324,26L13.324,9.45L0.768,4.747ZM27.177,4.747L15.563,8.897L15.563,24.505L27.177,20.078L27.177,4.747Z" style="fill:rgb(247,168,13);fill-rule:nonzero;"/>
+                    </g>
+                    <g id="Rectangle-7">
+                        <path id="path-9" d="M334,657C334,655.344 332.656,654 331,654L318,654C316.344,654 315,655.344 315,657L315,668C315,669.656 316.344,671 318,671L331,671C332.656,671 334,669.656 334,668L334,657Z" style="fill:rgb(242,242,242);"/>
+                        <path d="M333.5,657.5C333.5,655.844 332.156,654.5 330.5,654.5L318.5,654.5C316.844,654.5 315.5,655.844 315.5,657.5L315.5,667.5C315.5,669.156 316.844,670.5 318.5,670.5L330.5,670.5C332.156,670.5 333.5,669.156 333.5,667.5L333.5,657.5Z" style="fill:none;stroke:rgb(176,190,197);stroke-width:1px;"/>
+                    </g>
+                    <g id="Rectangle-71" serif:id="Rectangle-7">
+                        <path id="path-10" d="M334,657C334,655.344 332.656,654 331,654L318,654C316.344,654 315,655.344 315,657L315,668C315,669.656 316.344,671 318,671L331,671C332.656,671 334,669.656 334,668L334,657Z" style="fill:rgb(242,242,242);"/>
+                        <path d="M333.5,657.5C333.5,655.844 332.156,654.5 330.5,654.5L318.5,654.5C316.844,654.5 315.5,655.844 315.5,657.5L315.5,667.5C315.5,669.156 316.844,670.5 318.5,670.5L330.5,670.5C332.156,670.5 333.5,669.156 333.5,667.5L333.5,657.5Z" style="fill:none;stroke:rgb(176,190,197);stroke-width:1px;"/>
+                    </g>
+                    <path id="Rectangle-72" serif:id="Rectangle-7" d="M502,588C502,586.344 500.656,585 499,585L417,585C415.344,585 414,586.344 414,588L414,620C414,621.656 415.344,623 417,623L499,623C500.656,623 502,621.656 502,620L502,588Z" style="fill:white;"/>
+                    <path id="Rectangle-73" serif:id="Rectangle-7" d="M674,588C674,586.344 672.656,585 671,585L535,585C533.344,585 532,586.344 532,588L532,620C532,621.656 533.344,623 535,623L671,623C672.656,623 674,621.656 674,620L674,588Z" style="fill:white;"/>
+                    <path id="Rectangle-74" serif:id="Rectangle-7" d="M796,589C796,587.344 794.656,586 793,586L711,586C709.344,586 708,587.344 708,589L708,621C708,622.656 709.344,624 711,624L793,624C794.656,624 796,622.656 796,621L796,589Z" style="fill:white;"/>
+                    <path id="Rectangle-75" serif:id="Rectangle-7" d="M940,589C940,587.344 938.656,586 937,586L825,586C823.344,586 822,587.344 822,589L822,621C822,622.656 823.344,624 825,624L937,624C938.656,624 940,622.656 940,621L940,589Z" style="fill:white;"/>
+                    <path id="Rectangle-76" serif:id="Rectangle-7" d="M1090,588C1090,586.344 1088.66,585 1087,585L975,585C973.344,585 972,586.344 972,588L972,620C972,621.656 973.344,623 975,623L1087,623C1088.66,623 1090,621.656 1090,620L1090,588Z" style="fill:white;"/>
+                    <path id="Rectangle-77" serif:id="Rectangle-7" d="M1259,587C1259,585.344 1257.66,584 1256,584L1120,584C1118.34,584 1117,585.344 1117,587L1117,619C1117,620.656 1118.34,622 1120,622L1256,622C1257.66,622 1259,620.656 1259,619L1259,587Z" style="fill:white;"/>
+                    <path id="Rectangle-78" serif:id="Rectangle-7" d="M1399,587C1399,585.344 1397.66,584 1396,584L1292,584C1290.34,584 1289,585.344 1289,587L1289,619C1289,620.656 1290.34,622 1292,622L1396,622C1397.66,622 1399,620.656 1399,619L1399,587Z" style="fill:white;"/>
+                    <g id="Rectangle-79" serif:id="Rectangle-7">
+                        <path id="path-11" d="M334,731C334,729.344 332.656,728 331,728L318,728C316.344,728 315,729.344 315,731L315,742C315,743.656 316.344,745 318,745L331,745C332.656,745 334,743.656 334,742L334,731Z" style="fill:rgb(242,242,242);"/>
+                        <path d="M333.5,731.5C333.5,729.844 332.156,728.5 330.5,728.5L318.5,728.5C316.844,728.5 315.5,729.844 315.5,731.5L315.5,741.5C315.5,743.156 316.844,744.5 318.5,744.5L330.5,744.5C332.156,744.5 333.5,743.156 333.5,741.5L333.5,731.5Z" style="fill:none;stroke:rgb(176,190,197);stroke-width:1px;"/>
+                    </g>
+                    <g id="Rectangle-710" serif:id="Rectangle-7">
+                        <path id="path-12" d="M334,826C334,824.344 332.656,823 331,823L318,823C316.344,823 315,824.344 315,826L315,837C315,838.656 316.344,840 318,840L331,840C332.656,840 334,838.656 334,837L334,826Z" style="fill:rgb(242,242,242);"/>
+                        <path d="M333.5,826.5C333.5,824.844 332.156,823.5 330.5,823.5L318.5,823.5C316.844,823.5 315.5,824.844 315.5,826.5L315.5,836.5C315.5,838.156 316.844,839.5 318.5,839.5L330.5,839.5C332.156,839.5 333.5,838.156 333.5,836.5L333.5,826.5Z" style="fill:none;stroke:rgb(176,190,197);stroke-width:1px;"/>
+                    </g>
+                    <g id="Rectangle-711" serif:id="Rectangle-7">
+                        <path id="path-13" d="M334,926C334,924.344 332.656,923 331,923L318,923C316.344,923 315,924.344 315,926L315,937C315,938.656 316.344,940 318,940L331,940C332.656,940 334,938.656 334,937L334,926Z" style="fill:rgb(242,242,242);"/>
+                        <path d="M333.5,926.5C333.5,924.844 332.156,923.5 330.5,923.5L318.5,923.5C316.844,923.5 315.5,924.844 315.5,926.5L315.5,936.5C315.5,938.156 316.844,939.5 318.5,939.5L330.5,939.5C332.156,939.5 333.5,938.156 333.5,936.5L333.5,926.5Z" style="fill:none;stroke:rgb(176,190,197);stroke-width:1px;"/>
+                    </g>
+                    <g id="Filter-by:-x-New-x-R" transform="matrix(1,0,0,1,296,611)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;fill:rgb(23,36,50);">F</text>
+                        <g transform="matrix(1,0,0,1,9.866,0)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;fill:rgb(23,36,50);">ilter by:         x New          x Remediated          x DLP          x Malware          x Phishing          x Shadow IT          x Anomaly</text>
+                        </g>
+                    </g>
+                    <rect id="Rectangle-6" x="501" y="716" width="57" height="29" style="fill:rgb(220,85,43);"/>
+                    <g id="NEW1" serif:id="NEW" transform="matrix(1,0,0,1,510,737)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:16px;fill:white;">N</text>
+                        <g transform="matrix(1,0,0,1,11.991,0)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:16px;fill:white;">EW</text>
+                        </g>
+                    </g>
+                    <rect id="Rectangle-61" serif:id="Rectangle-6" x="501" y="813" width="57" height="29" style="fill:rgb(220,85,43);"/>
+                    <g id="NEW2" serif:id="NEW" transform="matrix(1,0,0,1,510,834)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:16px;fill:white;">N</text>
+                        <g transform="matrix(1,0,0,1,11.991,0)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:16px;fill:white;">EW</text>
+                        </g>
+                    </g>
+                    <rect id="Rectangle-62" serif:id="Rectangle-6" x="501" y="914" width="57" height="29" style="fill:rgb(220,85,43);"/>
+                    <path id="Shape10" serif:id="Shape" d="M652.306,716.127L660.153,716.127C664.487,716.127 668,721.947 668,729.127C668,736.306 664.487,742.127 660.153,742.127L652.306,742.127L652.306,716.127Z" style="fill:rgb(238,238,238);"/>
+                    <path id="Shape11" serif:id="Shape" d="M606.694,716.127L598.847,716.127C594.513,716.127 591,721.947 591,729.127C591,736.306 594.513,742.127 598.847,742.127L606.694,742.127L606.694,716.127Z" style="fill:rgb(255,0,0);"/>
+                    <rect id="Shape12" serif:id="Shape" x="608.516" y="716.127" width="13.181" height="26" style="fill:rgb(255,0,0);"/>
+                    <rect id="Shape13" serif:id="Shape" x="623.405" y="716.127" width="13.18" height="26" style="fill:rgb(255,0,0);"/>
+                    <rect id="Shape14" serif:id="Shape" x="637.418" y="716.127" width="13.18" height="26" style="fill:rgb(238,238,238);"/>
+                    <path id="Shape15" serif:id="Shape" d="M652,814L659.847,814C664.18,814 667.694,819.82 667.694,827C667.694,834.18 664.18,840 659.847,840L652,840L652,814Z" style="fill:rgb(238,238,238);"/>
+                    <path id="Shape16" serif:id="Shape" d="M606.694,814L598.847,814C594.513,814 591,819.82 591,827C591,834.18 594.513,840 598.847,840L606.694,840L606.694,814Z" style="fill:rgb(126,211,33);"/>
+                    <rect id="Shape17" serif:id="Shape" x="608" y="814" width="13.181" height="26" style="fill:rgb(238,238,238);"/>
+                    <rect id="Shape18" serif:id="Shape" x="623" y="814" width="13.181" height="26" style="fill:rgb(238,238,238);"/>
+                    <rect id="Shape19" serif:id="Shape" x="637" y="814" width="13.181" height="26" style="fill:rgb(238,238,238);"/>
+                    <path id="Shape20" serif:id="Shape" d="M652.153,915L660,915C664.334,915 667.847,920.82 667.847,928C667.847,935.18 664.334,941 660,941L652.153,941L652.153,915Z" style="fill:rgb(238,238,238);"/>
+                    <path id="Shape21" serif:id="Shape" d="M606.847,915L599,915C594.666,915 591.153,920.82 591.153,928C591.153,935.18 594.666,941 599,941L606.847,941L606.847,915Z" style="fill:rgb(126,211,33);"/>
+                    <rect id="Shape22" serif:id="Shape" x="608.153" y="915" width="13.181" height="26" style="fill:rgb(238,238,238);"/>
+                    <rect id="Shape23" serif:id="Shape" x="623.153" y="915" width="13.181" height="26" style="fill:rgb(238,238,238);"/>
+                    <rect id="Shape24" serif:id="Shape" x="637.153" y="915" width="13.181" height="26" style="fill:rgb(238,238,238);"/>
+                    <g id="NEW3" serif:id="NEW" transform="matrix(1,0,0,1,510,935)">
+                        <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:16px;fill:white;">N</text>
+                        <g transform="matrix(1,0,0,1,11.991,0)">
+                            <text x="0px" y="0px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:16px;fill:white;">EW</text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
