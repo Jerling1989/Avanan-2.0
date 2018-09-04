@@ -10581,18 +10581,18 @@ a.text-dark:focus {
 
 .owl-carousel .owl-dots .owl-dot > span {
     border-radius: 100%;
-    background: #505cfd;
+    background: #5385bd;
     display: block;
     height: 4px;
     width: 4px;
 }
 
 .owl-carousel .owl-dots .owl-dot.active {
-    border-color: #505cfd;
+    border-color: #5385bd;
 }
 
 .owl-carousel .owl-dots .owl-dot:hover {
-    border-color: #505cfd;
+    border-color: #5385bd;
     opacity: .5;
 }
 
@@ -12008,7 +12008,7 @@ img.img-shadow,
     position: relative;
     border-bottom: 1px solid #f0f0f0;
     padding: 30px 0;
-    height: 215px;
+    height: 175px;
 }
 
 .pricing-header p {
@@ -14277,6 +14277,10 @@ body.off-canvas-sidebar-open:after {
   padding-right: 25px;
 }
 
+.btn-break {
+  display: none;
+}
+
 /* PHONES IN PORTRAIT col-3 */
 @media (max-width: 576px) {
   .more-info {
@@ -14304,6 +14308,10 @@ body.off-canvas-sidebar-open:after {
   .off-canvas-sidebar-wrapper {
     padding-right: -15px;
   }
+
+  .btn-break {
+    display: block;
+  }
 }
 
 /* PHONES IN LANDSCAPE col-sm-3 */
@@ -14329,6 +14337,10 @@ body.off-canvas-sidebar-open:after {
     color: #FFF !important;
     margin-top: 10px;
   }
+
+  .btn-break {
+    display: block;
+  }
 }
 
 /* TABLETS col-md-3 */
@@ -14353,6 +14365,10 @@ body.off-canvas-sidebar-open:after {
     color: #FFF !important;
     margin-top: 10px;
   }
+
+  .btn-break {
+    display: none;
+  }
 }
 
 /* LAPTOPS  col-lg-3 */
@@ -14370,6 +14386,10 @@ body.off-canvas-sidebar-open:after {
     font-weight: bolder;
     margin-top: 20px;
   }
+
+  .btn-break {
+    display: none;
+  }
 }
 
 /* DESKTOPS col-xl-3 */
@@ -14386,5 +14406,9 @@ body.off-canvas-sidebar-open:after {
     color: #000 !important;
     font-weight: bolder;
     margin-top: 20px;
+  }
+
+  .btn-break {
+    display: none;
   }
 }
