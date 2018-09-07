@@ -456,6 +456,15 @@
         })
 
         /* ---------------------------------------------- /*
+         * Change Image Source on Click
+        /* ---------------------------------------------- */
+
+        // $('.change-saas-pic').click(function(){
+        //     var idToSRC = 'assets/images/screenshots/'+ this.id +'.png';
+        //     $('#saas-template-pic').attr('src', idToSRC);
+        // });
+
+        /* ---------------------------------------------- /*
          * A jQuery plugin for fluid width video embeds
         /* ---------------------------------------------- */
 
