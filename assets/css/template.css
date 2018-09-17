@@ -14073,17 +14073,18 @@ body.off-canvas-sidebar-open:after {
 
 .off-canvas-sidebar {
     position: fixed;
-    background: #222;
+    background: #f7f7f7;
     height: 100%;
-    width: 400px;
-    right: -400px;
+    width: 600px;
+    max-width: 100%;
+    right: -600px;
     z-index: 9999;
     top: 0;
 }
 
 .off-canvas-sidebar-open .off-canvas-sidebar {
-    -webkit-transform: translateX(-400px);
-            transform: translateX(-400px);
+    -webkit-transform: translateX(-600px);
+            transform: translateX(-600px);
 }
 
 .off-canvas-sidebar h1,
