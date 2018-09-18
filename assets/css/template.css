@@ -11415,7 +11415,7 @@ img.img-shadow,
 .modal-video-container .play-button {
     width: 80px;
     height: 80px;
-    border: 2px solid #fff;
+    border: 2px solid #5385bd;
     text-align: center;
     margin: 0 auto;
     position: absolute;
@@ -11440,7 +11440,7 @@ img.img-shadow,
     height: 0;
     border-style: solid;
     border-width: 7px 0 7px 14px;
-    border-color: transparent transparent transparent #fff;
+    border-color: transparent transparent transparent #5385bd;
 }
 
 .modal-video-container .play-button:hover {
