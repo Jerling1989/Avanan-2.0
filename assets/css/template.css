@@ -14340,6 +14340,14 @@ body.off-canvas-sidebar-open:after {
     display: block;
   }
 
+  .casb-desktop-tabs {
+    display: none;
+  }
+
+  .casb-mobile-tabs {
+    display: block;
+  }
+
 }
 
 /* PHONES IN LANDSCAPE col-sm-3 */
@@ -14385,6 +14393,14 @@ body.off-canvas-sidebar-open:after {
 
   .casb-mobile {
     display: block;
+  }
+
+  .casb-desktop-tabs {
+    display: block;
+  }
+
+  .casb-mobile-tabs {
+    display: none;
   }
 }
 
@@ -14432,6 +14448,14 @@ body.off-canvas-sidebar-open:after {
     display: block;
   }
 
+  .casb-desktop-tabs {
+    display: block;
+  }
+
+  .casb-mobile-tabs {
+    display: none;
+  }
+
 }
 
 /* LAPTOPS  col-lg-3 */
@@ -14471,6 +14495,14 @@ body.off-canvas-sidebar-open:after {
     display: none;
   }
 
+  .casb-desktop-tabs {
+    display: block;
+  }
+
+  .casb-mobile-tabs {
+    display: none;
+  }
+
 }
 
 /* DESKTOPS col-xl-3 */
@@ -14507,6 +14539,14 @@ body.off-canvas-sidebar-open:after {
   }
 
   .casb-mobile {
+    display: none;
+  }
+
+  .casb-desktop-tabs {
+    display: block;
+  }
+
+  .casb-mobile-tabs {
     display: none;
   }
 
