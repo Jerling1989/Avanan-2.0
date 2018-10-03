@@ -14290,6 +14290,7 @@ body.off-canvas-sidebar-open:after {
   border-right: #222 1px solid; padding-right: 50px;
 }
 
+
 /* PHONES IN PORTRAIT col-3 */
 @media (max-width: 576px) {
   .more-info {
@@ -14330,6 +14331,15 @@ body.off-canvas-sidebar-open:after {
     border-right: none;
     padding-right: 15px;
   }
+
+  .casb-desktop {
+    display: none;
+  }
+
+  .casb-mobile {
+    display: block;
+  }
+
 }
 
 /* PHONES IN LANDSCAPE col-sm-3 */
@@ -14367,6 +14377,14 @@ body.off-canvas-sidebar-open:after {
   #service-dock {
     border-right: none;
     padding-right: 15px;
+  }
+
+  .casb-desktop {
+    display: none;
+  }
+
+  .casb-mobile {
+    display: block;
   }
 }
 
@@ -14406,6 +14424,14 @@ body.off-canvas-sidebar-open:after {
     padding-right: 15px;
   }
 
+  .casb-desktop {
+    display: none;
+  }
+
+  .casb-mobile {
+    display: block;
+  }
+
 }
 
 /* LAPTOPS  col-lg-3 */
@@ -14437,6 +14463,14 @@ body.off-canvas-sidebar-open:after {
     padding-right: 50px;
   }
 
+  .casb-desktop {
+    display: block;
+  }
+
+  .casb-mobile {
+    display: none;
+  }
+
 }
 
 /* DESKTOPS col-xl-3 */
@@ -14466,6 +14500,14 @@ body.off-canvas-sidebar-open:after {
   #service-dock {
     border-right: #222 1px solid; 
     padding-right: 50px;
+  }
+
+  .casb-desktop {
+    display: block;
+  }
+
+  .casb-mobile {
+    display: none;
   }
 
 }
