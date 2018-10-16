@@ -11199,10 +11199,15 @@ pre[class*=language-] {
     color: #222;
 }
 
+.nav-tabs .nav-link:hover {
+    background-color: #f7f7f7;
+}
+
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
     border-color: #5385bd;
     border-bottom-width: 2px;
+    background-color: #ecf0f1;
 }
 
 .nav-tabs-icons .nav-link > span {
