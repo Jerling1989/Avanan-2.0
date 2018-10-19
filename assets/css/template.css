@@ -11635,13 +11635,14 @@ img.img-shadow,
 }
 
 .team-name {
-    font-size: .8125rem;
+    font-size: .95rem;
     margin-bottom: 2px;
 }
 
 .team-role {
-    font-size: .75rem;
+    font-size: .85rem;
     opacity: .6;
+    font-weight: bold;
 }
 
 .team-name,
