@@ -12269,6 +12269,9 @@ img.img-shadow,
     height: 100%;
     float: right;
     text-align: right;
+    background-color: #dc3545;
+    padding: 0px 8px 0px 0px;
+    margin-right: -15px;
 }
 
 .inner-navigation {
@@ -12323,7 +12326,8 @@ img.img-shadow,
 }
 
 .extra-nav {
-    padding-left: 10px;
+    padding-left: 0px;
+    margin-right: -15px;
 }
 
 .extra-nav > ul {
@@ -14558,3 +14562,5 @@ body.off-canvas-sidebar-open:after {
   }
 
 }
+
+
