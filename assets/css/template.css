@@ -13476,14 +13476,14 @@ img.img-shadow,
 }
 
 .post-content blockquote {
-    border-left: 2px solid #eaeaea;
+    border-left: px solid #eaeaea;
     padding: 10px 0 10px 40px;
     margin: 40px 0;
     transition: all .3s ease-in-out;
 }
 
 .post-content blockquote:hover {
-    border-color: #505cfd;
+    border-color: #5385bd;
 }
 
 .post-content ul,
