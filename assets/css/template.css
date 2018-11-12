@@ -12270,7 +12270,7 @@ img.img-shadow,
     float: right;
     text-align: right;
     background-color: #dc3545;
-    padding: 0px 8px 0px 0px;
+    padding-right: 15px;
     margin-right: -15px;
 }
 
@@ -13476,7 +13476,7 @@ img.img-shadow,
 }
 
 .post-content blockquote {
-    border-left: px solid #eaeaea;
+    border-left: 2px solid #eaeaea;
     padding: 10px 0 10px 40px;
     margin: 40px 0;
     transition: all .3s ease-in-out;
