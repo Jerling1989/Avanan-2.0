@@ -263,40 +263,7 @@ function(g) {
 
 
 
-function(s) {
-    "use strict";
-    s.fn.emulateTransitionEnd = function(t) {
-        var e = !1,
-            i = this;
-        s(this).one("bsTransitionEnd", function() {
-            e = !0
-        });
-        return setTimeout(function() {
-            e || s(i).trigger(s.support.transition.end)
-        }, t), this
-    }, s(function() {
-        s.support.transition = function() {
-            var t = document.createElement("bootstrap"),
-                e = {
-                    WebkitTransition: "webkitTransitionEnd",
-                    MozTransition: "transitionend",
-                    OTransition: "oTransitionEnd otransitionend",
-                    transition: "transitionend"
-                };
-            for (var i in e)
-                if (void 0 !== t.style[i]) return {
-                    end: e[i]
-                };
-            return !1
-        }(), s.support.transition && (s.event.special.bsTransitionEnd = {
-            bindType: s.support.transition.end,
-            delegateType: s.support.transition.end,
-            handle: function(t) {
-                return s(t.target).is(this) ? t.handleObj.handler.apply(this, arguments) : void 0
-            }
-        })
-    })
-}(jQuery),
+
 function() {
     var l, i, n, r, o = {}.hasOwnProperty;
     (r = function() {
@@ -1192,25 +1159,8 @@ var GrayScaleFix = function() {
     }
 }();
 
-function initNavHover() {
-    var i = "hover";
-    window.isTouchDevice ? jQuery(document).on("click", ".main-menu > li > a", function(t) {
-        var e = jQuery(this).closest("li");
-        e.siblings().removeClass(i), !e.hasClass(i) && e.find(".sub-menu").length && (e.addClass(i), t.preventDefault())
-    }) : jQuery(document).on("mouseenter", ".main-menu li", function() {
-        jQuery(this).addClass(i)
-    }).on("mouseleave", ".main-menu li", function() {
-        jQuery(this).removeClass(i)
-    })
-}
 
-function initRetinaCover() {
-    jQuery(".bg-stretch").retinaCover()
-}
 
-function initVideoPopup() {
-    jQuery(".btn-play").videoPopup()
-}
 
 function initSteps() {
     jQuery(".story-wrap").lineSVG({
@@ -1229,175 +1179,10 @@ function initFundingBanner() {
     }
 }
 
-function initCookieBanner() {
-    if (jQuery("body").on("click", "a#CybotCookiebotDialogBodyButtonDetails", function() {
-            jQuery(".CybotCookiebotDialogDetailBodyContentCookieContainerTypes, .CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected, #CybotCookiebotDialogDetailBodyContentCookieContainerNecessary").each(function() {
-                var t = jQuery(this).html().split(" ")[0];
-                jQuery(this).html(t)
-            })
-        }), jQuery("#cookie-banner").length) {
-        -1 == document.cookie.indexOf("cookie_banner_closed=") && jQuery("#cookie-banner").addClass("new-visitor");
-        var t, e = new Date;
-        e.setTime(e.getTime() + 31536e6), t = "; expires=" + e.toGMTString(), jQuery("#cookie-banner span#cookie-banner-close").on("click", function() {
-            document.cookie = "cookie_banner_closed=1" + t + ";path=/;", console.log("closed"), jQuery("#cookie-banner").hide()
-        })
-    }
-}
 
-function CookiebotCallback_OnAccept() {
-    if (jQuery("#CybotCookiebotDialog").length) {
-        var t, e = new Date;
-        e.setTime(e.getTime() + 31536e6), t = "; expires=" + e.toGMTString(), document.cookie = "cookie_banner_closed=1" + t + ";path=/;", console.log("accept"), jQuery("#cookie-banner").hide()
-    }
-}
 
-function CookiebotCallback_OnDecline() {
-    if (jQuery("#CybotCookiebotDialog").length) {
-        var t, e = new Date;
-        e.setTime(e.getTime() + 31536e6), t = "; expires=" + e.toGMTString(), document.cookie = "cookie_banner_closed=1" + t + ";path=/;", console.log("decline"), jQuery("#cookie-banner").hide()
-    }
-}
 
-function initFixedHeader() {
-    var s = jQuery(window),
-        n = "sticky-header",
-        o = "fixed-position";
-    jQuery(".header").each(function() {
-        var t = jQuery(this),
-            e = !t.hasClass(n),
-            i = function() {
-                0 < s.scrollTop() ? t.addClass(o) : t.removeClass(o), e && (768 < s.width() ? t.addClass(n) : t.removeClass(n))
-            };
-        i(), s.on("load resize orientationchange scroll", i)
-    }), jQuery(".tag-section").each(function() {
-        var e = jQuery(this),
-            t = function() {
-                var t;
-                s.scrollTop() + (t = 0, jQuery(".sticky-header").each(function() {
-                    t += jQuery(this).outerHeight()
-                }), t) > e.offset().top ? e.addClass(o) : e.removeClass(o)
-            };
-        t(), s.on("load resize orientationchange scroll", t)
-    })
-}
 
-function initOpenClose() {
-    jQuery(".open-close").openClose({
-        hideOnClickOutside: !1,
-        activeClass: "active",
-        opener: ".open-btn",
-        slider: ".slide-content",
-        animSpeed: 400,
-        effect: "slide",
-        onInit: function(e) {
-            function t() {
-                e.options.animSpeed = e.tabLink.is(":visible") ? 0 : 400
-            }
-            e.tabHolder = e.holder.closest("[id]"), e.toggleState = function() {
-                e.holder.hasClass(e.options.activeClass) ? e.hideSlide() : e.showSlide()
-            }, e.tabLink = jQuery('[href="#' + e.tabHolder.attr("id") + '"]'), e.tabLink.on("click tap", function(t) {
-                t.preventDefault(), e.toggleState()
-            }), e.holder.on("click tap", ".close-tab", function(t) {
-                t.preventDefault(), e.hideSlide()
-            }), t(), jQuery(window).on("resize orientationchange load", t)
-        },
-        animStart: function(t, e) {
-            e ? (t.tabHolder.siblings().find(".open-close.active").each(function() {
-                jQuery(this).data("OpenClose").hideSlide()
-            }), t.tabLink.closest("li").addClass(t.options.activeClass)) : t.tabLink.closest("li").removeClass(t.options.activeClass)
-        },
-        animEnd: function(t, e) {
-            var i, s;
-            e && jQuery(window).width() < 768 && SmoothScroll.scrollTo((i = t.tabHolder, s = i.offset().top, jQuery(".sticky-header").each(function() {
-                s -= jQuery(this).outerHeight(!0)
-            }), s), 1e3)
-        }
-    })
-}
-
-function initMobileNav() {
-    jQuery("html").mobileNav({
-        hideOnClickOutside: !0,
-        menuActiveClass: "nav-active",
-        menuOpener: ".nav-opener",
-        menuDrop: ".nav-drop"
-    })
-}
-
-function initCycleCarousel() {
-    jQuery(".carousel").scrollAbsoluteGallery({
-        mask: ".mask",
-        slider: ".slideset",
-        slides: ".slide",
-        btnPrev: "a.btn-prev",
-        btnNext: "a.btn-next",
-        generatePagination: ".pagination",
-        stretchSlideToMask: !0,
-        pauseOnHover: !0,
-        maskAutoSize: !0,
-        autoRotation: !1,
-        switchTime: 3e3,
-        animSpeed: 500,
-        onChange: function(i) {
-            i.slides.each(function(t) {
-                var e = jQuery(this).data("YoutubePlayer");
-                e && (t === i.currentIndex ? e.player.playVideo() : e.player.pauseVideo())
-            })
-        }
-    })
-}
-
-function initAccordion() {
-    jQuery(".tag-list").slideAccordion({
-        opener: "a.opener",
-        slider: "div.tag-submenu",
-        collapsible: !1,
-        animSpeed: 300,
-        event: window.isTouchDevice ? "click" : "mouseenter"
-    }), jQuery(".questions-list").slideAccordion({
-        opener: "a.opener",
-        addClassBeforeAnimation: !0,
-        slider: ".answer-slide",
-        animSpeed: 300,
-        onShow: function(t) {
-            var e;
-            jQuery(window).width() < 768 && SmoothScroll.scrollTo((e = t.offset().top, jQuery(".sticky-header").each(function() {
-                e -= jQuery(this).outerHeight(!0)
-            }), e), 1e3)
-        }
-    })
-}
-
-function initBackgroundResize() {
-    jQuery(".bg-holder-image").each(function() {
-        ImageStretcher.add({
-            container: this,
-            image: "img"
-        })
-    })
-}
-
-function onYouTubeIframeAPIReady() {
-    jQuery("[data-video]").youtubePlayer({
-        onReady: function(t) {
-            t.holder.hasClass("active") && t.player.playVideo()
-        }
-    })
-}
-
-function initBlog() {
-    jQuery("#blog-listings, #blog-single-wrapper").length && (jQuery(".match-height").matchHeight(), jQuery(".match-height-2").matchHeight(), jQuery(".chosen").chosen(), jQuery(".chosen-container .chosen-search-input").on("keyup", function() {
-        0 < jQuery(this).val().length ? jQuery("li.tag").removeClass("hide") : jQuery("li.tag").addClass("hide")
-    }), jQuery("#blog-categories-dropdown").on("change", function() {
-        var t = jQuery(this).val();
-        "Select category" != t && ("category" == jQuery(this).find(":selected").data("type") ? window.location = location.protocol + "//" + location.hostname + "/blog/category/" + t : window.location = location.protocol + "//" + location.hostname + "/blog/tag/" + t)
-    }), jQuery(document).on("ready scroll", function() {
-        var t = jQuery(this).scrollTop();
-        jQuery(".blog-item").each(function() {
-            jQuery(this).position().top - jQuery(this).height() + jQuery(window).height() / 9 <= t && jQuery(this).addClass("fadeInUp")
-        })
-    }))
-}
 
 function initTimeline() {
     if (jQuery("#timeline-wrapper").length) {
