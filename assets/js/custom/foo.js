@@ -1,18 +1,7 @@
 if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requires jQuery");
 
-
 function initRandomBlocks() {
-    var i = 0;
-    jQuery(".customer-logos-list li").each(function() {
-        var t = jQuery(this);
-        if (t.find("img").attr("height") > i) {
-            i = t.find("img").attr("height");
-            var e = parseInt(i) + 2 * parseInt(jQuery(".customer-logos-list li").css("padding-top"));
-            jQuery(".customer-logos-list li").css("height", e)
-        }
-    });
 }(jQuery), 
-
 
 function() {
     var l, i, n, r, o = {}.hasOwnProperty;
@@ -22,14 +11,10 @@ function() {
         return t.prototype.add_node = function(t) {
         }, t
     }()).select_to_array = function(t) {
-        var e, i, s, n, o;
-        for (i = new r, s = 0, n = (o = t.childNodes).length; s < n; s++) e = o[s], i.add_node(e);
-        return i.parsed
+        
     }, i = function() {
         function n(t, e) {
-            var i, s;
             this.form_field = t, this.options = null != e ? e : {}, this.label_click_handler = (i = this.label_click_handler, s = this, function() {
-                return i.apply(s, arguments)
             }), n.browser_is_supported() && (this.is_multiple = this.form_field.multiple, this.set_default_text(), this.set_default_values(), this.setup(), this.set_up_html(), this.register_observers(), this.on_ready())
         }
         return n.prototype.set_default_values = function() {
@@ -39,12 +24,9 @@ function() {
             }, this.active_field = !1, this.mouse_on_container = !1, this.results_showing = !1, this.result_highlighted = null, this.is_rtl = this.options.rtl || /\bchosen-rtl\b/.test(this.form_field.className), this.allow_single_deselect = null != this.options.allow_single_deselect && null != this.form_field.options[0] && "" === this.form_field.options[0].text && this.options.allow_single_deselect, this.disable_search_threshold = this.options.disable_search_threshold || 0, this.disable_search = this.options.disable_search || !1, this.enable_split_word_search = null == this.options.enable_split_word_search || this.options.enable_split_word_search, this.group_search = null == this.options.group_search || this.options.group_search, this.search_contains = this.options.search_contains || !1, this.single_backstroke_delete = null == this.options.single_backstroke_delete || this.options.single_backstroke_delete, this.max_selected_options = this.options.max_selected_options || 1 / 0, this.inherit_select_classes = this.options.inherit_select_classes || !1, this.display_selected_options = null == this.options.display_selected_options || this.options.display_selected_options, this.display_disabled_options = null == this.options.display_disabled_options || this.options.display_disabled_options, this.include_group_label_in_selected = this.options.include_group_label_in_selected || !1, this.max_shown_results = this.options.max_shown_results || Number.POSITIVE_INFINITY, this.case_sensitive_search = this.options.case_sensitive_search || !1, this.hide_results_on_select = null == this.options.hide_results_on_select || this.options.hide_results_on_select
         }, n.default_multiple_text = "Select Some Options", n.default_single_text = "Select an Option", n.default_no_result_text = "No results match", n
     }(), (l = jQuery).fn.extend({
-        chosen: function(s) {
-
-        }
+      
     }), n = function(t) {
         function e() {
-            return e.__super__.constructor.apply(this, arguments)
         }
         return function(t, e) {
         }, e
@@ -52,90 +34,39 @@ function() {
 }.call(this),
     function() {
         "use strict";
-
         function o(t, e, i) {
             "addEventListener" in window ? t.addEventListener(e, i, !1) : "attachEvent" in window && t.attachEvent("on" + e, i)
         }
-
-
         function t() {
             function t(t) {
-                var s = document.body,
-                    e = 0;
-                return "defaultView" in document && "getComputedStyle" in document.defaultView ? e = null !== (e = document.defaultView.getComputedStyle(s, null)) ? e[t] : 0 : e = function(t) {
-                    if (/^\d+(px)?$/i.test(t)) return parseInt(t, w);
-                    var e = s.style.left,
-                        i = s.runtimeStyle.left;
-                    return s.runtimeStyle.left = s.currentStyle.left, s.style.left = t || 0, t = s.style.pixelLeft, s.style.left = e, s.runtimeStyle.left = i, t
-                }(s.currentStyle[t]), parseInt(e, w)
             }
-            return document.body.offsetHeight + t("marginTop") + t("marginBottom")
         }
-
         function s() {
             return document.body.scrollHeight
         }
-
         function n() {
             return document.documentElement.offsetHeight
         }
-
         function d() {
             return document.documentElement.scrollHeight
         }
-
         function u() {
             return [t(), s(), n(), d()]
         }
-
         function p() {
             return Math.max.apply(null, u())
         }
-
         function f() {
             return Math.max(document.documentElement.scrollWidth, document.body.scrollWidth)
         }
 
-        
-
-        
-
-        var b = !0,
-            w = 10,
-            C = "",
-            k = 0,
-            x = "",
-            T = "",
-            S = !1,
-            j = {
-                resize: 1,
-                click: 1
-            },
-            E = 128,
-            I = 1,
-            D = !0,
-            Q = "offset",
-            A = Q,
-            H = !0,
-            $ = "",
-            O = 32,
-            N = !1,
-            R = "[iFrameSizer]",
-            P = R.length,
-            z = "",
-            M = !1,
-            L = {
+        // HERE HERE HERE GO DOOOOWN!!!
+        var L = {
                 max: 1,
                 scroll: 1,
                 bodyScroll: 1,
                 documentElementScroll: 1
             },
-            W = "*",
-            F = window.parent,
-            q = 0,
-            B = !1,
-            U = null,
-            V = 1,
             Y = {
                 offset: t,
                 bodyOffset: t,
@@ -516,11 +447,4 @@ function(c, t) {
     });
 
     
-
-
-
-
-
-
-
 }(window, document);
