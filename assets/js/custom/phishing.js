@@ -1,7 +1,6 @@
 /*! jQuery v2.2.4 | (c) jQuery Foundation | jquery.org/license */ ! function(a, b) {
     "object" == typeof module && "object" == typeof module.exports ? module.exports = a.document ? b(a, !0) : function(a) {
-        if (!a.document) throw new Error("jQuery requires a window with a document");
-        return b(a)
+       
     } : b(a)
 }("undefined" != typeof window ? window : this, function(a, b) {
     var c = [],
@@ -2985,72 +2984,15 @@
             }
         }
     });
-    var Jb = [],
-        Kb = /(=)\?(?=&|$)|\?\?/;
-    n.ajaxSetup({
-        jsonp: "callback",
-        jsonpCallback: function() {
-            var a = Jb.pop() || n.expando + "_" + kb++;
-            return this[a] = !0, a
-        }
-    }), n.ajaxPrefilter("json jsonp", function(b, c, d) {
-        var e, f, g, h = b.jsonp !== !1 && (Kb.test(b.url) ? "url" : "string" == typeof b.data && 0 === (b.contentType || "").indexOf("application/x-www-form-urlencoded") && Kb.test(b.data) && "data");
-        return h || "jsonp" === b.dataTypes[0] ? (e = b.jsonpCallback = n.isFunction(b.jsonpCallback) ? b.jsonpCallback() : b.jsonpCallback, h ? b[h] = b[h].replace(Kb, "$1" + e) : b.jsonp !== !1 && (b.url += (lb.test(b.url) ? "&" : "?") + b.jsonp + "=" + e), b.converters["script json"] = function() {
-            return g || n.error(e + " was not called"), g[0]
-        }, b.dataTypes[0] = "json", f = a[e], a[e] = function() {
-            g = arguments
-        }, d.always(function() {
-            void 0 === f ? n(a).removeProp(e) : a[e] = f, b[e] && (b.jsonpCallback = c.jsonpCallback, Jb.push(e)), g && n.isFunction(f) && f(g[0]), g = f = void 0
-        }), "script") : void 0
-    }), n.parseHTML = function(a, b, c) {
-        if (!a || "string" != typeof a) return null;
-        "boolean" == typeof b && (c = b, b = !1), b = b || d;
-        var e = x.exec(a),
-            f = !c && [];
-        return e ? [b.createElement(e[1])] : (e = ca([a], b, f), f && f.length && n(f).remove(), n.merge([], e.childNodes))
-    };
-    var Lb = n.fn.load;
-    n.fn.load = function(a, b, c) {
-        if ("string" != typeof a && Lb) return Lb.apply(this, arguments);
-        var d, e, f, g = this,
-            h = a.indexOf(" ");
-        return h > -1 && (d = n.trim(a.slice(h)), a = a.slice(0, h)), n.isFunction(b) ? (c = b, b = void 0) : b && "object" == typeof b && (e = "POST"), g.length > 0 && n.ajax({
-            url: a,
-            type: e || "GET",
-            dataType: "html",
-            data: b
-        }).done(function(a) {
-            f = arguments, g.html(d ? n("<div>").append(n.parseHTML(a)).find(d) : a)
-        }).always(c && function(a, b) {
-            g.each(function() {
-                c.apply(this, f || [a.responseText, b, a])
-            })
-        }), this
-    }, n.each(["ajaxStart", "ajaxStop", "ajaxComplete", "ajaxError", "ajaxSuccess", "ajaxSend"], function(a, b) {
-        n.fn[b] = function(a) {
-            return this.on(b, a)
-        }
-    }), n.expr.filters.animated = function(a) {
-        return n.grep(n.timers, function(b) {
-            return a === b.elem
-        }).length
-    };
+    
 
     function Mb(a) {
         return n.isWindow(a) ? a : 9 === a.nodeType && a.defaultView
     }
     n.offset = {
-        setOffset: function(a, b, c) {
-            var d, e, f, g, h, i, j, k = n.css(a, "position"),
-                l = n(a),
-                m = {};
-            "static" === k && (a.style.position = "relative"), h = l.offset(), f = n.css(a, "top"), i = n.css(a, "left"), j = ("absolute" === k || "fixed" === k) && (f + i).indexOf("auto") > -1, j ? (d = l.position(), g = d.top, e = d.left) : (g = parseFloat(f) || 0, e = parseFloat(i) || 0), n.isFunction(b) && (b = b.call(a, c, n.extend({}, h))), null != b.top && (m.top = b.top - h.top + g), null != b.left && (m.left = b.left - h.left + e), "using" in b ? b.using.call(a, m) : l.css(m)
-        }
+       
     }, n.fn.extend({
         offset: function(a) {
-            if (arguments.length) return void 0 === a ? this : this.each(function(b) {
-                n.offset.setOffset(this, a, b)
-            });
             var b, c, d = this[0],
                 e = {
                     top: 0,
@@ -3061,48 +3003,22 @@
                 top: e.top + c.pageYOffset - b.clientTop,
                 left: e.left + c.pageXOffset - b.clientLeft
             }) : e
-        },
-        position: function() {
-            if (this[0]) {
-                var a, b, c = this[0],
-                    d = {
-                        top: 0,
-                        left: 0
-                    };
-                return "fixed" === n.css(c, "position") ? b = c.getBoundingClientRect() : (a = this.offsetParent(), b = this.offset(), n.nodeName(a[0], "html") || (d = a.offset()), d.top += n.css(a[0], "borderTopWidth", !0), d.left += n.css(a[0], "borderLeftWidth", !0)), {
-                    top: b.top - d.top - n.css(c, "marginTop", !0),
-                    left: b.left - d.left - n.css(c, "marginLeft", !0)
-                }
-            }
-        },
-        offsetParent: function() {
-            return this.map(function() {
-                var a = this.offsetParent;
-                while (a && "static" === n.css(a, "position")) a = a.offsetParent;
-                return a || Ea
-            })
         }
     }), n.each({
         scrollLeft: "pageXOffset",
         scrollTop: "pageYOffset"
     }, function(a, b) {
-        var c = "pageYOffset" === b;
         n.fn[a] = function(d) {
             return K(this, function(a, d, e) {
                 var f = Mb(a);
                 return void 0 === e ? f ? f[b] : a[d] : void(f ? f.scrollTo(c ? f.pageXOffset : e, c ? e : f.pageYOffset) : a[d] = e)
             }, a, d, arguments.length)
         }
-    }), n.each(["top", "left"], function(a, b) {
-        n.cssHooks[b] = Ga(l.pixelPosition, function(a, c) {
-            return c ? (c = Fa(a, b), Ba.test(c) ? n(a).position()[b] + "px" : c) : void 0
-        })
     }), n.each({
         Height: "height",
         Width: "width"
     }, function(a, b) {
         n.each({
-            padding: "inner" + a,
             content: b,
             "": "outer" + a
         }, function(c, d) {
@@ -3110,33 +3026,14 @@
                 var f = arguments.length && (c || "boolean" != typeof d),
                     g = c || (d === !0 || e === !0 ? "margin" : "border");
                 return K(this, function(b, c, d) {
-                    var e;
                     return n.isWindow(b) ? b.document.documentElement["client" + a] : 9 === b.nodeType ? (e = b.documentElement, Math.max(b.body["scroll" + a], e["scroll" + a], b.body["offset" + a], e["offset" + a], e["client" + a])) : void 0 === d ? n.css(b, c, g) : n.style(b, c, d, g)
                 }, b, f ? d : void 0, f, null)
             }
         })
     }), n.fn.extend({
-        bind: function(a, b, c) {
-            return this.on(a, null, b, c)
-        },
-        unbind: function(a, b) {
-            return this.off(a, null, b)
-        },
-        delegate: function(a, b, c, d) {
-            return this.on(b, a, c, d)
-        },
-        undelegate: function(a, b, c) {
-            return 1 === arguments.length ? this.off(a, "**") : this.off(b, a || "**", c)
-        },
-        size: function() {
-            return this.length
-        }
     }), n.fn.andSelf = n.fn.addBack, "function" == typeof define && define.amd && define("jquery", [], function() {
-        return n
     });
-    var Nb = a.jQuery,
-        Ob = a.$;
+    
     return n.noConflict = function(b) {
-        return a.$ === n && (a.$ = Ob), b && a.jQuery === n && (a.jQuery = Nb), n
     }, b || (a.jQuery = a.$ = n), n
 });
