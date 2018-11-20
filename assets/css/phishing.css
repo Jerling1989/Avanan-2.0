@@ -209,19 +209,23 @@
 
 
 @media (min-width:1300px) {
-    .step-2 .story-content {
-        max-width: 410px
-    }
+  .step-2 .story-content {
+      max-width: 700px;
+  }
+
+  .step-3 .story-content {
+    max-width: 700px;
+  }
+
+  .step-4 .story-content {
+    max-width: 700px
+  }
 }
 
 
-.step-3 .story-content {
-    max-width: 370px
-}
 
-.step-4 .story-content {
-    max-width: 410px
-}
+
+
 
 
 @media (min-width:992px) {
