@@ -74,137 +74,29 @@ function() {
         }
 
         function t() {
-            function i(t) {
-                if ("IFRAME" !== t.tagName.toUpperCase()) throw new TypeError("Expected <IFRAME> tag, found <" + t.tagName + ">.");
-                e.call(t)
-            }
-            return function(t, e) {
-                (function(t) {
-                    for (var e in s(t = t || {}), C) C.hasOwnProperty(e) && (w[e] = t.hasOwnProperty(e) ? t[e] : C[e])
-                })(t), Array.prototype.forEach.call(document.querySelectorAll(e || "iframe"), i)
-            }
         }
-        var i, r = 0,
-            f = !0,
-            g = "message".length,
+        var i, 
             m = "[iFrameSizer]",
             v = m.length,
-            y = "",
-            _ = null,
-            a = window.requestAnimationFrame,
-            b = {
-                max: 1,
-                scroll: 1,
-                bodyScroll: 1,
-                documentElementScroll: 1
-            },
-            w = {},
-            C = {
-                autoResize: !0,
-                bodyBackground: null,
-                bodyMargin: null,
-                bodyMarginV1: 8,
-                bodyPadding: null,
-                checkOrigin: !0,
-                enablePublicMethods: !1,
-                heightCalculationMethod: "offset",
-                interval: 32,
-                log: !1,
-                maxHeight: 1 / 0,
-                maxWidth: 1 / 0,
-                minHeight: 0,
-                minWidth: 0,
-                scrolling: !1,
-                sizeHeight: !0,
-                sizeWidth: !1,
-                tolerance: 0,
-                closedCallback: function() {},
-                initCallback: function() {},
-                messageCallback: function() {},
-                resizedCallback: function() {}
-            };
+            a = window.requestAnimationFrame;
         (function() {
-            var t, e = ["moz", "webkit", "o", "ms"];
-            for (t = 0; t < e.length && !a; t += 1) a = window[e[t] + "RequestAnimationFrame"];
-            a || l(" RequestAnimationFrame not supported")
+          
         })(), n(window, "message", function(i) {
-            function s() {
-                t("Height"), t("Width"), p(function() {
-                    u(a), c(), w.resizedCallback(a)
-                }, a, "resetPage")
-            }
 
-            function t(t) {
-                var e = Number(w["max" + t]),
-                    i = Number(w["min" + t]),
-                    s = t.toLowerCase(),
-                    n = Number(a[s]);
-                if (e < i) throw new Error("Value for min" + t + " can not be greater than max" + t);
-                l(" Checking " + s + " is in range " + i + "-" + e), n < i && (n = i, l(" Set " + s + " to min value")), e < n && (n = e, l(" Set " + s + " to max value")), a[s] = "" + n
-            }
-
-            function n(t) {
-                var e, i = t ? (e = a.iframe.getBoundingClientRect(), h(), {
-                    x: Number(e.left) + Number(_.x),
-                    y: Number(e.top) + Number(_.y)
-                }) : {
-                    x: 0,
-                    y: 0
-                };
-                l(" Reposition requested from iFrame (offset x:" + i.x + " y:" + i.y + ")"), _ = {
-                    x: Number(a.width) + i.x,
-                    y: Number(a.height) + i.y
-                }, c()
-            }
             var e, o, r = i.data,
                 a = {};
             m === ("" + r).substr(0, v) && (l(" Received: " + r), o = r.substr(v).split(":"), a = {
-                iframe: document.getElementById(o[0]),
-                id: o[0],
-                height: o[1],
-                width: o[2],
-                type: o[3]
+               
             }, (e = a.type in {
-                true: 1,
-                false: 1
+
             }) && l(" Ignoring init message from meta parent page"), !e && function() {
-                if (null === a.iframe) throw new Error("iFrame (" + a.id + ") does not exist on " + y);
-                return !0
+
             }() && function() {
-                var t = i.origin,
-                    e = a.iframe.src.split("/").slice(0, 3).join("/");
-                if (w.checkOrigin && (l(" Checking connection is from: " + e), "" + t != "null" && t !== e)) throw new Error("Unexpected message received from: " + t + " for " + a.iframe.id + ". Message was: " + i.data + ". This error can be disabled by adding the checkOrigin: false option.");
-                return !0
+                
             }() && (function() {
-                switch (a.type) {
-                    case "close":
-                        e = a.iframe, l(" Removing iFrame: " + (i = e.id)), e.parentNode.removeChild(e), w.closedCallback(i), l(" --"), w.resizedCallback(a);
-                        break;
-                    case "message":
-                        t = r.substr(r.indexOf(":") + g + 6), l(" MessageCallback passed: {iframe: " + a.iframe.id + ", message: " + t + "}"), w.messageCallback({
-                            iframe: a.iframe,
-                            message: JSON.parse(t)
-                        }), l(" --");
-                        break;
-                    case "scrollTo":
-                        n(!1);
-                        break;
-                    case "scrollToOffset":
-                        n(!0);
-                        break;
-                    case "reset":
-                        d(a);
-                        break;
-                    case "init":
-                        s(), w.initCallback(a.iframe);
-                        break;
-                    default:
-                        s()
-                }
+                
                 var t, e, i
             }(), f = !1))
-        }), window.jQuery && ((i = jQuery).fn.iFrameResize = function(t) {
-            return s(t = t || {}), w = i.extend({}, C, t), this.filter("iframe").each(e).end()
         }), "function" == typeof define && define.amd ? define([], t) : "object" == typeof exports ? module.exports = t() : window.iFrameResize = t()
     }(), window.isTouchDevice = /Windows Phone/.test(navigator.userAgent) || "ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch, jQuery(function() {
         initSteps(), initOpenClose(), initNavHover(), initMobileNav(), initCycleCarousel(), initAccordion(), initFundingBanner(), initCookieBanner(), initFixedHeader(), initRetinaCover(), initVideoPopup(), initBackgroundResize(), initRandomBlocks(), initSearch(), initBlog(), initTimeline(), initLanguage(), initTinyFilter(), initSmoothScroll(), initEventsDropdown(), initSnapToBottom(), initScrollReveal()
@@ -215,65 +107,41 @@ function() {
 
 
 function initSteps() {
-    jQuery(".story-wrap").lineSVG({
-        onceMode: !1
-    })
+  jQuery(".story-wrap").lineSVG({
+    onceMode: !1
+  })
 }
 
 
 function initTimeline() {
-    if (jQuery("#timeline-wrapper").length) {
-        jQuery('[data-toggle="popover"]').popover({
-            html: !0,
-            placement: function(t, e) {
-                return jQuery(window).width() < 991 ? "bottom" : "right"
-            },
-            content: function() {
-                return jQuery(this).next(".line-event-content").html()
-            }
-        }).on("mouseenter", function() {
-            jQuery(this).hasClass("active") || (jQuery(".line-event a").removeClass("active"), jQuery(".popover").popover("hide"), jQuery(this).addClass("active").popover("show"))
-        }).on("mouseleave", function() {
-            var t = this,
-                e = jQuery(this).parent();
-            setTimeout(function() {
-                jQuery(".popover:hover").length || e.is(":hover") || jQuery(t).removeClass("active").popover("hide")
-            }, 150)
-        }).on("shown.bs.popover", function() {
-            var t = jQuery(this).parent().find(".popover");
-            if (window.isTouchDevice && !isElementInViewport(t)) {
-                var e = jQuery(this).offset().top - 2 * jQuery("header.header").height();
-                jQuery("html, body").animate({
-                    scrollTop: e + "px"
-                })
-            }
-        }), jQuery("a.event-0").addClass("active").popover("show"), jQuery('[data-toggle="popover"]:not(.event-0)').on("mouseover", function() {
-            jQuery("a.event-0").removeClass("active").popover("hide")
-        }), jQuery("html").on("click tap", function(t) {
-            void 0 === jQuery(t.target).data("toggle") && jQuery('[data-toggle="popover"]').popover("hide")
-        });
-        var e = jQuery(".timeline.row").offset().top - jQuery("header.header").height(),
-            i = jQuery(".timeline.row").offset().left;
-        jQuery(document).on("ready scroll", function() {
-            var t = jQuery(document).scrollTop();
-            e <= t ? jQuery("#timeline-legend").addClass("sticky").css({
-                top: "125px",
-                left: i
-            }) : t < e && jQuery("#timeline-legend").removeClass("sticky").css({
-                top: 0,
-                left: 0
-            })
-        })
-    }
+  if (jQuery("#timeline-wrapper").length) {
+    jQuery('[data-toggle="popover"]').popover({
+        
+    }).on("mouseenter", function() {
+    }).on("mouseleave", function() {
+    }).on("shown.bs.popover", function() {
+    }), jQuery("html").on("click tap", function(t) {
+
+    });
+    var e = jQuery(".timeline.row").offset().top - jQuery("header.header").height(),
+      i = jQuery(".timeline.row").offset().left;
+    jQuery(document).on("ready scroll", function() {
+      var t = jQuery(document).scrollTop();
+      e <= t ? jQuery("#timeline-legend").addClass("sticky").css({
+        top: "125px",
+        left: i
+      }) : t < e && jQuery("#timeline-legend").removeClass("sticky").css({
+        top: 0,
+        left: 0
+      })
+    })
+  }
 }! 
 
+
 function(e, t) {
-    "use strict";
-    function i(t) {
-    }
-    i.prototype = {
-        destroy: function() {}
-    }
+  "use strict";
+    
 }(jQuery, jQuery(window)),
 function(e, o) {
     "use strict";
@@ -360,62 +228,27 @@ function TinyFilter() {
 
 }(jQuery),
 function(s) {
-    function e(t) {
-        this.options = s.extend({
-            activeClass: "active",
-            mask: "div.slides-mask",
-            slider: ">ul",
-            slides: ">li",
-            btnPrev: ".btn-prev",
-            btnNext: ".btn-next",
-            pagerLinks: "ul.pager > li",
-            generatePagination: !1,
-            pagerList: "<ul>",
-            pagerListItem: '<li><a href="#"></a></li>',
-            pagerListItemText: "a",
-            galleryReadyClass: "gallery-js-ready",
-            currentNumber: "span.current-num",
-            totalNumber: "span.total-num",
-            maskAutoSize: !1,
-            autoRotation: !1,
-            pauseOnHover: !1,
-            stretchSlideToMask: !1,
-            switchTime: 3e3,
-            animSpeed: 500,
-            handleTouch: !0,
-            swipeThreshold: 15,
-            vertical: !1
-        }, t), this.init()
-    }
+  function e(t) {
+    this.options = s.extend({
+      
+    }, t), this.init()
+  }
 
 }(jQuery),
 function(c, t) {
 
-    function e(t) {
-        this.options = c.extend({
-            anchorLinks: 'a[href^="#"]',
-            container: null,
-            extraOffset: null,
-            activeClasses: null,
-            easing: "swing",
-            animMode: "duration",
-            animDuration: 800,
-            animSpeed: 1500,
-            anchorActiveClass: "anchor-active",
-            sectionActiveClass: "section-active",
-            wheelBehavior: "stop",
-            useNativeAnchorScrolling: !1
-        }, t), this.init()
+  function e(t) {
+    this.options = c.extend({
+    }, t), this.init()
+  }
+  e.prototype = {
+    init: function() {
+      this.initStructure(), this.attachEvents()
     }
-    e.prototype = {
-        init: function() {
-            this.initStructure(), this.attachEvents()
-        }
-    }, c.extend(e, {
-        scrollTo: function(t, e, i) {
-            s(t, e, i)
-        }
-    });
+  }, c.extend(e, {
+    scrollTo: function(t, e, i) {
+      s(t, e, i)
+    }
+  });
 
-    
 }(window, document);
