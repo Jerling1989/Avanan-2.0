@@ -60,46 +60,17 @@ function() {
             return Math.max(document.documentElement.scrollWidth, document.body.scrollWidth)
         }
 
-        // HERE HERE HERE GO DOOOOWN!!!
-        var L = {
-                max: 1,
-                scroll: 1,
-                bodyScroll: 1,
-                documentElementScroll: 1
-            },
-            Y = {
-                offset: t,
-                bodyOffset: t,
-                bodyScroll: s,
-                documentElementOffset: n,
-                scroll: d,
-                documentElementScroll: d,
-                max: p,
+        var Y = {
                 min: function() {
-                    return Math.min.apply(null, u())
-                },
-                grow: p,
-                lowestElement: function() {
-                    return Math.max(t(), function() {
-                        for (var t = document.querySelectorAll("body *"), e = t.length, i = 0, s = (new Date).getTime(), n = 0; n < e; n++) t[n].getBoundingClientRect().bottom > i && (i = t[n].getBoundingClientRect().bottom);
-                        return s = (new Date).getTime() - s, a("Parsed " + e + " HTML elements"), a("LowestElement bottom position calculated in " + s + "ms"), i
-                    }())
                 }
             };
         o(window, "message", function(t) {
-            R === ("" + t.data).substr(0, P) && (D && t.data.split(":")[2] in {
-                true: 1,
-                false: 1
-            } ? ($ = t.data, F = t.source, i(), D = !1, setTimeout(function() {
-                H = !1
-            }, E)) : "reset" === t.data.split("]")[1] ? H ? a("Page reset ignored by init") : (a("Page size reset by host page"), v("resetPage")) : t.data === $ || "iFrameResize" in window || r("Unexpected message (" + t.data + ")"))
         })
     }(),
     function() {
         "use strict";
 
         function n(t, e, i) {
-            "addEventListener" in window ? t.addEventListener(e, i, !1) : "attachEvent" in window && t.attachEvent("on" + e, i)
         }
 
         function t() {
