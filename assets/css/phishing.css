@@ -27,7 +27,7 @@
 
 .story-container {
     overflow: hidden;
-    max-width: 1385px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -45,7 +45,7 @@
     text-align: center;
     position: relative;
     padding-bottom: 40px;
-    max-width: 870px;
+    max-width: 100%;
     margin: 0 auto
 }
 
@@ -56,7 +56,7 @@
     top: 40px;
     bottom: 0;
     left: 50%;
-    background: #FF8200;
+    background: #fff;
     transform: translateX(-50%)
 }
 
@@ -152,6 +152,7 @@
     line-height: 1.02
 }
 
+
 @media (min-width:992px) {
     .steps h5 {
         font-size: 24px;
@@ -172,6 +173,7 @@
     max-width: 491px
 }
 
+
 @media (min-width:992px) {
     .step-1 .story-content {
         padding-top: 70px;
@@ -179,16 +181,18 @@
     }
 }
 
+
 @media (min-width:1200px) {
     .step-1 .story-content {
         max-width: 340px
     }
 }
 
+
 @media (min-width:1300px) {
     .step-1 .story-content {
         padding-top: 70px;
-        max-width: 491px
+        max-width: 700px
     }
 }
 
@@ -196,17 +200,20 @@
     max-width: 410px
 }
 
+
 @media (min-width:1200px) {
     .step-2 .story-content {
         max-width: 380px
     }
 }
 
+
 @media (min-width:1300px) {
     .step-2 .story-content {
         max-width: 410px
     }
 }
+
 
 .step-3 .story-content {
     max-width: 370px
@@ -215,6 +222,7 @@
 .step-4 .story-content {
     max-width: 410px
 }
+
 
 @media (min-width:992px) {
     .story-content {
@@ -233,6 +241,7 @@
     font-size: 24px;
     margin: 0 0 10px
 }
+
 
 @media (min-width:992px) {
     .step-title {
@@ -258,6 +267,7 @@
     max-width: 470px
 }
 
+
 @media (min-width:992px) {
     .graph-holder {
         position: absolute;
@@ -276,6 +286,7 @@
     visibility: visible
 }
 
+
 @media (min-width:1200px) {
     .graph-holder {
         max-width: 300px
@@ -293,6 +304,7 @@
     top: 20%
 }
 
+
 @media (min-width:992px) {
     .step-1 .graph-holder {
         top: 23%;
@@ -300,6 +312,7 @@
         transform: translateX(-200%)
     }
 }
+
 
 @media (min-width:1200px) {
     .step-1 .graph-holder {
@@ -309,6 +322,7 @@
     }
 }
 
+
 @media (min-width:1350px) {
     .step-1 .graph-holder {
         top: 16%;
@@ -317,10 +331,12 @@
     }
 }
 
+
 .step-2 .graph-holder {
     top: 30%;
     right: -37%
 }
+
 
 @media (min-width:992px) {
     .step-2 .graph-holder {
@@ -330,6 +346,7 @@
     }
 }
 
+
 @media (min-width:1200px) {
     .step-2 .graph-holder {
         top: 30%;
@@ -338,11 +355,13 @@
     }
 }
 
+
 .step-3 .graph-holder {
     top: 7%;
     left: -35%;
     max-width: 200px
 }
+
 
 @media (min-width:992px) {
     .step-3 .graph-holder {
@@ -351,6 +370,7 @@
         transform: translateX(-200%)
     }
 }
+
 
 @media (min-width:1200px) {
     .step-3 .graph-holder {
@@ -366,6 +386,7 @@
     max-width: 200px
 }
 
+
 @media (min-width:992px) {
     .step-4 .graph-holder {
         top: 27%;
@@ -376,6 +397,7 @@
         color: #ff671f
     }
 }
+
 
 @media (min-width:1200px) {
     .step-4 .graph-holder {
@@ -393,6 +415,7 @@
     height: 100%;
     z-index: 0
 }
+
 
 @media (max-width:992px) {
     .line {
