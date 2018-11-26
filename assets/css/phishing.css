@@ -27,7 +27,7 @@
 
 .story-container {
   overflow: hidden;
-  max-width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -146,7 +146,7 @@
 
 .graph-holder img {
   display: block;
-  max-width: 100%;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -189,7 +189,65 @@
   transform: none !important;
 }
 
+/*.step-1 {
+  margin-top: 100px;
+}*/
 
+.step-1 .graph-holder {
+  top: 0%;
+  right: 0px;
+  transform: translateX(0%);
+  padding: 0;
+  width: 80%;
+}
+
+.step-2 {
+  margin-top: 100px;
+}
+
+.step-2 .graph-holder {
+  top: 0%;
+  right: 0px;
+  transform: translateX(0%);
+  padding: 0;
+  width: 80%;
+}
+
+.step-2 .story-content {
+  max-width: 100%;
+}
+
+.step-3 {
+  margin-top: 100px;
+}
+
+.step-3 .graph-holder {
+  top: 0%;
+  right: 0px;
+  transform: translateX(0%);
+  padding: 0;
+  width: 80%;
+}
+
+.step-3 .story-content {
+  max-width: 100%;
+}
+
+.step-4 {
+  margin-top: 100px;
+}
+
+.step-4 .graph-holder {
+  top: 0%;
+  right: 0px;
+  transform: translateX(0%);
+  padding: 0;
+  width: 80%;
+}
+
+.step-4 .story-content {
+  max-width: 100%;
+}
 
 /* MEDIA QUERY 768PX */
 @media (min-width:768px) {
@@ -197,6 +255,22 @@
     font-size: 16px;
     padding: 0;
   }
+
+  .step-1 .story-content {
+    padding-top: 70px;
+    max-width: 80%;
+  }
+
+  .step-2 .story-content {
+    max-width: 80%;
+  }
+
+  .step-3 .story-content {
+    max-width: 80%;
+  }
+
+  .step-4 .story-content {
+    m
 }
 /* END MEDIA QUERY 768PX */
 
@@ -245,7 +319,19 @@
 
   .step-1 .story-content {
     padding-top: 70px;
-    max-width: 400px;
+    max-width: 80%;
+  }
+
+  .step-2 .story-content {
+    max-width: 80%;
+  }
+
+  .step-3 .story-content {
+    max-width: 80%;
+  }
+
+  .step-4 .story-content {
+    max-width: 80%;
   }
 
   .story-content {
@@ -277,7 +363,7 @@
 
   .step-1 .graph-holder {
     top: 23%;
-    left: -200px;
+    left: -120px;
     transform: translateX(-200%);
   }
 
@@ -314,15 +400,24 @@
 /* MEDIA QUERY 1200PX */
 @media (min-width:1200px) {
   .steps {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .step-1 .story-content {
-    max-width: 340px;
+    padding-top: 70px;
+    max-width: 80%;
   }
 
   .step-2 .story-content {
-    max-width: 380px;
+    max-width: 80%;
+  }
+
+  .step-3 .story-content {
+    max-width: 80%;
+  }
+
+  .step-4 .story-content {
+    max-width: 80%;
   }
 
   .graph-holder {
@@ -331,13 +426,13 @@
 
   .step-1 .graph-holder {
     top: 19%;
-    left: -113px;
+    left: -130px;
     transform: translateX(-200%);
   }
 
   .step-2 .graph-holder {
     top: 30%;
-    right: -126px;
+    right: -130px;
     transform: translateX(200%);
   }
 
@@ -359,12 +454,12 @@
 /* MEDIA QUERY 1300PX */
 @media (min-width:1300px) {
   .step-1 .story-content {
-      padding-top: 70px;
-      max-width: 80%;
+    padding-top: 70px;
+    max-width: 80%;
   }
 
   .step-2 .story-content {
-      max-width: 80%;
+    max-width: 80%;
   }
 
   .step-3 .story-content {
