@@ -144,11 +144,11 @@
   visibility: visible;
 }
 
-.graph-holder img {
+/*.graph-holder img {
   display: block;
   max-width: 80%;
   margin: 0 auto;
-}
+}*/
 
 .step-1 .graph-holder {
   left: -43%;
@@ -469,6 +469,27 @@
   .step-4 .story-content {
     max-width: 80%;
   }
+
+  #img-one {
+    margin-top: 20px;
+  }
+
+  #img-two {
+
+  }
+
+  #img-three {
+
+  }
+
+  #img-four {
+
+  }
+
+  #img-five {
+
+  }
+
 }
 /* MEDIA QUERY 1300PX */
 
