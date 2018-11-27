@@ -153,23 +153,25 @@
 .step-1 .graph-holder {
   left: -43%;
   top: 20%;
+  max-width: 300px;
 }
 
 .step-2 .graph-holder {
   top: 30%;
   right: -37%;
+  max-width: 300px;
 }
 
 .step-3 .graph-holder {
   top: 7%;
   left: -35%;
-  max-width: 200px;
+  max-width: 300px;
 }
 
 .step-4 .graph-holder {
   top: 12%;
   right: -31%;
-  max-width: 200px;
+  max-width: 300px;
 }
 
 .line {
@@ -334,6 +336,27 @@
     max-width: 80%;
   }
 
+  #img-one {
+    margin-top: 20px;
+  }
+
+  #img-two {
+    margin-top: 40px;
+  }
+
+  #img-three {
+    margin-top: 50px;
+    width: 250px;
+  }
+
+  #img-four {
+    margin-top: 65px;
+  }
+
+  #img-five {
+    margin-top: 85px;
+  }
+
   .story-content {
     padding: 50px 10px;
     margin: 0 auto;
@@ -420,6 +443,27 @@
     max-width: 80%;
   }
 
+  #img-one {
+    margin-top: 20px;
+  }
+
+  #img-two {
+    margin-top: 40px;
+  }
+
+  #img-three {
+    margin-top: 50px;
+    width: 250px;
+  }
+
+  #img-four {
+    margin-top: 65px;
+  }
+
+  #img-five {
+    margin-top: 85px;
+  }
+
   .graph-holder {
     max-width: 300px;
   }
@@ -480,14 +524,15 @@
 
   #img-three {
     margin-top: 50px;
+    width: 250px;
   }
 
   #img-four {
-    margin-top: 80px;
+    margin-top: 65px;
   }
 
   #img-five {
-    margin-top: 100px;
+    margin-top: 85px;
   }
 
 }
@@ -504,4 +549,11 @@
   }
 }
 /* END MEDIA QUERY 1350PX */
+
+
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
 
