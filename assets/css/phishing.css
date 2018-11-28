@@ -659,9 +659,30 @@
   font-size: 18px;
 }
 
+#img-one-mobile {
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /* MEDIA QUERY 576PX */
 @media (min-width:576px) {
+  .mobile-info {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .mobile-info h5 {
+    font-size: 20px;
+  }
+}
+/* END MEDIA QUERY 576PX */
+
+
+/* MEDIA QUERY 767PX */
+@media (min-width:768px) {
   .mobile-info {
     font-size: 18px;
     line-height: 1.5;
@@ -671,19 +692,19 @@
     font-size: 24px;
   }
 }
-/* END MEDIA QUERY 576PX */
-
-
-/* MEDIA QUERY 767PX */
-@media (min-width:768px) {
-  
-}
 /* END MEDIA QUERY 767PX */
 
 
 /* MEDIA QUERY 992PX */
 @media (min-width:992px) {
-  
+  .mobile-info {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .mobile-info h5 {
+    font-size: 24px;
+  }
 }
 /* END MEDIA QUERY 992PX */
 
