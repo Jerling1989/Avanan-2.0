@@ -9,18 +9,6 @@
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
-.mobile-info {
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 0;
-  min-height: 340px;
-}
-
-.mobile-info h5 {
-  font-size: 24px;
-  margin-top: 30px;
-}
-
 .steps {
   background: #fff;
 }
@@ -659,6 +647,46 @@
   }
 }
 /* END MEDIA QUERY 1350PX */
+
+
+.mobile-info {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.mobile-info h5 {
+  font-size: 18px;
+}
+
+
+/* MEDIA QUERY 576PX */
+@media (min-width:576px) {
+  .mobile-info {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .mobile-info h5 {
+    font-size: 24px;
+  }
+}
+/* END MEDIA QUERY 576PX */
+
+
+/* MEDIA QUERY 767PX */
+@media (min-width:768px) {
+  
+}
+/* END MEDIA QUERY 767PX */
+
+
+/* MEDIA QUERY 992PX */
+@media (min-width:992px) {
+  
+}
+/* END MEDIA QUERY 992PX */
+
 
 /*
 * {
