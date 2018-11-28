@@ -131,7 +131,7 @@
 .graph-holder {
   transition: transform 1s ease-in-out .1s, visibility 1s ease-in-out .1s, opacity 1s ease-in-out .1s;
   margin: 0 auto 10px;
-  background: #fff;
+  background: transparent;
   max-width: 470px;
 }
 
@@ -683,6 +683,11 @@
 #img-five-mobile {
   width: 80%;
   height: auto;
+}
+
+#mobile-title {
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 
