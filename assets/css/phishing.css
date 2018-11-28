@@ -269,6 +269,13 @@
   display: block;
 }
 
+.mobile-step {
+  display: block;
+}
+
+.desktop-step {
+  display: none;
+}
 
 /* MEDIA QUERY 576 */
 @media (min-width: 576px) {
@@ -277,6 +284,14 @@
   }
 
   #static-info {
+    display: block;
+  }
+
+  .mobile-step {
+    display: none;
+  }
+
+  .desktop-step {
     display: block;
   }
 }
