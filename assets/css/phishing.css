@@ -690,10 +690,41 @@
   .mobile-info {
     font-size: 16px;
     line-height: 1.5;
+    
   }
 
   .mobile-info h5 {
     font-size: 20px;
+  }
+
+  #img-one-mobile {
+    width: 100%;
+    height: auto;
+    margin-top: 37px;
+  }
+
+  #img-two-mobile {
+    width: 100%;
+    height: auto;
+    margin-top: 37px;
+  }
+
+  #img-three-mobile {
+    width: 100%;
+    height: auto;
+    margin-top: 63px;
+  }
+
+  #img-four-mobile {
+    width: 100%;
+    height: auto;
+    margin-top: 37px;
+  }
+
+  #img-five-mobile {
+    width: 100%;
+    height: auto;
+    margin-top: 37px;
   }
 }
 /* END MEDIA QUERY 576PX */
@@ -709,6 +740,31 @@
   .mobile-info h5 {
     font-size: 24px;
   }
+
+  #img-one-mobile {
+    width: 100%;
+    height: auto;
+  }
+
+  #img-two-mobile {
+    width: 100%;
+    height: auto;
+  }
+
+  #img-three-mobile {
+    width: 100%;
+    height: auto;
+  }
+
+  #img-four-mobile {
+    width: 100%;
+    height: auto;
+  }
+
+  #img-five-mobile {
+    width: 100%;
+    height: auto;
+  }
 }
 /* END MEDIA QUERY 767PX */
 
@@ -723,12 +779,37 @@
   .mobile-info h5 {
     font-size: 24px;
   }
+
+  #img-one-mobile {
+    width: 100%;
+    height: auto;
+  }
+
+  #img-two-mobile {
+    width: 100%;
+    height: auto;
+  }
+
+  #img-three-mobile {
+    width: 100%;
+    height: auto;
+  }
+
+  #img-four-mobile {
+    width: 100%;
+    height: auto;
+  }
+
+  #img-five-mobile {
+    width: 100%;
+    height: auto;
+  }
 }
 /* END MEDIA QUERY 992PX */
 
 
-/*
-* {
+
+/** {
   background: #000 !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important;
