@@ -438,7 +438,7 @@
 
 
 /* MEDIA QUERY 992PX */
-@media (min-width:992px) {
+@media (min-width:1060px) {
   .steps {
     background: 0 0;
   }
