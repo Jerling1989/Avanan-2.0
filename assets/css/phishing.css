@@ -134,6 +134,7 @@
   margin: 0 auto 10px;
   background: #fff;
   max-width: 470px;
+  background: transparent;
 }
 
 .on-scroll .graph-holder,
