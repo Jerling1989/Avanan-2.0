@@ -653,6 +653,7 @@
   font-size: 14px;
   line-height: 1.5;
   margin: 0;
+  margin-bottom: 0px;
 }
 
 .mobile-info h5 {
@@ -690,7 +691,7 @@
   .mobile-info {
     font-size: 16px;
     line-height: 1.5;
-    
+    margin-bottom: 50px;
   }
 
   .mobile-info h5 {
@@ -716,7 +717,7 @@
   }
 
   #img-four-mobile {
-    width: 100%;
+    width: 150% !important;
     height: auto;
     margin-top: 37px;
   }
@@ -735,6 +736,7 @@
   .mobile-info {
     font-size: 18px;
     line-height: 1.5;
+    margin-bottom: 50px;
   }
 
   .mobile-info h5 {
@@ -744,26 +746,31 @@
   #img-one-mobile {
     width: 100%;
     height: auto;
+    margin-top: 25px;
   }
 
   #img-two-mobile {
     width: 100%;
     height: auto;
+    margin-top: 30px;
   }
 
   #img-three-mobile {
     width: 100%;
     height: auto;
+    margin-top: 0px;
   }
 
   #img-four-mobile {
     width: 100%;
     height: auto;
+    margin-top: 40px;
   }
 
   #img-five-mobile {
     width: 100%;
     height: auto;
+    margin-top: 60px;
   }
 }
 /* END MEDIA QUERY 767PX */
