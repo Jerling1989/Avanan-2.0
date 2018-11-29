@@ -2593,49 +2593,8 @@
         }
     }
 
-    function xb(a, b, c, d) {
-        var e = {},
-            f = a === tb;
+    // STOPPED HERE
 
-        function g(h) {
-            var i;
-            return e[h] = !0, n.each(a[h] || [], function(a, h) {
-                var j = h(b, c, d);
-                return "string" != typeof j || f || e[j] ? f ? !(i = j) : void 0 : (b.dataTypes.unshift(j), g(j), !1)
-            }), i
-        }
-        return g(b.dataTypes[0]) || !e["*"] && g("*")
-    }
-
-    function yb(a, b) {
-        var c, d, e = n.ajaxSettings.flatOptions || {};
-        for (c in b) void 0 !== b[c] && ((e[c] ? a : d || (d = {}))[c] = b[c]);
-        return d && n.extend(!0, a, d), a
-    }
-
-    function zb(a, b, c) {
-        var d, e, f, g, h = a.contents,
-            i = a.dataTypes;
-        while ("*" === i[0]) i.shift(), void 0 === d && (d = a.mimeType || b.getResponseHeader("Content-Type"));
-        if (d)
-            for (e in h)
-                if (h[e] && h[e].test(d)) {
-                    i.unshift(e);
-                    break
-                }
-        if (i[0] in c) f = i[0];
-        else {
-            for (e in c) {
-                if (!i[0] || a.converters[e + " " + i[0]]) {
-                    f = e;
-                    break
-                }
-                g || (g = e)
-            }
-            f = f || g
-        }
-        return f ? (f !== i[0] && i.unshift(f), c[f]) : void 0
-    }
 
     function Ab(a, b, c, d) {
         var e, f, g, h, i, j = {},
@@ -2722,8 +2681,8 @@
                 q = n.Deferred(),
                 r = n.Callbacks("once memory"),
                 s = m.statusCode || {},
-                t = {},
-                u = {},
+                // t = {},
+                // u = {},
                 v = 0,
                 w = "canceled",
                 x = {
