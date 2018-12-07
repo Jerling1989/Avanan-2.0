@@ -1980,9 +1980,26 @@ function initVideoPopup() {
 }
 
 function initSteps() {
+    function i(t) {
+        this.options = e.extend({
+            activeClass: "on-scroll",
+            steps: ".steps",
+            line: ".line",
+            startItem: ".story-symbol",
+            turnWidth: 50,
+            onceMode: !1
+        }, t), this.init()
+    }
+    
+    jQuery(".story-wrap").data("LineSVG", new i(e.extend(t, {
+                holder: this
+    })))
+
+    /*
     jQuery(".story-wrap").lineSVG({
         onceMode: !1
     })
+    */
 }
 
 function initFundingBanner() {
