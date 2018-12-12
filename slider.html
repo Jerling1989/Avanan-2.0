@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<!--[if IE]> <script src="https://www.zerto.com/wp-content/themes/foundation/js/plugins/html5shiv.js"></script> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="en" ><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+<!--[if gte IE 9]><style type="text/css">.gradient {filter: none;}</style><![endif]-->
+
+<head>
+    <script type='text/javascript'>
+        (function(c, h, a, f, i, e) {
+            c[a] = c[a] || function() {
+                (c[a].q = c[a].q || []).push(arguments)
+            };
+            c[a].a = i;
+            c[a].e = e;
+            var g = h.createElement("script");
+            g.async = true;
+            g.type = "text/javascript";
+            g.src = f + '?aid=' + i;
+            var b = h.getElementsByTagName("script")[0];
+            b.parentNode.insertBefore(g, b);
+        })(window, document, "rtp", "//sjrtp3-cdn.marketo.com/rtp-api/v1/rtp.js", "zerto");
+
+        rtp('send', 'view');
+        rtp('get', 'campaign', true);
+    </script>
+    <script type="text/javascript">
+        (function() {
+            var didInit = false;
+
+            function initMunchkin() {
+                if (didInit === false) {
+                    didInit = true;
+                    Munchkin.init('743-HBR-773');
+                }
+            }
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = '//munchkin.marketo.net/munchkin.js';
+            s.onreadystatechange = function() {
+                if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                    initMunchkin();
+                }
+            };
+            s.onload = initMunchkin;
+            document.getElementsByTagName('head')[0].appendChild(s);
+        })();
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" charset="UTF-8" />
+    <link type="image/png" href="https://zerto-com.azureedge.net/wp-content/uploads/2018/01/Zerto_FavIcon128x128px.png" rel="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <style type="text/css" media="print">
+        @media print {
+            #header,
+            #fl_menu,
+            .assets_box,
+            .comments,
+            .wonderplugin-engine,
+            #wonderpluginlightbox_options {
+                display: none
+            }
+            footer .row {
+                display: none
+            }
+        }
+    </style>
+    <link type="text/css" media="all" href="https://www.zerto.com/wp-content/cache/autoptimize/css/autoptimize_7c8c21ec31198ebed103ff7a9b3fd33c.css" rel="stylesheet" />
+    <link type="text/css" media="screen" href="https://www.zerto.com/wp-content/cache/autoptimize/css/autoptimize_aa5fd3bffbb4c30111f755837e1a96b7.css" rel="stylesheet" />
+    <title>Zerto Virtual Replication | IT Resilience is Disaster Recovery Evolved</title>
+    <link rel="alternate" hreflang="en" href="https://www.zerto.com" />
+    <link rel="alternate" hreflang="zh-hans" href="https://www.zerto.com/cn/" />
+    <link rel="alternate" hreflang="fr" href="https://www.zerto.com/fr/" />
+    <link rel="alternate" hreflang="de" href="https://www.zerto.com/de/" />
+    <link rel="alternate" hreflang="it" href="https://www.zerto.com/it/" />
+    <link rel="alternate" hreflang="ja" href="https://www.zerto.com/jp/" />
+    <link rel="alternate" hreflang="pt" href="https://www.zerto.com/pt-br/" />
+    <link rel="alternate" hreflang="es" href="https://www.zerto.com/es/" />
+    <meta name="description" content="Zerto&#039;s virtual data replication software for VMWare, Hyper-V, Azure &amp; AWS ensures disaster recovery &amp; IT Resilience for virtualized &amp; cloud datacenters." />
+    <link rel="canonical" href="https://www.zerto.com/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Zerto Virtual Replication | IT Resilience is Disaster Recovery Evolved" />
+    <meta property="og:description" content="Zerto&#039;s virtual data replication software for VMWare, Hyper-V, Azure &amp; AWS ensures disaster recovery &amp; IT Resilience for virtualized &amp; cloud datacenters." />
+    <meta property="og:url" content="https://www.zerto.com/" />
+    <meta property="og:site_name" content="Zerto" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="Zerto&#039;s virtual data replication software for VMWare, Hyper-V, Azure &amp; AWS ensures disaster recovery &amp; IT Resilience for virtualized &amp; cloud datacenters." />
+    <meta name="twitter:title" content="Zerto Virtual Replication | IT Resilience is Disaster Recovery Evolved" />
+    <script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.zerto.com\/","name":"Zerto","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.zerto.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+    <link rel='dns-prefetch' href='//use.fontawesome.com' />
+    <link rel='dns-prefetch' href='//cdn.evgnet.com' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//code.jquery.com' />
+    <link rel="alternate" type="application/rss+xml" title="Zerto &raquo; Feed" href="https://www.zerto.com/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Zerto &raquo; Comments Feed" href="https://www.zerto.com/comments/feed/" />
+    <link rel='stylesheet' id='dashicons-css' href='https://zerto-com.azureedge.net/wp-includes/css/dashicons.min.css?ver=4.9.8' type='text/css' media='all' />
+    <link rel='stylesheet' id='google_fonts-css' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' type='text/css' media='all' />
+    <link rel='stylesheet' id='datepicker-css-css' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css' type='text/css' media='all' />
+    <script type='text/javascript' src='https://zerto-com.azureedge.net/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+    <script type='text/javascript' src='https://zerto-com.azureedge.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/wp-video-lightbox/js/jquery.prettyPhoto.min.js?ver=3.1.6'></script>
+    <script type='text/javascript'>
+        var vlpp_vars = {
+            "prettyPhoto_rel": "wp-video-lightbox",
+            "animation_speed": "fast",
+            "slideshow": "5000",
+            "autoplay_slideshow": "false",
+            "opacity": "0.80",
+            "show_title": "true",
+            "allow_resize": "true",
+            "allow_expand": "true",
+            "default_width": "640",
+            "default_height": "480",
+            "counter_separator_label": "\/",
+            "theme": "pp_default",
+            "horizontal_padding": "20",
+            "hideflash": "false",
+            "wmode": "opaque",
+            "autoplay": "true",
+            "modal": "true",
+            "deeplinking": "false",
+            "overlay_gallery": "true",
+            "overlay_gallery_max": "30",
+            "keyboard_shortcuts": "true",
+            "ie6_fallback": "true"
+        };
+    </script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/wp-video-lightbox/js/video-lightbox.js?ver=3.1.6'></script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/responsive-lightbox/assets/swipebox/js/jquery.swipebox.min.js?ver=2.0.5'></script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/responsive-lightbox/assets/infinitescroll/infinite-scroll.pkgd.min.js?ver=4.9.8'></script>
+    <script type='text/javascript'>
+        var rlArgs = {
+            "script": "swipebox",
+            "selector": "lightbox",
+            "customEvents": "",
+            "activeGalleries": "1",
+            "animation": "1",
+            "hideCloseButtonOnMobile": "0",
+            "removeBarsOnMobile": "0",
+            "hideBars": "1",
+            "hideBarsDelay": "5000",
+            "videoMaxWidth": "1080",
+            "useSVG": "1",
+            "loopAtEnd": "0",
+            "woocommerce_gallery": "0",
+            "ajaxurl": "https:\/\/www.zerto.com\/wp-admin\/admin-ajax.php",
+            "nonce": "886edd56bf"
+        };
+    </script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/responsive-lightbox/js/front.js?ver=2.0.5'></script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/wp-megamenu/addons/wpmm-featuresbox/wpmm-featuresbox.js?ver=1'></script>
+    <script type='text/javascript'>
+        var postgrid_ajax_load = {
+            "ajax_url": "https:\/\/www.zerto.com\/wp-admin\/admin-ajax.php"
+        };
+    </script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/wp-megamenu/addons/wpmm-gridpost/wpmm-gridpost.js?ver=1'></script>
+    <script type='text/javascript' src='//www.zerto.com/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown/script.js?ver=1'></script>
+    <link rel='https://api.w.org/' href='https://www.zerto.com/wp-json/' />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.zerto.com/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://zerto-com.azureedge.net/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 4.9.8" />
+    <link rel='shortlink' href='https://www.zerto.com/' />
+    <link rel="alternate" type="application/json+oembed" href="https://www.zerto.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.zerto.com%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://www.zerto.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.zerto.com%2F&#038;format=xml" />
+    <meta name="generator" content="WPML ver:4.1.1 stt:65,1,4,3,27,66,44,2;" />
+    <script type="text/javascript">
+        (function(url) {
+            if (/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)) {
+                return;
+            }
+            var addEvent = function(evt, handler) {
+                if (window.addEventListener) {
+                    document.addEventListener(evt, handler, false);
+                } else if (window.attachEvent) {
+                    document.attachEvent('on' + evt, handler);
+                }
+            };
+            var removeEvent = function(evt, handler) {
+                if (window.removeEventListener) {
+                    document.removeEventListener(evt, handler, false);
+                } else if (window.detachEvent) {
+                    document.detachEvent('on' + evt, handler);
+                }
+            };
+            var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+            var logHuman = function() {
+                if (window.wfLogHumanRan) {
+                    return;
+                }
+                window.wfLogHumanRan = true;
+                var wfscr = document.createElement('script');
+                wfscr.type = 'text/javascript';
+                wfscr.async = true;
+                wfscr.src = url + '&r=' + Math.random();
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(wfscr);
+                for (var i = 0; i < evts.length; i++) {
+                    removeEvent(evts[i], logHuman);
+                }
+            };
+            for (var i = 0; i < evts.length; i++) {
+                addEvent(evts[i], logHuman);
+            }
+        })('//www.zerto.com/?wordfence_lh=1&hid=CB0F658EE3BF472B8CF3271D48334D1A');
+    </script>
+    <script>
+        WP_VIDEO_LIGHTBOX_VERSION = "1.8.8";
+        WP_VID_LIGHTBOX_URL = "https://www.zerto.com/wp-content/plugins/wp-video-lightbox";
+
+        function wpvl_paramReplace(name, string, value) {
+            // Find the param with regex
+            // Grab the first character in the returned string (should be ? or &)
+            // Replace our href string with our new value, passing on the name and delimeter
+
+            var re = new RegExp("[\?&]" + name + "=([^&#]*)");
+            var matches = re.exec(string);
+            var newString;
+
+            if (matches === null) {
+                // if there are no params, append the parameter
+                newString = string + '?' + name + '=' + value;
+            } else {
+                var delimeter = matches[0].charAt(0);
+                newString = string.replace(re, delimeter + name + "=" + value);
+            }
+            return newString;
+        }
+    </script>
+    <link rel="icon" href="https://zerto-com.azureedge.net/wp-content/uploads/2018/01/cropped-Zerto_FavIcon128x128px-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://zerto-com.azureedge.net/wp-content/uploads/2018/01/cropped-Zerto_FavIcon128x128px-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="https://zerto-com.azureedge.net/wp-content/uploads/2018/01/cropped-Zerto_FavIcon128x128px-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://zerto-com.azureedge.net/wp-content/uploads/2018/01/cropped-Zerto_FavIcon128x128px-270x270.png" />
+</head>
+
+<body class="home page-template page-template-templates page-template-template-home-2017 page-template-templatestemplate-home-2017-php page page-id-16914 wp-megamenu">
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FMFS" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-P9FMFS');
+    </script>
+    <header id="header">
+        <div class="row large-uncollapse medium-uncollapse small-collapse">
+            <div class="large-2 medium-3 small-12 columns">
+                <div class="logo small-only-text-center">
+                    <a href="https://www.zerto.com"><img src="https://zerto-com.azureedge.net/wp-content/uploads/2017/09/Zerto-Logo_RGB2.png" /></a>
+                </div>
+            </div>
+            <div class="large-10 medium-9 small-12 columns">
+                <nav class="desctop-menu">
+                    <nav id="wp-megamenu-header-menu" class="wp-megamenu-wrap    ">
+                        <div class="wpmm-fullwidth-wrap"></div>
+                        <div class="wpmm-nav-wrap wpmm-main-wrap-header-menu"><a href="javascript:;" class="wpmm_mobile_menu_btn"><i class="fa fa-bars"></i> Menu</a>
+                            <ul id="menu-main-menu" class="wp-megamenu">
+                                <li id="wp-megamenu-item-21114" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children wp-megamenu-item-21114  wpmm_mega_menu  wpmm-slideinup wpmm-submenu-right"><a href="https://www.zerto.com/zerto-it-resilience-platform/">Platform <b class="fa fa-angle-down"></b> </a>
+                                    <ul class="wp-megamenu-sub-menu">
+                                        <li id="wp-megamenu-item-55686" class="wpmm-row wp-megamenu-item-55686 wpmm-submenu-right">
+                                            <ul class="wp-megamenu-sub-menu">
+                                                <li id="wp-megamenu-item-111376" class="wpmm-col wpmm-col-4 wp-megamenu-item-111376 wpmm-submenu-right">
+                                                    <ul class="wp-megamenu-sub-menu">
+                                                        <li id="wp-megamenu-item-21116" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-21116 wpmm-submenu-right"><a href="https://www.zerto.com/it-resilience/">What is IT Resilience?</a>
+                                                            <ul class="wp-megamenu-sub-menu">
+                                                                <li id="wp-megamenu-item-23058" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-23058 wpmm-submenu-right"><a href="https://www.zerto.com/the-future-of-backup/">The Future of Backup</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="wp-megamenu-item-111378" class="wpmm-col wpmm-col-4 wp-megamenu-item-111378 wpmm-submenu-right">
+                                                    <ul class="wp-megamenu-sub-menu">
+                                                        <li id="wp-megamenu-item-690" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-690 wpmm-submenu-right"><a href="https://www.zerto.com/products/on-premises-disaster-recovery/">IT Resilience On-Premises</a>
+                                                            <ul class="wp-megamenu-sub-menu">
+                                                                <li id="wp-megamenu-item-4921" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-4921 wpmm-submenu-right"><a href="https://www.zerto.com/products/on-premises-disaster-recovery/hypervisor-based-replication/">Hypervisor-Based Replication</a></li>
+                                                                <li id="wp-megamenu-item-2728" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2728 wpmm-submenu-right"><a href="https://www.zerto.com/products/on-premises-disaster-recovery/vmware-vsphere-replication-recovery/">VMware vSphere</a></li>
+                                                                <li id="wp-megamenu-item-2729" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2729 wpmm-submenu-right"><a href="https://www.zerto.com/products/on-premises-disaster-recovery/hyper-v-replication-recovery/">Microsoft Hyper-V</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="wp-megamenu-item-111380" class="wpmm-col wpmm-col-4 wp-megamenu-item-111380 wpmm-submenu-right">
+                                                    <ul class="wp-megamenu-sub-menu">
+                                                        <li id="wp-megamenu-item-2682" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-2682 wpmm-submenu-right"><a href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/">IT Resilience in the Cloud</a>
+                                                            <ul class="wp-megamenu-sub-menu">
+                                                                <li id="wp-megamenu-item-13288" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-13288 wpmm-submenu-right"><a href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/zerto-virtual-replication-for-microsoft-azure/">Microsoft Azure</a></li>
+                                                                <li id="wp-megamenu-item-10350" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-10350 wpmm-submenu-right"><a href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/complete-disaster-recovery-for-ibm-cloud/">IBM Cloud</a></li>
+                                                                <li id="wp-megamenu-item-2730" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2730 wpmm-submenu-right"><a href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/zerto-virtual-replication-aws-amazon-web-services/">Amazon Web Services</a></li>
+                                                                <li id="wp-megamenu-item-2732" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2732 wpmm-submenu-right"><a href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/draas-disaster-recovery-dr-as-a-service/">DRaaS: DR as a Service</a></li>
+                                                                <li id="wp-megamenu-item-2733" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2733 wpmm-submenu-right"><a href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/multi-cloud-agility/">Multi-Cloud Agility</a></li>
+                                                                <li id="wp-megamenu-item-2731" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2731 wpmm-submenu-right"><a href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/cloud-based-disaster-recovery-dr-service/">Cloud-Based Disaster Recovery</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="wp-megamenu-item-10023" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children wp-megamenu-item-10023  wpmm_mega_menu  wpmm-slideinup wpmm-submenu-right"><a href="https://www.zerto.com/disaster-recovery-solutions/">Solutions <b class="fa fa-angle-down"></b> </a>
+                                    <ul class="wp-megamenu-sub-menu">
+                                        <li id="wp-megamenu-item-44596" class="wpmm-row wp-megamenu-item-44596 wpmm-submenu-right">
+                                            <ul class="wp-megamenu-sub-menu">
+                                                <li id="wp-megamenu-item-89197" class="wpmm-col wpmm-col-3 wp-megamenu-item-89197 wpmm-submenu-right">
+                                                    <ul class="wp-megamenu-sub-menu">
+                                                        <li id="wp-megamenu-item-2686" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-2686 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/application/">Application</a>
+                                                            <ul class="wp-megamenu-sub-menu">
+                                                                <li id="wp-megamenu-item-2687" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2687 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/application/oracle-database-replication-offsite-backup-recovery/">Oracle Replication &#038; Recovery</a></li>
+                                                                <li id="wp-megamenu-item-2688" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2688 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/application/sap-data-replication-offsite-backup-dr/">SAP Replication &#038; Recovery</a></li>
+                                                                <li id="wp-megamenu-item-2689" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2689 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/application/sql-server-database-replication-offsite-backup/">SQL Server Replication &#038; Recovery</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="wp-megamenu-item-89199" class="wpmm-col wpmm-col-3 wp-megamenu-item-89199 wpmm-submenu-right">
+                                                    <ul class="wp-megamenu-sub-menu">
+                                                        <li id="wp-megamenu-item-2684" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-2684 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/industry/">Industry</a>
+                                                            <ul class="wp-megamenu-sub-menu">
+                                                                <li id="wp-megamenu-item-2690" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2690 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/industry/financial-firm-bc-dr/">BC/DR for Financial Firms</a></li>
+                                                                <li id="wp-megamenu-item-13314" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-13314 wpmm-submenu-right"><a href="https://www.zerto.com/zerto-virtual-replication-for-healthcare/">BC/DR for Healthcare</a></li>
+                                                                <li id="wp-megamenu-item-2692" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2692 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/industry/law-firm-bc-dr/">BC/DR for Law Firms</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="wp-megamenu-item-89201" class="wpmm-col wpmm-col-3 wp-megamenu-item-89201 wpmm-submenu-right">
+                                                    <ul class="wp-megamenu-sub-menu">
+                                                        <li id="wp-megamenu-item-2685" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-2685 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/infrastructure/">Infrastructure</a>
+                                                            <ul class="wp-megamenu-sub-menu">
+                                                                <li id="wp-megamenu-item-2695" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2695 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/infrastructure/hybrid-cloud-dr-replication-offsite-backup-migrations/">Hybrid Cloud</a></li>
+                                                                <li id="wp-megamenu-item-2693" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2693 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/infrastructure/private-cloud-dr-replication-offsite-backup-migrations/">On-Premises Cloud (Private Cloud)</a></li>
+                                                                <li id="wp-megamenu-item-2694" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2694 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/infrastructure/public-cloud-dr-replication-offsite-backup-migrations/">DIY Disaster Recovery as a Service (Public Cloud)</a></li>
+                                                                <li id="wp-megamenu-item-13832" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-13832 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/infrastructure/managed-cloud-replication-offsite-backup-migrations/">Managed Cloud</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="wp-megamenu-item-89203" class="wpmm-col wpmm-col-3 wp-megamenu-item-89203 wpmm-submenu-right">
+                                                    <ul class="wp-megamenu-sub-menu">
+                                                        <li id="wp-megamenu-item-2683" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-2683 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/">Use Cases</a>
+                                                            <ul class="wp-megamenu-sub-menu">
+                                                                <li id="wp-megamenu-item-21928" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-21928 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/continuous-data-protection/">Continuous Data Protection</a></li>
+                                                                <li id="wp-megamenu-item-2699" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2699 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/replication-disaster-recovery-solutions-dr-software/">Replication &#038; Disaster Recovery</a></li>
+                                                                <li id="wp-megamenu-item-2697" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2697 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/offsite-backup-data-protection-long-term-retention/">Move from Backup to Long-Term Retention</a></li>
+                                                                <li id="wp-megamenu-item-2701" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2701 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/data-center-migration-software/">Data Center Migrations</a></li>
+                                                                <li id="wp-megamenu-item-7767" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-7767 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/automated-dr-testing/">Automated Disaster Recovery Testing</a></li>
+                                                                <li id="wp-megamenu-item-2698" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2698 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/reduce-rto-rpo-recovery-objectives/">Reduce RTO &#038; RPO</a></li>
+                                                                <li id="wp-megamenu-item-20047" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-20047 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/zerto-virtual-replication-one-to-many/">One-to-Many Replication</a></li>
+                                                                <li id="wp-megamenu-item-2703" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2703 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/complete-bcdr-solution-business-continuity-disaster-recovery/">Complete BC/DR Solution</a></li>
+                                                                <li id="wp-megamenu-item-8898" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-8898 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/recovering-from-ransomware-with-zerto-virtual-replication/">Recovering from Ransomware</a></li>
+                                                                <li id="wp-megamenu-item-2700" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2700 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/storage-savings/">Storage Savings</a></li>
+                                                                <li id="wp-megamenu-item-2704" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2704 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/cross-hypervisor-replication-vmware-hyper-v-aws/">Cross-Hypervisor Replication</a></li>
+                                                                <li id="wp-megamenu-item-20609" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-20609 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/gdpr-readiness-and-compliance/">General Data Protection Regulation (GDPR)</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="wp-megamenu-item-88" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children wp-megamenu-item-88  wpmm_dropdown_menu  wpmm-slideinup wpmm-submenu-right"><a href="https://www.zerto.com/partners/">Partners <b class="fa fa-angle-down"></b> </a>
+                                    <ul class="wp-megamenu-sub-menu">
+                                        <li id="wp-megamenu-item-11002" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-11002 wpmm-submenu-right"><a href="https://www.zerto.com/partners/">Partners</a></li>
+                                        <li id="wp-megamenu-item-10976" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-10976 wpmm-submenu-right"><a href="https://www.zerto.com/partners/the-zerto-alliance-partner-program/">Learn about the Partner Program</a></li>
+                                        <li id="wp-megamenu-item-10984" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-10984 wpmm-submenu-right"><a href="https://www.zerto.com/partners/become-a-partner/">Become a Partner</a></li>
+                                        <li id="wp-megamenu-item-10999" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-10999 wpmm-submenu-right"><a href="https://www.zerto.com/partners/find-a-partner/">Find a Partner</a></li>
+                                        <li id="wp-megamenu-item-11000" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-11000 wpmm-submenu-right"><a href="https://www.zerto.com/partners/technology-partners/">Technology Alliances</a></li>
+                                        <li id="wp-megamenu-item-11001" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-11001 wpmm-submenu-right"><a href="https://www.zerto.com/partners/partner-portals/">Partner Portals &#8211; Get Log In</a></li>
+                                    </ul>
+                                </li>
+                                <li id="wp-megamenu-item-91" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children wp-megamenu-item-91  wpmm_mega_menu  wpmm-slideinup wpmm-submenu-right"><a href="https://www.zerto.com/disaster-recovery-resources/">Resources <b class="fa fa-angle-down"></b> </a>
+                                    <ul class="wp-megamenu-sub-menu">
+                                        <li id="wp-megamenu-item-34663" class="wpmm-row wp-megamenu-item-34663 wpmm-submenu-right">
+                                            <ul class="wp-megamenu-sub-menu">
+                                                <li id="wp-megamenu-item-69330" class="wpmm-col wpmm-col-4 wp-megamenu-item-69330 wpmm-submenu-right">
+                                                    <ul class="wp-megamenu-sub-menu">
+                                                        <li id="wp-megamenu-item-19382" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-19382 wpmm-submenu-right"><a href="#">Learn</a>
+                                                            <ul class="wp-megamenu-sub-menu">
+                                                                <li id="wp-megamenu-item-19391" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-19391 wpmm-submenu-right"><a href="https://www.zerto.com/disaster-recovery-resources/">Resources</a></li>
+                                                                <li id="wp-megamenu-item-19393" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-19393 wpmm-submenu-right"><a href="https://www.zerto.com/myzerto/knowledge-base/">MyZerto Knowledge Base</a></li>
+                                                                <li id="wp-megamenu-item-19396" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-19396 wpmm-submenu-right"><a href="https://www.zerto.com/blog/">Blog</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="wp-megamenu-item-69332" class="wpmm-col wpmm-col-4 wp-megamenu-item-69332 wpmm-submenu-right">
+                                                    <ul class="wp-megamenu-sub-menu">
+                                                        <li id="wp-megamenu-item-19383" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-19383 wpmm-submenu-right"><a href="#">Connect</a>
+                                                            <ul class="wp-megamenu-sub-menu">
+                                                                <li id="wp-megamenu-item-19401" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-19401 wpmm-submenu-right"><a href="https://www.zerto.com/myzerto/forums/">MyZerto Forums</a></li>
+                                                                <li id="wp-megamenu-item-19404" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-19404 wpmm-submenu-right"><a href="/zerto-at-industry-events/">Events</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="wp-megamenu-item-69334" class="wpmm-col wpmm-col-4 wp-megamenu-item-69334 wpmm-submenu-right">
+                                                    <ul class="wp-megamenu-sub-menu">
+                                                        <li id="wp-megamenu-item-19385" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-19385 wpmm-submenu-right"><a href="#">Discover</a>
+                                                            <ul class="wp-megamenu-sub-menu">
+                                                                <li id="wp-megamenu-item-19408" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-19408 wpmm-submenu-right"><a href="https://www.zerto.com/cio-corner/">CIO Corner</a></li>
+                                                                <li id="wp-megamenu-item-18044" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-18044 wpmm-submenu-right"><a href="https://www.zerto.com/webinar/">Webinars</a></li>
+                                                                <li id="wp-megamenu-item-19409" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-19409 wpmm-submenu-right"><a href="https://www.zerto.com/the-dr-crowd/">The DR Crowd</a></li>
+                                                                <li id="wp-megamenu-item-18076" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-18076 wpmm-submenu-right"><a href="https://www.zerto.com/the-bald-truth/">The Bald Truth</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="wp-megamenu-item-2748" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children wp-megamenu-item-2748  wpmm_mega_menu  wpmm-slideinup wpmm-submenu-right"><a href="https://www.zerto.com/about/">Company <b class="fa fa-angle-down"></b> </a>
+                                    <ul class="wp-megamenu-sub-menu">
+                                        <li id="wp-megamenu-item-37320" class="wpmm-row wp-megamenu-item-37320 wpmm-submenu-right">
+                                            <ul class="wp-megamenu-sub-menu">
+                                                <li id="wp-megamenu-item-74644" class="wpmm-col wpmm-col-4 wp-megamenu-item-74644 wpmm-submenu-right">
+                                                    <ul class="wp-megamenu-sub-menu">
+                                                        <li id="wp-megamenu-item-2709" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-2709 wpmm-submenu-right"><a href="https://www.zerto.com/about/">About Zerto</a>
+                                                            <ul class="wp-megamenu-sub-menu">
+                                                                <li id="wp-megamenu-item-2714" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2714 wpmm-submenu-right"><a href="https://www.zerto.com/about/awards/">Awards</a></li>
+                                                                <li id="wp-megamenu-item-2712" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2712 wpmm-submenu-right"><a href="https://www.zerto.com/about/board-members/">Board Members</a></li>
+                                                                <li id="wp-megamenu-item-2715" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2715 wpmm-submenu-right"><a href="https://www.zerto.com/careers/">Careers</a></li>
+                                                                <li id="wp-megamenu-item-2710" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2710 wpmm-submenu-right"><a href="https://www.zerto.com/about/customers/">Customers</a></li>
+                                                                <li id="wp-megamenu-item-2717" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2717 wpmm-submenu-right"><a href="https://www.zerto.com/zerto-in-the-news/">In the News</a></li>
+                                                                <li id="wp-megamenu-item-2713" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2713 wpmm-submenu-right"><a href="https://www.zerto.com/about/investors/">Investors</a></li>
+                                                                <li id="wp-megamenu-item-2711" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2711 wpmm-submenu-right"><a href="https://www.zerto.com/about/management-team/">Management Team</a></li>
+                                                                <li id="wp-megamenu-item-5267" class="menu-item menu-item-type-taxonomy menu-item-object-category wp-megamenu-item-5267 wpmm-submenu-right"><a href="https://www.zerto.com/category/press-releases/">Press Releases</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="wp-megamenu-item-74646" class="wpmm-col wpmm-col-4 wp-megamenu-item-74646 wpmm-submenu-right">
+                                                    <ul class="wp-megamenu-sub-menu">
+                                                        <li id="wp-megamenu-item-17717" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-17717 wpmm-submenu-right"><a href="https://www.zerto.com/support-and-service/">Support and Service</a>
+                                                            <ul class="wp-megamenu-sub-menu">
+                                                                <li id="wp-megamenu-item-5289" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-5289 wpmm-submenu-right"><a href="https://www.zerto.com/myzerto/">MyZerto</a></li>
+                                                                <li id="wp-megamenu-item-2725" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-2725 wpmm-submenu-right"><a href="https://www.zerto.com/myzerto/support/">Support Portal Login</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="wp-megamenu-item-74648" class="wpmm-col wpmm-col-4 wp-megamenu-item-74648 wpmm-submenu-right">
+                                                    <ul class="wp-megamenu-sub-menu">
+                                                        <li id="wp-megamenu-item-2716" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-2716 wpmm-submenu-right"><a href="https://www.zerto.com/contact/">Contact Us</a>
+                                                            <ul class="wp-megamenu-sub-menu">
+                                                                <li id="wp-megamenu-item-21537" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-21537 wpmm-submenu-right"><a href="/page/how-to-buy-zerto/">How to Buy</a></li>
+                                                                <li id="wp-megamenu-item-4136" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-4136 wpmm-submenu-right"><a href="https://www.zerto.com/offices/">Offices</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="wp-megamenu-item-37321" class="wpmm-row wp-megamenu-item-37321 wpmm-submenu-right">
+                                            <ul class="wp-megamenu-sub-menu">
+                                                <li id="wp-megamenu-item-74650" class="wpmm-col wpmm-col-3 wp-megamenu-item-74650 wpmm-submenu-right"></li>
+                                                <li id="wp-megamenu-item-74652" class="wpmm-col wpmm-col-3 wp-megamenu-item-74652 wpmm-submenu-right"></li>
+                                                <li id="wp-megamenu-item-74654" class="wpmm-col wpmm-col-3 wp-megamenu-item-74654 wpmm-submenu-right"></li>
+                                                <li id="wp-megamenu-item-74656" class="wpmm-col wpmm-col-3 wp-megamenu-item-74656 wpmm-submenu-right"></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="wp-megamenu-item-9784" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children wp-megamenu-item-9784  wpmm_dropdown_menu  wpmm-slideinup wpmm-submenu-right"><a href="https://www.zerto.com/zertocon/">ZertoCON 2019 <b class="fa fa-angle-down"></b> </a>
+                                    <ul class="wp-megamenu-sub-menu">
+                                        <li id="wp-megamenu-item-23101" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-23101 wpmm-submenu-right"><a href="https://www.zerto.com/it-resilience-roadshow/">IT Resilience Roadshows</a></li>
+                                        <li id="wp-megamenu-item-23321" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-23321 wpmm-submenu-right"><a href="https://www.zerto.com/zertocon/2018-highlights/">ZertoCON 2018</a></li>
+                                        <li id="wp-megamenu-item-12509" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-12509 wpmm-submenu-right"><a href="https://www.zerto.com/zertocon/2017-highlights/">ZertoCON 2017</a></li>
+                                        <li id="wp-megamenu-item-10199" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-10199 wpmm-submenu-right"><a href="https://www.zerto.com/zertocon-2016/">ZertoCON 2016</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="sales-num mobile"> <a href="tel://1-800-687-9259">Sales: 800-687-9259 ext: 1</a></div>
+                </nav>
+                <div class="header-right">
+                    <div class="search-box"> <i class="fa fa-search"></i> <a class="trial-box" href="https://www.zerto.com/page/zerto-free-trial/">Free Trial</a> <a class="trial-box get-demo" href="https://www.zerto.com/page/get-zerto-demo/">Get A Demo</a>
+                        <form method="get" id="searchform" action="https://www.zerto.com/">
+                            <div class="row collapse">
+                                <div class="small-12 columns">
+                                    <input type="text" name="s" id="s" placeholder="Search" />
+                                    <button class="btn-submit" type="submit" name="submit" id="searchsubmit"></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-icon-box">
+            <div class='sales-num'> <a href="tel://1-800-687-9259">Sales: 800-687-9259 ext: 1</a></div>
+            <div class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-dropdown js-wpml-ls-legacy-dropdown" id="lang_sel">
+                <ul>
+                    <li tabindex="0" class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-dropdown"> <a href="#" class="js-wpml-ls-item-toggle wpml-ls-item-toggle lang_sel_sel icl-en"><span class="wpml-ls-native icl_lang_sel_native">English</span></a>
+                        <ul class="wpml-ls-sub-menu">
+                            <li class="icl-cn wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-cn"> <a href="https://www.zerto.com/cn/" class="wpml-ls-link"><span class="wpml-ls-native icl_lang_sel_native">中文</span><span class="wpml-ls-display icl_lang_sel_translated"><span class="wpml-ls-bracket icl_lang_sel_bracket"> (</span>Chinese<span class="wpml-ls-bracket icl_lang_sel_bracket">)</span></span></a></li>
+                            <li class="icl-fr wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-fr"> <a href="https://www.zerto.com/fr/" class="wpml-ls-link"><span class="wpml-ls-native icl_lang_sel_native">Français</span><span class="wpml-ls-display icl_lang_sel_translated"><span class="wpml-ls-bracket icl_lang_sel_bracket"> (</span>French<span class="wpml-ls-bracket icl_lang_sel_bracket">)</span></span></a></li>
+                            <li class="icl-de wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-de"> <a href="https://www.zerto.com/de/" class="wpml-ls-link"><span class="wpml-ls-native icl_lang_sel_native">Deutsch</span><span class="wpml-ls-display icl_lang_sel_translated"><span class="wpml-ls-bracket icl_lang_sel_bracket"> (</span>German<span class="wpml-ls-bracket icl_lang_sel_bracket">)</span></span></a></li>
+                            <li class="icl-it wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-it"> <a href="https://www.zerto.com/it/" class="wpml-ls-link"><span class="wpml-ls-native icl_lang_sel_native">Italiano</span><span class="wpml-ls-display icl_lang_sel_translated"><span class="wpml-ls-bracket icl_lang_sel_bracket"> (</span>Italian<span class="wpml-ls-bracket icl_lang_sel_bracket">)</span></span></a></li>
+                            <li class="icl-jp wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-jp"> <a href="https://www.zerto.com/jp/" class="wpml-ls-link"><span class="wpml-ls-native icl_lang_sel_native">日本語</span><span class="wpml-ls-display icl_lang_sel_translated"><span class="wpml-ls-bracket icl_lang_sel_bracket"> (</span>Japanese<span class="wpml-ls-bracket icl_lang_sel_bracket">)</span></span></a></li>
+                            <li class="icl-pt-br wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-pt-br"> <a href="https://www.zerto.com/pt-br/" class="wpml-ls-link"><span class="wpml-ls-native icl_lang_sel_native">Português</span><span class="wpml-ls-display icl_lang_sel_translated"><span class="wpml-ls-bracket icl_lang_sel_bracket"> (</span>Portuguese - Brazil<span class="wpml-ls-bracket icl_lang_sel_bracket">)</span></span></a></li>
+                            <li class="icl-es wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-es wpml-ls-last-item"> <a href="https://www.zerto.com/es/" class="wpml-ls-link"><span class="wpml-ls-native icl_lang_sel_native">Español</span><span class="wpml-ls-display icl_lang_sel_translated"><span class="wpml-ls-bracket icl_lang_sel_bracket"> (</span>Spanish<span class="wpml-ls-bracket icl_lang_sel_bracket">)</span></span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-link-box">
+                <a class="header-link" href="https://www.zerto.com/page/how-to-buy-zerto/"> <img src="https://zerto-com.azureedge.net/wp-content/uploads/2015/07/buy1.png" /> <span>Buy</span> </a>
+                <a class="header-link" href="https://www.zerto.com/myzerto/"> <img src="https://zerto-com.azureedge.net/wp-content/uploads/2015/09/myzerto-z-icon.png" /> <span>MyZerto</span> </a>
+                <a class="header-link" href="https://www.zerto.com/blog/"> <img src="https://zerto-com.azureedge.net/wp-content/uploads/2015/07/comment1.png" /> <span>Blog</span> </a>
+                <a class="header-link" href="https://www.zerto.com/support/"> <img src="https://zerto-com.azureedge.net/wp-content/uploads/2015/07/headset.png" /> <span>Support</span> </a>
+                <a class="header-link" href="https://www.zerto.com/page/contact/"> <img src="https://zerto-com.azureedge.net/wp-content/uploads/2015/07/phone1.png" /> <span>Contact</span> </a>
+            </div>
+        </div>
+    </header>
+    <div class='clearfix>'></div>
+    <main id="home-2017">
+        <style>
+            header#header,
+            .wp-megamenu-wrap.wpmm-mobile-menu ul.wp-megamenu {
+                background-color: #ffffff;
+            }
+            
+            body:not(.sticky) header#header ul li a,
+            body:not(.sticky) header#header ul li a span,
+            .wpmm_mobile_menu_btn,
+            .wpmm_mobile_menu_btn:hover,
+            .wpml-ls-statics-shortcode_actions .wpml-ls-current-language > a,
+            .wpml-ls-statics-shortcode_actions .wpml-ls-current-language > a:hover {
+                color: #393737 !important;
+            }
+            
+            body:not(.sticky) .sales-num a {
+                color: #393737 !important;
+            }
+            
+            body:not(.sticky) header .trial-box,
+            body:not(.sticky) header .fa-search,
+            body:not(.sticky) header .fa-search,
+            body:not(.sticky).trial-box,
+            body:not(.sticky) header .fa-search,
+            body:not(.sticky) .trial-box,
+            body:not(.sticky) .home header .fa-search,
+            body:not(.sticky) .home .trial-box {
+                color: #393737 !important;
+            }
+            
+            body:not(.sticky).home header .trial-box {
+                border-color: #393737 !important;
+            }
+            
+            #rtp_home_section_1 {
+                background-image: url('https://zerto-com.azureedge.net/wp-content/uploads/2018/05/MicrosoftTeams-image.png');
+            }
+            
+            @media screen and (max-width: 640px) {
+                #rtp_home_section_1 {
+                    background-image: url('https://zerto-com.azureedge.net/wp-content/uploads/2018/05/MicrosoftTeams-image.png');
+                }
+            }
+        </style>
+        <section id="rtp_home_section_1" class="full_height_section custom_full_height">
+            <div class='row valign-middle'>
+                <div id="rtp_home_section_1_full" class='large-12 medium-12 columns display-table'>
+                    <div class="small-12 medium-6 large-6 columns custom_img_holder">
+                        <h4 class="mobile-middle" style="padding-bottom: 5px;"><img class="alignnone size-full wp-image-22468" src="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/Zerto_ITresilience_Lockup_Web_RBG_640x420-002.png" alt="" width="650" height="420" /></h4></div>
+                    <div class="small-12 medium-6 large-6 columns bump-me">
+                        <h4 class="mobile-middle" style="padding-bottom: 15px; text-align: right;">The Zerto IT Resilience Platform</h4>
+                        <p class="mobile-middle" style="padding-bottom: 15px; text-align: right;">Introducing 6.5, Advancing Continuous Backup, Cloud Mobility and Analytics</p>
+                        <div class="mobile-middle" style="text-align: right;"><a class="full_height_cta hvr-grow" href="https://www.zerto.com/the-future-of-backup/" rel="noopener"><span class="cta-text">Learn More</span></a></div>
+                    </div>
+                </div>
+        </section>
+        <section id="rtp_home_section_2" class="cc_section animate-section " data-animate-class="fadeInUp">
+            <div class="row animate-me">
+                <h4 id="rtp_home_section_2_header" class="cc_header text-center" style="color:#191b1c;"></h4></div>
+            <div class="row animate-me">
+                <div id="rtp_home_section_2_paragraph" class="cc_main_text_area" style="color:#191b1c;"></div>
+            </div>
+            <div class="row flex-holder animate-me">
+                <div id="rtp_home_section_2_subsection_1" class="columns cc_columns large-12">
+                    <div id="rtp_home_section_2_subsection_1_html" class="cc_html">
+                        <h4>Move Beyond Backup and Recovery, to IT Resilience</h4>
+                        <p>Zerto’s IT Resilience Platform™ delivers disaster recovery, data protection, and workload mobility whether on-premises or to, from and between hybrid and multi-clouds. The platform is built on a foundation of continuous data protection (CDP) with built-in orchestration and automation providing IT leaders with simplicity, enterprise scale, and agile data protection to save time, resource, and costs. Zerto Analytics, with intelligent dashboards and live reports, provides complete visibility across multi-site and multi-cloud environments giving companies the confidence to know business SLAs and compliance needs are met.</p>
+                    </div>
+                    <div class="cc_btn_holder button-style-button"> <a id="rtp_home_section_2_subsection_1_button" href="https://www.zerto.com/it-resilience/" class="full_height_cta hvr-grow" target="_blank"><span class="cta-text">Get Resilient</span></a></div>
+                </div>
+                <div id="rtp_home_section_2_subsection_2" class="columns cc_columns large-12">
+                    <div id="rtp_home_section_2_subsection_2_html" class="cc_html">
+                        <p>
+                            <video class="hidden-xs" muted="">
+                                <source src="https://zerto-com.azureedge.net/wp-content/uploads/2017/12/IS-07987_Zerto.com_Homepage_ResilienceWheel.mp4" type="video/mp4" />
+                            </video>
+                            <br /> <img class="visible-xs" src="https://zerto-com.azureedge.net/wp-content/uploads/2017/08/CircleImage.png" /></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="rtp_home_section_3" class="cc_section animate-section " data-animate-class="fadeInUp">
+            <div class="row animate-me">
+                <h4 id="rtp_home_section_3_header" class="cc_header text-center" style="color:#FFFFFF;">IT Resilience By the Numbers</h4></div>
+            <div class="row animate-me">
+                <div id="rtp_home_section_3_paragraph" class="cc_main_text_area" style="color:#FFFFFF;"></div>
+            </div>
+            <div class="row flex-holder animate-me">
+                <div id="rtp_home_section_3_subsection_1" class="columns cc_columns large-12">
+                    <div id="rtp_home_section_3_subsection_1_html" class="cc_html">
+                        <p>
+                            <center>
+                                <video class="hidden-xs" muted="">
+                                    <source src="https://zerto-com.azureedge.net/wp-content/uploads/2017/08/Final_Circle_A_1-1.mp4" />
+                                </video><img class="visible-xs" src="https://zerto-com.azureedge.net/wp-content/uploads/2017/08/circleb-1.png" /></center>
+                        </p>
+                    </div>
+                </div>
+                <div id="rtp_home_section_3_subsection_2" class="columns cc_columns large-12">
+                    <div id="rtp_home_section_3_subsection_2_html" class="cc_html">
+                        <p>
+                            <center>
+                                <video class="hidden-xs" muted="">
+                                    <source src="https://zerto-com.azureedge.net/wp-content/uploads/2017/08/Final_Circle_B_1-1.mp4" />
+                                </video><img class="visible-xs" src="https://zerto-com.azureedge.net/wp-content/uploads/2017/08/circlea.png" /></center>
+                        </p>
+                    </div>
+                </div>
+                <div id="rtp_home_section_3_subsection_3" class="columns cc_columns large-12">
+                    <div id="rtp_home_section_3_subsection_3_html" class="cc_html">
+                        <p>
+                            <center>
+                                <video class="hidden-xs" muted="">
+                                    <source src="https://zerto-com.azureedge.net/wp-content/uploads/2017/08/Final_Circle_C_1-1.mp4" />
+                                </video><img class="visible-xs" src="https://zerto-com.azureedge.net/wp-content/uploads/2017/08/ciclec.png" /></center>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="rtp_home_section_4" class="cc_section animate-section " data-animate-class="fadeInUp">
+            <div class="row animate-me">
+                <h4 id="rtp_home_section_4_header" class="cc_header text-center" style="color:#000000;">Start Your IT Resilience Journey</h4></div>
+            <div class="row animate-me">
+                <div id="rtp_home_section_4_paragraph" class="cc_main_text_area" style="color:#000000;">
+                    <p style="text-align: center; font-size: 23px;">Application protection, migration and disaster recovery that is easy to implement, manage and test.</p>
+                    <p style="text-align: center;">
+                </div>
+            </div>
+            <div class="row flex-holder animate-me">
+                <div id="rtp_home_section_4_subsection_1" class="columns cc_columns large-12">
+                    <div id="rtp_home_section_4_subsection_1_html" class="cc_html">
+                        <p style="text-align: center; font-size: 30px;">
+                            <a href="https://www.zerto.com/products/on-premise-disaster-recovery/"><img class="alignnone size-full wp-image-14181" src="https://zerto-com.azureedge.net/wp-content/uploads/2017/09/on-premise-icon-home-page.png" alt="" width="140" height="120" /></a>
+                            <br /> <strong>ON-PREMISES </strong></p>
+                        <p>Zerto makes replication and recovery between two datacenters simple and flexible. With Continuous Data Protection(CDP) and built in Orchestration and Automation managed through a single pane of glass, Zerto delivers the protection simplicity IT teams require for demanding service levels management needs.</p>
+                    </div>
+                    <div class="cc_btn_holder button-style-text"> <a id="rtp_home_section_4_subsection_1_button" style="color:#BA0C25;" href="https://www.zerto.com/products/on-premise-disaster-recovery/" class="cc_btn hvr-grow " target=""><span class="cta-text">Data Protection Has Never Been This Easy</span><span class="cta-icon"><i class="fa fa-chevron-right fa-fw"></i></span></a></div>
+                </div>
+                <div id="rtp_home_section_4_subsection_2" class="columns cc_columns large-12">
+                    <div id="rtp_home_section_4_subsection_2_html" class="cc_html">
+                        <p style="text-align: center; font-size: 30px;">
+                            <a href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/"><img class="alignnone size-full wp-image-14182" src="https://zerto-com.azureedge.net/wp-content/uploads/2017/09/cloud-icon-home-page.png" alt="" width="140" height="120" /></a>
+                            <br /> <strong>CLOUD</strong></p>
+                        <p>Public, private, multi-cloud or hybrid cloud – it’s your choice. Whatever datacenter permutation meets your needs, Zerto will help you get there, with applications migrated to and protected across clouds easily and effectively. Choose from over 350 cloud service providers for DRaaS, or public clouds like Microsoft Azure, IBM Cloud and AWS.</p>
+                    </div>
+                    <div class="cc_btn_holder button-style-text"> <a id="rtp_home_section_4_subsection_2_button" style="color:#BA0C25;" href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/" class="cc_btn hvr-grow " target=""><span class="cta-text">Right This Way, Your Cloud Awaits</span><span class="cta-icon"><i class="fa fa-chevron-right fa-fw"></i></span></a></div>
+                </div>
+            </div>
+        </section>
+        <section id="rtp_home_section_5" class="cc_section animate-section tile_link" data-animate-class="fadeInUp">
+            <div class="row animate-me">
+                <h4 id="rtp_home_section_5_header" class="cc_header text-center" style="color:#000000;">The Latest from Zerto</h4></div>
+            <div class="row animate-me">
+                <div id="rtp_home_section_5_paragraph" class="cc_main_text_area" style="color:#000000;"></div>
+            </div>
+            <div class="row flex-holder animate-me">
+                <div id="rtp_home_section_5_subsection_1" class="columns cc_columns large-12">
+                    <div id="rtp_home_section_5_subsection_1_html" class="cc_html">
+                        <p>
+                            <a href="https://www.zerto.com/page/future-of-backup-from-periodic-to-continuous/"><img class="alignnone size-full wp-image-23396" src="https://zerto-com.azureedge.net/wp-content/uploads/2018/11/IS-11744_FutureBackup_Webtile_350x200-1.png" alt="" width="350" height="200" srcset="https://zerto-com.azureedge.net/wp-content/uploads/2018/11/IS-11744_FutureBackup_Webtile_350x200-1.png 350w, https://zerto-com.azureedge.net/wp-content/uploads/2018/11/IS-11744_FutureBackup_Webtile_350x200-1-300x171.png 300w" sizes="(max-width: 350px) 100vw, 350px" /></a>
+                        </p>
+                        <p><strong>Backup is evolving. The future is continuous data protection combining backup, disaster recovery, and cloud mobility in one. Learn More!</strong></p>
+                    </div>
+                    <div class="cc_btn_holder button-style-text"> <a id="rtp_home_section_5_subsection_1_button" style="color:#f3f3f3;" href="https://www.zerto.com/page/future-of-backup-from-periodic-to-continuous/" class="cc_btn hvr-grow " target=""><span class="cta-text">Download Now</span><span class="cta-icon"><i class="fa fa-chevron-right fa-fw"></i></span></a></div>
+                </div>
+                <div id="rtp_home_section_5_subsection_2" class="columns cc_columns large-12">
+                    <div id="rtp_home_section_5_subsection_2_html" class="cc_html">
+                        <p>
+                            <a id="homepage-tile-click" href="https://www.zerto.com/page/the-state-of-it-resilience-report-2018/"><img class="size-full wp-image-22621 aligncenter" src="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/350x200_webtile_IDC-report.png" alt="" width="350" height="200" srcset="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/350x200_webtile_IDC-report.png 350w, https://zerto-com.azureedge.net/wp-content/uploads/2018/09/350x200_webtile_IDC-report-300x171.png 300w" sizes="(max-width: 350px) 100vw, 350px" /></a>
+                        </p>
+                        <p><strong>Download this new report by Zerto and IDC to get the pulse of the state of IT resilience and its correlation to business and digital transformation. </strong></p>
+                    </div>
+                    <div class="cc_btn_holder button-style-text"> <a id="rtp_home_section_5_subsection_2_button" style="color:#f3f3f3;" href="https://www.zerto.com/page/the-state-of-it-resilience-report-2018/" class="cc_btn hvr-grow " target=""><span class="cta-text">Download Now</span><span class="cta-icon"><i class="fa fa-chevron-right fa-fw"></i></span></a></div>
+                </div>
+                <div id="rtp_home_section_5_subsection_3" class="columns cc_columns large-12">
+                    <div id="rtp_home_section_5_subsection_3_html" class="cc_html">
+                        <p>
+                            <a id="homepage-tile-click" href="https://www.zerto.com/page/the-gorilla-guide-to-moving-beyond-disaster-recovery-to-it-resilience/"><img class="size-full wp-image-22648 aligncenter" src="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/IS-11114_WebTile_02.png" alt="" width="350" height="200" srcset="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/IS-11114_WebTile_02.png 350w, https://zerto-com.azureedge.net/wp-content/uploads/2018/09/IS-11114_WebTile_02-300x171.png 300w" sizes="(max-width: 350px) 100vw, 350px" /></a>
+                        </p>
+                        <p><strong>Download the Gorilla Guide and take steps to move beyond just protecting your business from disasters and focus on IT Resilience.</strong></p>
+                    </div>
+                    <div class="cc_btn_holder button-style-text"> <a id="rtp_home_section_5_subsection_3_button" style="color:#f3f3f3;" href="https://www.zerto.com/page/the-gorilla-guide-to-moving-beyond-disaster-recovery-to-it-resilience/" class="cc_btn hvr-grow " target=""><span class="cta-text">Download Now</span><span class="cta-icon"><i class="fa fa-chevron-right fa-fw"></i></span></a></div>
+                </div>
+            </div>
+        </section>
+        <section id="rtp_home_section_6" class="img-slider animate-section" data-animate-class="none">
+            <div class="row animate-me">
+                <div class="large-12 columns">
+                    <h4 id="rtp_home_section_6_header" class="logo_header text-center">Building IT Resilience for Great Brands</h4>
+                    <div id="rtp_home_section_6_paragraph" class="logo_paragraph"></div>
+                </div>
+            </div>
+            <div class="continous-slider" data-num-to-show="5">
+                <div class="slick-slide"> <img class='logo-img hvr-grow' src="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/Carefirst_Logo.png"></div>
+                <div class="slick-slide"> <img class='logo-img hvr-grow' src="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/Kronos_Logo.png"></div>
+                <div class="slick-slide"> <img class='logo-img hvr-grow' src="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/McKesson_Logo.png"></div>
+                <div class="slick-slide"> <img class='logo-img hvr-grow' src="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/Cosmopolitan_Logo.png"></div>
+                <div class="slick-slide"> <img class='logo-img hvr-grow' src="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/XPOlogistics_Logo.png"></div>
+                <div class="slick-slide"> <img class='logo-img hvr-grow' src="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/Braves_Logo.png"></div>
+            </div>
+        </section>
+        <section id="rtp_home_section_experience" class="home-experience-section animate-section" data-animate-class="fadeInUp" style="background-color:#eef0f2;">
+            <div class='row animate-me'>
+                <div class='large-12 columns'>
+                    <h4 id="rtp_home_section_experience_header" class="text-center experience-header text-center">Simple, Fast Data Protection: Get Proof!</h4>
+                    <div id="rtp_home_section_experience_paragraph" class='experience-content'>
+                        <form id="mktoForm_2075"></form>
+                    </div>
+                    <div id="rtp_home_section_experience_thankyou">
+                        <h3 style="text-align: center;"><span style="color: #ba0c25;">Thank you! Please check your email for Free Trial instructions.</span></h3></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        jQuery(document).ready(function() {
+
+            var custom_link_selectors = [{
+                "section": null,
+                "class": "tile_link"
+            }];
+            if (custom_link_selectors.length > 0) {
+                jQuery.each(custom_link_selectors, function(index, value) {
+
+                    jQuery("#cc_" + value.section + " a").each(function(e) {
+                        jQuery(this).addClass(value.class);
+                    });
+                });
+            }
+
+            // jQuery(document).ready(function () {
+
+            jQuery("body").on("click", ".dropdown", function(e) {
+                e.preventDefault();
+
+                $cta_icon = jQuery(this).find(".cta-icon i");
+
+                if ($cta_icon.hasClass("fa-caret-down")) {
+                    $cta_icon.removeClass("fa-caret-down").addClass("fa-caret-up");
+                } else {
+                    $cta_icon.removeClass("fa-caret-up").addClass("fa-caret-down");
+                }
+
+                dropdown_to_toggle = jQuery(this).data("target");
+
+                jQuery("#" + dropdown_to_toggle).slideToggle();
+            });
+
+            jQuery('.animate-section .animate-me').css('opacity', 0);
+
+            jQuery('.animate-section .animate-me').waypoint(function() {
+                jQuery(this.element).addClass(jQuery(this.element).closest('.animate-section').data('animate-class') + ' animated');
+                jQuery(this.element).css('opacity', 1);
+
+            }, {
+                offset: '85%'
+            });
+
+            jQuery('video').each(function() {
+                var $vid = jQuery(this);
+                jQuery(this).waypoint(function() {
+                    $vid[0].play();
+                }, {
+                    offset: '45%'
+                });
+            });
+
+            jQuery('.slick-slider').slick({
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 7000,
+                responsive: [{
+                    breakpoint: 600,
+                    settings: {
+                        dots: false
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        dots: false
+                    }
+                }]
+            })
+
+            jQuery('.continous-slider').each(function() {
+
+                num_to_show = jQuery(this).data('num-to-show');
+
+                jQuery(this).slick({
+                    dots: false,
+                    slidesToShow: num_to_show,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    autoplay: true,
+                    autoplaySpeed: 0,
+                    speed: 3000,
+
+                    responsive: [{
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: num_to_show,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: false
+                        }
+                    }, {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    }, {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    }]
+                });
+            });
+
+            if (MktoForms2) {
+                MktoForms2.whenReady(function(m_form) {
+                    m_form.onSuccess(function() {
+                        jQuery("#rtp_home_section_experience_thankyou").slideDown();
+                        jQuery("#mktoForm_2075").slideUp();
+                        window.location.hash = "mktoForm_2075";
+                    });
+                });
+            }
+        });
+    </script>
+    <script src="https://pages.zerto.com/js/forms2/js/forms2.min.js"></script>
+    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBuw0zemIm3W92lL__tFD7u-PwdAcDAtME"></script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion_async.js" charset="utf-8"></script>
+    <script>
+        var global_marketo_form = {};
+        MktoForms2.loadForm("//pages.zerto.com", "743-HBR-773", "2075", function(m_form) {
+
+            global_marketo_form = m_form;
+            var stored_continent = readCookie("user_continent_code");
+            var is_page_template = false;
+            var attempt_auto_submit = null;
+            var auto_submit_txt = null;
+
+            if (is_page_template && attempt_auto_submit) {
+
+                form_params = m_form.getFormElem();
+                form_params = form_params[0];
+
+                jQuery("#marketo-wrapper").append("<div class='loading'><i class='fa fa-spinner fa-spin fa-2x'></i></div>");
+                jQuery(".loading").show();
+
+                valuesToGet = [];
+
+                for (var i = 0, element; element = form_params.elements[i++];) {
+                    if (element.type !== "hidden" && element.type !== "submit") {
+                        valuesToGet.push(element.name.replace(" ", ""));
+                    }
+                }
+                var ajaxurl = "https:\/\/www.zerto.com\/wp-admin\/admin-ajax.php";
+                var marketo_cookie = null;
+                var security = "Az7YAUnQLRdI3KIl2VXyMWjS7sVRspiHyPEbZWeOSMUxlUQyzGgdPHHYatTBqErDMTQFIoqIH5/BRhLp9lnQIxHsXkSe4CfrzqltB4LAHNo=";
+
+                var sendRequest = jQuery.post(ajaxurl, {
+                    values: valuesToGet,
+                    action: "get_m_data",
+                    sec: security,
+                    cookie: ""
+                }, function(response) {
+                    try {
+                        var result = JSON.parse(response);
+                    } catch (e) {
+                        console.log("Error parsing json: ", e);
+                        jQuery(".loading").hide('fast');
+                        jQuery("#marketo-wrapper form").slideDown('fast');
+
+                        return false;
+                    }
+
+                    console.log(result);
+
+                    if (result.success === false || result.result === null) {
+                        jQuery(".loading").hide('fast');
+                        jQuery("#marketo-wrapper form").slideDown('fast');
+
+                        return false;
+                    }
+
+                    var marketo_values = result.result;
+                    var partial_results = result.partial;
+
+                    delete marketo_values.id;
+                    delete marketo_values.cookies;
+
+                    Object.keys(marketo_values).forEach(function(key, index) {
+
+                        modified_key = key[0].toUpperCase() + key.substr(1);
+
+                        var input_type = (jQuery("input[name='" + key + "'").attr('type'));
+
+                        if (input_type !== "checkbox") {
+                            if (marketo_values[key] === true) {
+                                marketo_values[key] = "True";
+                            } else if (marketo_values[key] === false) {
+                                marketo_values[key] = "False";
+                            }
+                        }
+
+                        m_form.vals(_defineProperty({}, key, marketo_values[key]));
+                        m_form.vals(_defineProperty({}, modified_key, marketo_values[key]));
+                    });
+
+                    jQuery(".loading").hide('fast');
+
+                    if (partial_results === false && m_form.validate() === true) {
+                        jQuery("#marketo-wrapper form").slideUp('fast');
+                        jQuery("#marketo-wrapper").append("<div id='marketo-auto-holder'><h4>Welcome Back, " + marketo_values.firstName.charAt(0).toUpperCase() + marketo_values.firstName.slice(1) + "!</h4><a style='text-align:center' class='mktoButton' href='#' id='marketo-auto-submit'>" + auto_submit_txt + "</a><div style='margin-top:100px;text-align:center'><a style='color:#ba0c25;' href='#' id='edit-marketo-form'>This isn't me</a></div></div>");
+
+                        jQuery('body').on('click', '#edit-marketo-form', function(e) {
+                            jQuery("#marketo-wrapper form").find("input[type=text], input[type=email], select").val("");
+                            jQuery("#marketo-wrapper form").slideDown();
+                            jQuery("#marketo-auto-holder").slideUp('fast');
+
+                            return false;
+                        });
+
+                        jQuery('body').on('click', '#marketo-auto-submit', function(e) {
+
+                            m_form.vals({
+                                "formAutocomplete": "true"
+                            });
+
+                            m_form.submit();
+                            if (m_form.validate() === false) {
+                                jQuery("#marketo-wrapper form").slideDown();
+                                jQuery("#marketo-auto-holder").slideUp();
+                            }
+
+                            return false;
+                        });
+                    } else {
+                        m_form.vals({
+                            optinPrivacyPolicy: false,
+                            optinCommunicationsAll: false
+                        });
+                        jQuery("#marketo-wrapper form").slideDown('fast');
+                    }
+                });
+            }
+
+            jQuery("#zertoCONLocalRegion").change(function() {
+                jQuery("#zertoCONLocalUnitedStates").attr('autocomplete', 'false');
+            });
+
+            var email_input = document.getElementById('Email');
+            email_input.onchange = function() {
+                m_form.submittable(true)
+            };
+
+            var allow_all_email_domains = 0;
+
+            var origin_url = "";
+            var cookieFields = JSON.parse('{"jstrackingasset":"z_asset","jstrackingcampaign":"z_campaign","jstrackingcontent":"z_content","jstrackinggcid":"z_gcid","jstrackingleadsource":"z_leadsource","jstrackingname":"z_name","jstrackingreferrer":"z_referrer","jstrackingsfid":"z_sfid","jstrackingsource":"z_source","jstrackingtype":"z_type","jsutmcampaign":"utm_campaign","jsutmname":"utm_name","jsutmsource":"utm_source","jsutmmedium":"utm_medium","jstrackingfirstpage":"z_origin_url"}');
+
+            console.log(cookieFields);
+
+            for (var key in cookieFields) {
+                var cookie_value = getCookie(cookieFields[key]);
+                var marketo_key = key;
+
+                if (cookie_value !== undefined && cookie_value.length > 0) {
+                    console.log("Applied " + marketo_key + " as " + cookie_value);
+
+                    m_form.vals(_defineProperty({}, marketo_key, cookie_value));
+                }
+            }
+
+            m_form.vals({
+                "jstrackinglastpage": window.location.href,
+                "jstrackingfirstpage": origin_url,
+                "jstrackingIP": "1.202.78.247"
+            });
+
+            // Setup Google Maps
+
+            var company_input = document.getElementById('Company');
+            var autocomplete = new google.maps.places.Autocomplete(company_input);
+
+            var countries_with_states = ['United States', 'Canada', 'Australia'];
+
+            var street_number = '';
+            var street1 = '';
+            var street2 = '';
+            var city = '';
+            var state = '';
+            var country = '';
+            var zip_code = '';
+
+            autocomplete.addListener('place_changed', function() {
+
+                var place = autocomplete.getPlace();
+
+                company_input.value = place.name;
+
+                console.log(place);
+
+                var company_phone = place.international_phone_number;
+
+                if (typeof place.formatted_phone_number != 'undefined' && place.formatted_phone_number.length > 0) {
+                    company_phone = place.formatted_phone_number;
+                }
+
+                var company_website = place.website;
+
+                var company_address_components = place.address_components;
+
+                for (var i = 0; i < company_address_components.length; i++) {
+
+                    var this_component = company_address_components[i];
+
+                    switch (this_component.types[0]) { // first types is always the one we want
+                        case 'route':
+                            street1 = this_component.short_name;
+                            break;
+
+                        case 'street_number':
+                            street_number = this_component.short_name;
+                            break;
+
+                        case 'subpremise':
+                            street2 = this_component.short_name;
+                            break;
+
+                        case 'locality':
+                            city = this_component.short_name;
+                            break;
+
+                        case 'administrative_area_level_1':
+                            state = this_component.short_name;
+                            break;
+
+                        case 'country':
+                            country = this_component.long_name;
+                            break;
+                        case 'postal_code':
+                            zip_code = this_component.short_name;
+                            break;
+                    }
+                }
+
+                var company_address = street_number + " " + street1 + " " + street2;
+                var company_state = "";
+
+                if (countries_with_states.indexOf(country) > -1) {
+                    company_state = state;
+                }
+
+                m_form.vals({
+                    "Address": company_address,
+                    "City": city,
+                    "Postal Code": zip_code,
+                    "Country": country,
+                    "Website": company_website,
+                    "Phone": company_phone,
+                    "State": company_state
+                });
+            });
+
+            m_form.onSubmit(function(this_form) {
+                email_input = document.getElementById("Email");
+
+                email_domain = email_input.value.replace(/.*@/, "");
+
+                var invalid_email_domains = [
+                    /* Default domains included */
+                    "att.net", "comcast.net", "facebook.com", "gmail.com", "gmx.com", "googlemail.com", "google.com", "hotmail.com", "hotmail.co.uk", "mac.com", "me.com", "msn.com", "live.com", "sbcglobal.net", "verizon.net", "yahoo.com", "yahoo.co.uk",
+                    /* Other global domains */
+                    "email.com", "games.com" /* AOL */ , "gmx.net", "hush.com", "hushmail.com", "icloud.com", "inbox.com", "lavabit.com", "love.com" /* AOL */ , "outlook.com", "pobox.com", "rocketmail.com" /* Yahoo */ , "safe-mail.net", "wow.com" /* AOL */ , "ygm.com" /* AOL */ , "ymail.com" /* Yahoo */ , "zoho.com", "fastmail.fm", "yandex.com",
+                    /* United States ISP domains */
+                    "bellsouth.net", "charter.net", "comcast.net", "cox.net", "earthlink.net", "juno.com", /* British ISP domains */ "btinternet.com", "virginmedia.com", "blueyonder.co.uk", "freeserve.co.uk", "live.co.uk", "ntlworld.com", "o2.co.uk", "orange.net", "sky.com", "talktalk.co.uk", "tiscali.co.uk", "virgin.net", "wanadoo.co.uk", "bt.com",
+                    /* Domains used in Asia */
+                    "sina.com", "qq.com", "daum.net", "nate.com", "yahoo.co.kr", "yahoo.co.id", "yahoo.co.in", "yahoo.com.sg", "yahoo.com.ph", /* French ISP domains */ "hotmail.fr", "live.fr", "laposte.net", "yahoo.fr", "wanadoo.fr", "orange.fr", "gmx.fr", "sfr.fr", "neuf.fr", "free.fr",
+                    /* German ISP domains */
+                    "gmx.de", "hotmail.de", "live.de", "online.de", "t-online.de" /* T-Mobile */ , "web.de", "yahoo.de", /* Russian ISP domains */ "mail.ru", "rambler.ru", "yandex.ru", "ya.ru", "list.ru", /* Belgian ISP domains */ "hotmail.be", "live.be", "skynet.be", "voo.be", "tvcablenet.be", "telenet.be", /* Argentinian ISP domains */ "hotmail.com.ar", "live.com.ar", "yahoo.com.ar", "fibertel.com.ar", "speedy.com.ar", "arnet.com.ar",
+                    /* Domains used in Mexico */
+                    "yahoo.com.mx", "live.com.mx", "yahoo.com", "hotmail.es", "hotmail.com.mx", "prodigy.net.mx"
+                ];
+
+                console.log(stored_continent);
+                if (stored_continent == "AS" || stored_continent == "OC") {
+                    // Allow these domains for Asia only
+                    allowed_domains = ["hotmail.com", "gmail.com", "outlook.com", "yahoo.com", "live.com", "msn.com"];
+
+                    for (var i = 0; i < allowed_domains.length; i++) {
+                        invalid_email_domains.splice(jQuery.inArray(allowed_domains[i], invalid_email_domains), 1);
+                    }
+
+                    console.log(invalid_email_domains);
+                }
+
+                if (invalid_email_domains.indexOf(email_domain) > -1 && allow_all_email_domains == false) {
+                    this_form.submittable(false);
+                    var emailElem = this_form.getFormElem().find("#Email");
+                    this_form.showErrorMessage("Must be a businesss email address.", emailElem);
+
+                    setTimeout(function() {
+                        this_form.submittable(true);
+                    }, 1000);
+                }
+
+            });
+
+            m_form.onSuccess(function() {
+
+                //Google Code for Whitepaper Download Conversion Page
+
+                try {
+                    window.google_trackConversion({
+                        google_conversion_id: 1008696500,
+                        google_conversion_language: "en",
+                        google_conversion_format: "1",
+                        google_conversion_color: "ffffff",
+                        google_conversion_label: "VIjgCOfdqFkQtPn94AM",
+                        google_remarketing_only: false
+                    });
+                } catch (e) {}
+                //
+
+                try {
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                        'event': 'marketoSuccessfulSubmit',
+                        'formId': 'marketo_embed_form'
+                    });
+                } catch (e) {}
+
+                var img = document.createElement("img");
+                img.src = "https://insight.adsrvr.org/track/conv/?adv=3td7qc5&ct=0:5osifub&fmt=3";
+                img.height = 1;
+                img.width = 1;
+                img.style = "border-style:none;";
+
+                var src = document.getElementById("header");
+                src.appendChild(img);
+
+                _linkedin_partner_id = "14745";
+                window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+                window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+
+                (function() {
+                    var s = document.getElementsByTagName("script")[0];
+                    var b = document.createElement("script");
+                    b.type = "text/javascript";
+                    b.async = true;
+                    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+                    s.parentNode.insertBefore(b, s);
+                })();
+
+                var redirect_url = "";
+
+                if (redirect_url.length > 0) {
+                    setTimeout(function() {
+                        window.location.href = redirect_url;
+                    }, 1000);
+                } else {
+                    page_header = document.getElementById("page-title");
+
+                    if (page_header) {
+                        page_header.textContent = "THANK YOU!";
+                    }
+
+                    page_tag_text = document.getElementById("bannerText");
+
+                    if (page_tag_text) {
+                        page_tag_text.textContent = "";
+                    }
+
+                    var init_display = document.getElementById('init-display');
+                    var thank_you_text = document.getElementById('thank-you-text');
+
+                    if (init_display) {
+                        init_display.style.display = 'none';
+                    }
+
+                    if (thank_you_text) {
+                        thank_you_text.style.display = 'block';
+                    }
+
+                    box_flex = document.getElementById('box_flex_container');
+
+                    if (box_flex) {
+                        box_flex.style.display = 'none';
+                    }
+
+                    marketo_wrapper = document.getElementById('marketo-wrapper');
+
+                    if (marketo_wrapper) {
+                        marketo_wrapper.style.display = 'none';
+                    }
+
+                    window.scrollTo(0, 0);
+
+                }
+
+                return false;
+            });
+        });
+
+        function getCookie(name) {
+            var value = "; " + document.cookie;
+            var parts = value.split("; " + name + "=");
+            if (parts.length == 2) return parts.pop().split(";").shift();
+        }
+
+        function readCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        function _defineProperty(obj, key, value) {
+            if (key in obj) {
+                Object.defineProperty(obj, key, {
+                    value: value,
+                    enumerable: true,
+                    configurable: true,
+                    writable: true
+                });
+            } else {
+                obj[key] = value;
+            }
+            return obj;
+        }
+    </script>
+    <div id="wonderpluginlightbox_options" data-skinsfoldername="skins/default/" data-jsfolder="https://www.zerto.com/wp-content/plugins/wonderplugin-lightbox/engine/" data-responsive="true" data-autoplay="true" data-html5player="true" data-overlaybgcolor="#000" data-overlayopacity="0.8" data-defaultvideovolume="1" data-bgcolor="#FFF" data-borderradius="0" data-thumbwidth="96" data-thumbheight="72" data-thumbtopmargin="12" data-thumbbottommargin="12" data-barheight="48" data-showtitle="true" data-titlebottomcss="{color:#333; font-size:14px; font-family:Armata,sans-serif,Arial; overflow:hidden; text-align:left;}" data-showdescription="true" data-descriptionbottomcss="{color:#333; font-size:12px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left; margin:4px 0px 0px; padding: 0px;}" style="display:none;"></div>
+    <div class="wonderplugin-engine"><a href="http://www.wonderplugin.com/wordpress-lightbox/" title="WordPress Lightbox Plugin">WordPress Lightbox Plugin</a></div>
+    <link rel='stylesheet' id='animate-css-css' href='//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css?ver=4.9.8' type='text/css' media='all' />
+    <script type='text/javascript'>
+        var alm_localize = {
+            "ajaxurl": "https:\/\/www.zerto.com\/wp-admin\/admin-ajax.php",
+            "alm_nonce": "d0af0ab48e",
+            "pluginurl": "https:\/\/www.zerto.com\/wp-content\/plugins\/ajax-load-more",
+            "scrolltop": "true",
+            "ajax_object": {
+                "is_single": true,
+                "is_singular": true
+            }
+        };
+    </script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/ajax-load-more/core/dist/js/ajax-load-more.min.js?ver=3.2.0'></script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/ajax-load-more-seo/js/alm-seo.js?ver=1.0'></script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/wonderplugin-lightbox/engine/wonderpluginlightbox.js?ver=2.7'></script>
+    <script type='text/javascript'>
+        var wpmm_object = {
+            "ajax_url": "https:\/\/www.zerto.com\/wp-admin\/admin-ajax.php",
+            "wpmm_responsive_breakpoint": "640px",
+            "wpmm_disable_mobile": "false"
+        };
+    </script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/wp-megamenu/assets/js/wpmm.js?ver=1.1.7'></script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/themes/foundation/js/foundation.min.js'></script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/themes/foundation/js/plugins/jquery.simpleselect.min_.js'></script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/themes/foundation/js/plugins/respond.js'></script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/themes/foundation/js/plugins/slick.min.js'></script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/themes/foundation/js/foundation.magellan.js'></script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/themes/foundation/js/plugins/jquery.mixitup.js'></script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/themes/foundation/js/global.js'></script>
+    <script type='text/javascript' src='https://use.fontawesome.com/f4026424d0.js'></script>
+    <script type='text/javascript' src='https://zerto-com.azureedge.net/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+    <script type='text/javascript' src='https://zerto-com.azureedge.net/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4'></script>
+    <script type='text/javascript'>
+        jQuery(document).ready(function(jQuery) {
+            jQuery.datepicker.setDefaults({
+                "closeText": "Close",
+                "currentText": "Today",
+                "monthNames": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+                "monthNamesShort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                "nextText": "Next",
+                "prevText": "Previous",
+                "dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+                "dayNamesMin": ["S", "M", "T", "W", "T", "F", "S"],
+                "dateFormat": "MM d, yy",
+                "firstDay": 1,
+                "isRTL": false
+            });
+        });
+    </script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/themes/foundation/js/plugins/jquery.modal.min.js'></script>
+    <script type='text/javascript' src='https://cdn.evgnet.com/beacon/zerto/engage/scripts/evergage.min.js'></script>
+    <script type='text/javascript'>
+        var lc_vars = {
+            "ajaxurl": "https:\/\/www.zerto.com\/wp-admin\/admin-ajax.php"
+        };
+    </script>
+    <script type='text/javascript' src='https://www.zerto.com/wp-content/themes/foundation/js/plugins/livechat.js?ver=2.0'></script>
+    <script type='text/javascript' src='https://zerto-com.azureedge.net/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
+    <script type='text/javascript' src='//code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+    <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js'></script>
+    <script>
+        ! function($) {
+            $(document).foundation();
+        }(window.jQuery);
+    </script>
+    <script>
+        function createCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+
+            document.cookie = name + "=" + value + expires + "; path=/";
+        }
+
+        function readCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+    </script>
+    <footer>
+        <div class="row">
+            <div class="large-8 medium-8 small-12 columns">
+                <div class="row footer-menu">
+                    <div class="large-4 medium-4 small-6 columns">
+                        <aside id="nav_menu-24" class="widget widget_nav_menu">
+                            <div class="menu-footer-column-1-container">
+                                <ul id="menu-footer-column-1" class="menu">
+                                    <li id="menu-item-19276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19276"><a href="https://www.zerto.com/products/">Products</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-19277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19277"><a href="https://www.zerto.com/products/on-premises-disaster-recovery/">On-Premises Disaster Recovery</a></li>
+                                            <li id="menu-item-19278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19278"><a href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/">Disaster Recovery to the Cloud</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-19279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19279"><a href="https://www.zerto.com/solutions/">Solutions</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-19280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19280"><a href="https://www.zerto.com/solutions/application/">Application</a></li>
+                                            <li id="menu-item-19281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19281"><a href="https://www.zerto.com/solutions/industry/">Industry</a></li>
+                                            <li id="menu-item-19282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19282"><a href="https://www.zerto.com/solutions/infrastructure/">Infrastructure</a></li>
+                                            <li id="menu-item-19283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19283"><a href="https://www.zerto.com/solutions/use-cases/">Use Cases</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-19284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19284"><a href="https://www.zerto.com/disaster-recovery-resources/">Resources</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-19285" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19285"><a href="https://www.zerto.com/the-bald-truth/">The Bald Truth</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="large-4 medium-4 small-6 columns">
+                        <aside id="nav_menu-19" class="widget widget_nav_menu">
+                            <div class="menu-footer-column-2-container">
+                                <ul id="menu-footer-column-2" class="menu">
+                                    <li id="menu-item-19286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19286"><a href="https://www.zerto.com/partners/">Partners</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-19287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19287"><a href="https://www.zerto.com/partners/become-a-partner/">Become a Partner</a></li>
+                                            <li id="menu-item-19288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19288"><a href="https://www.zerto.com/partners/find-a-partner/">Find a Partner</a></li>
+                                            <li id="menu-item-19289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19289"><a href="http://zap.zerto.com/wp-login.php">Partner Login</a></li>
+                                            <li id="menu-item-19290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19290"><a href="https://www.zerto.com/partners/request-login/">Request Login</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-19291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19291"><a href="https://www.zerto.com/company/">Company</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-19293" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19293"><a href="https://www.zerto.com/about/">About Zerto</a></li>
+                                            <li id="menu-item-19294" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19294"><a href="https://www.zerto.com/about/customers/">Customers</a></li>
+                                            <li id="menu-item-19295" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19295"><a href="https://www.zerto.com/about/management-team/">Management Team</a></li>
+                                            <li id="menu-item-19296" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19296"><a href="https://www.zerto.com/about/board-members/">Board Members</a></li>
+                                            <li id="menu-item-19297" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19297"><a href="https://www.zerto.com/about/investors/">Investors</a></li>
+                                            <li id="menu-item-19298" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19298"><a href="https://www.zerto.com/about/awards/">Awards</a></li>
+                                            <li id="menu-item-19299" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19299"><a href="https://www.zerto.com/careers/">Careers</a></li>
+                                            <li id="menu-item-19300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19300"><a href="https://www.zerto.com/zerto-in-the-news/">In the News</a></li>
+                                            <li id="menu-item-19301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19301"><a href="https://www.zerto.com/zerto-at-industry-events/">Industry Events</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="large-4 medium-4 small-12 columns">
+                        <aside id="nav_menu-21" class="widget widget_nav_menu">
+                            <div class="menu-footer-column-3-container">
+                                <ul id="menu-footer-column-3" class="menu">
+                                    <li id="menu-item-19303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19303"><a href="https://www.zerto.com/professional-services/">Support and Services</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-19306" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19306"><a href="https://www.zerto.com/support/">Overview</a></li>
+                                            <li id="menu-item-19307" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19307"><a href="/myzerto/">MyZerto</a></li>
+                                            <li id="menu-item-19308" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19308"><a href="/myzerto/support/">Portal Login</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-19309" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19309"><a href="https://www.zerto.com/blog/">Blog</a></li>
+                                    <li id="menu-item-19310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19310"><a href="https://www.zerto.com/the-dr-crowd/">The DR Crowd</a></li>
+                                    <li id="menu-item-19311" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19311"><a href="https://www.zerto.com/zerto-mobile/">Zerto Mobile</a></li>
+                                    <li id="menu-item-19312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19312"><a href="https://www.zerto.com/cio-corner/">The CIO Corner</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+            <div class="large-4 medium-4 small-12 columns">
+                <div class="footer-sidebar">
+                    <div class="search-box"> <i class="fa fa-search"> <span> Search </span> </i>
+                        <form method="get" id="searchform" action="https://www.zerto.com/">
+                            <div class="row collapse">
+                                <div class="small-12 columns">
+                                    <input type="text" name="s" id="s" placeholder="Search" />
+                                    <button class="btn-submit" type="submit" name="submit" id="searchsubmit"></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="social-icons text-right">
+                        <div class="soc-networks">
+                            <a class="soc-network-item" href="https://www.linkedin.com/company/zerto" target="_blank"> <i class="fa fa-linkedin"></i> </a>
+                            <a class="soc-network-item" href="https://twitter.com/Zerto" target="_blank"> <i class="fa fa-twitter"></i> </a>
+                            <a class="soc-network-item" href="https://www.facebook.com/ZertoCorp" target="_blank"> <i class="fa fa-facebook"></i> </a>
+                            <a class="soc-network-item" href="https://www.youtube.com/user/ZeRTOcorp" target="_blank"> <i class="fa fa-youtube"></i> </a>
+                            <a class="soc-network-item" href="https://plus.google.com/+Zerto/about" target="_blank"> <i class="fa fa-google-plus"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-bottom">
+            <div class="large-6 medium-6 small-12 columns">
+                <div class="footer-menu-line">
+                    <div class="row">
+                        <div class="large-12 columns text-left"> <span> Copyright &copy; 2010-2018</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="large-5 medium-5 small-12 columns small-menu">
+                <div class="menu-footer-small-menu-container">
+                    <ul id="menu-footer-small-menu" class="menu">
+                        <li id="menu-item-19268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19268"><a href="https://www.zerto.com/privacy-policy/">Privacy Policy</a></li>
+                        <li id="menu-item-20618" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20618"><a href="https://www.zerto.com/cookie-policy/">Cookie Policy</a></li>
+                        <li id="menu-item-19269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19269"><a href="https://www.zerto.com/terms-of-use/">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="large-1 medium-1 small-12 columns"></div>
+        </div>
+    </footer>
+    <a href="#chat-chooser" id='chat-init'> <img alt="Chat with Zerto Now!" src="https://www.zerto.com/wp-content/themes/foundation/images/chat_with_us_red.png"> </a>
+    <div id="chat-chooser">
+        <div class='chat-loading'> <i class='fa fa-spin fa-spinner fa-5x'></i></div>
+        <div class='chat-text'>
+            <h1>How Can We Help?</h1>
+            <div class='row'>
+                <div id='sales-chat-init' class='chat-holder columns large-4 medium-4 small-12'> <img src="https://www.zerto.com/wp-content/themes/foundation/images/bullseye.png">
+                    <h4>I'm Interested in Learning More About Zerto</h4> <small> If you’d like to learn more about Zerto, whether you’re looking for product information, are looking to purchase Zerto, or just have questions about how the software works – We’re here to  help! </small>
+                    <a id="sales_chat_starter" class='chat-starter lc-support-btn' data-group-type="Sales"> </a>
+                </div>
+                <div id="support-chat-init" class='chat-holder columns large-4 medium-4 small-12'> <img src="https://www.zerto.com/wp-content/themes/foundation/images/headset.png">
+                    <h4>I'm a Current Zerto Customer with a Support Request</h4> <small> At Zerto, we have a round-the-clock support team and many helpful resources available to you. Head to <a href="/myzerto">MyZerto</a> for forums, technical documentation, and a robust knowledge base. If you need support, Click the link below to get started. </small> <a class='lc-support-btn' href="/myzerto/support/">Begin a Support Request</a></div>
+                <div id="partners-chat-init" class='chat-holder columns large-4 medium-4 small-12'> <img src="https://www.zerto.com/wp-content/themes/foundation/images/users_crosshair.png">
+                    <h4>I am, or Hope to be, a Zerto Partner</h4> <small> Whether you’re looking to become a new Zerto partner, or have questions around your existing partnership or the ZAP Program in general, we’re here to answer your questions! </small> <a class='chat-starter lc-support-btn' data-group-type="Partner" data-group-id="7"> Chat Now </a></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        page_uri = "https://www.zerto.com/";
+        partner_lc_group_id = "7";
+    </script>
+    <div id="wonderpluginlightbox_options" data-skinsfoldername="skins/default/" data-jsfolder="https://www.zerto.com/wp-content/plugins/wonderplugin-lightbox/engine/" data-responsive="true" data-autoplay="true" data-html5player="true" data-overlaybgcolor="#000" data-overlayopacity="0.8" data-defaultvideovolume="1" data-bgcolor="#FFF" data-borderradius="0" data-thumbwidth="96" data-thumbheight="72" data-thumbtopmargin="12" data-thumbbottommargin="12" data-barheight="48" data-showtitle="true" data-titlebottomcss="{color:#333; font-size:14px; font-family:Armata,sans-serif,Arial; overflow:hidden; text-align:left;}" data-showdescription="true" data-descriptionbottomcss="{color:#333; font-size:12px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left; margin:4px 0px 0px; padding: 0px;}" style="display:none;"></div>
+    <div class="wonderplugin-engine"><a href="http://www.wonderplugin.com/wordpress-lightbox/" title="WordPress Lightbox Plugin">WordPress Lightbox Plugin</a></div>
+    <script>
+        ! function($) {
+            $(document).foundation();
+        }(window.jQuery);
+    </script>
+</body>
+
+</html>
+<!-- Dynamic page generated in 0.595 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2018-12-11 16:26:43 -->
+
+<!-- super cache -->
