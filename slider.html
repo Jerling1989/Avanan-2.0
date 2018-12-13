@@ -1,1527 +1,880 @@
 <!DOCTYPE html>
-<!--[if IE]> <script src="https://www.zerto.com/wp-content/themes/foundation/js/plugins/html5shiv.js"></script> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="en" ><![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en" prefix="og: http://ogp.me/ns#">
-<!--<![endif]-->
-<!--[if gte IE 9]><style type="text/css">.gradient {filter: none;}</style><![endif]-->
-
-<head>
-    <script type='text/javascript'>
-        (function(c, h, a, f, i, e) {
-            c[a] = c[a] || function() {
-                (c[a].q = c[a].q || []).push(arguments)
-            };
-            c[a].a = i;
-            c[a].e = e;
-            var g = h.createElement("script");
-            g.async = true;
-            g.type = "text/javascript";
-            g.src = f + '?aid=' + i;
-            var b = h.getElementsByTagName("script")[0];
-            b.parentNode.insertBefore(g, b);
-        })(window, document, "rtp", "//sjrtp3-cdn.marketo.com/rtp-api/v1/rtp.js", "zerto");
-
-        rtp('send', 'view');
-        rtp('get', 'campaign', true);
-    </script>
-    <script type="text/javascript">
-        (function() {
-            var didInit = false;
-
-            function initMunchkin() {
-                if (didInit === false) {
-                    didInit = true;
-                    Munchkin.init('743-HBR-773');
-                }
-            }
-            var s = document.createElement('script');
-            s.type = 'text/javascript';
-            s.async = true;
-            s.src = '//munchkin.marketo.net/munchkin.js';
-            s.onreadystatechange = function() {
-                if (this.readyState == 'complete' || this.readyState == 'loaded') {
-                    initMunchkin();
-                }
-            };
-            s.onload = initMunchkin;
-            document.getElementsByTagName('head')[0].appendChild(s);
-        })();
-    </script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" charset="UTF-8" />
-    <link type="image/png" href="https://zerto-com.azureedge.net/wp-content/uploads/2018/01/Zerto_FavIcon128x128px.png" rel="icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-    <style type="text/css" media="print">
-        @media print {
-            #header,
-            #fl_menu,
-            .assets_box,
-            .comments,
-            .wonderplugin-engine,
-            #wonderpluginlightbox_options {
-                display: none
-            }
-            footer .row {
-                display: none
-            }
-        }
-    </style>
-    <link type="text/css" media="all" href="https://www.zerto.com/wp-content/cache/autoptimize/css/autoptimize_7c8c21ec31198ebed103ff7a9b3fd33c.css" rel="stylesheet" />
-    <link type="text/css" media="screen" href="https://www.zerto.com/wp-content/cache/autoptimize/css/autoptimize_aa5fd3bffbb4c30111f755837e1a96b7.css" rel="stylesheet" />
-    <title>Zerto Virtual Replication | IT Resilience is Disaster Recovery Evolved</title>
-    <link rel="alternate" hreflang="en" href="https://www.zerto.com" />
-    <link rel="alternate" hreflang="zh-hans" href="https://www.zerto.com/cn/" />
-    <link rel="alternate" hreflang="fr" href="https://www.zerto.com/fr/" />
-    <link rel="alternate" hreflang="de" href="https://www.zerto.com/de/" />
-    <link rel="alternate" hreflang="it" href="https://www.zerto.com/it/" />
-    <link rel="alternate" hreflang="ja" href="https://www.zerto.com/jp/" />
-    <link rel="alternate" hreflang="pt" href="https://www.zerto.com/pt-br/" />
-    <link rel="alternate" hreflang="es" href="https://www.zerto.com/es/" />
-    <meta name="description" content="Zerto&#039;s virtual data replication software for VMWare, Hyper-V, Azure &amp; AWS ensures disaster recovery &amp; IT Resilience for virtualized &amp; cloud datacenters." />
-    <link rel="canonical" href="https://www.zerto.com/" />
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <!-- WM Verification -->
+    <meta name="msvalidate.01" content="2A2E14CA1909BC80E79578772BC3A45A" />
+    <meta name="p:domain_verify" content="e241f8b2178f499952f2447257796d97"/>
+    <meta name="google-site-verification" content="MAertWf37jwlXuqRMZ3bO_d7OMDYqHdhiVpDyo_gGHI" />
+    <meta name="image" property="og:image" content="https://www.netskope.com/wp-content/uploads/2018/07/logo-share.png">
+    
+    <title>Netskope Leader in Cloud Security &amp; Highest-ranked CASB</title>
+    <!-- This site is optimized with the Yoast SEO plugin v9.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
+    <meta name="description" content="Trusted by industry-leading businesses, we work to protect your data, stop threats and respond to incidents. Netskope, your cloud security platform."/>
+    <link rel="canonical" href="https://www.netskope.com/" />
     <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="de_DE" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+    <meta property="og:locale:alternate" content="es_ES" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Zerto Virtual Replication | IT Resilience is Disaster Recovery Evolved" />
-    <meta property="og:description" content="Zerto&#039;s virtual data replication software for VMWare, Hyper-V, Azure &amp; AWS ensures disaster recovery &amp; IT Resilience for virtualized &amp; cloud datacenters." />
-    <meta property="og:url" content="https://www.zerto.com/" />
-    <meta property="og:site_name" content="Zerto" />
+    <meta property="og:title" content="Netskope Leader in Cloud Security &amp; Highest-ranked CASB" />
+    <meta property="og:description" content="Trusted by industry-leading businesses, we work to protect your data, stop threats and respond to incidents. Netskope, your cloud security platform." />
+    <meta property="og:url" content="https://www.netskope.com/" />
+    <meta property="og:site_name" content="Netskope" />
+    <meta property="og:image" content="https://www.netskope.com/wp-content/uploads/2018/07/logo-share.png" />
+    <meta property="og:image:secure_url" content="https://www.netskope.com/wp-content/uploads/2018/07/logo-share.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:description" content="Zerto&#039;s virtual data replication software for VMWare, Hyper-V, Azure &amp; AWS ensures disaster recovery &amp; IT Resilience for virtualized &amp; cloud datacenters." />
-    <meta name="twitter:title" content="Zerto Virtual Replication | IT Resilience is Disaster Recovery Evolved" />
-    <script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.zerto.com\/","name":"Zerto","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.zerto.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
-    <link rel='dns-prefetch' href='//use.fontawesome.com' />
-    <link rel='dns-prefetch' href='//cdn.evgnet.com' />
+    <meta name="twitter:description" content="Trusted by industry-leading businesses, we work to protect your data, stop threats and respond to incidents. Netskope, your cloud security platform." />
+    <meta name="twitter:title" content="Netskope Leader in Cloud Security &amp; Highest-ranked CASB" />
+    <meta name="twitter:image" content="https://www.netskope.com/wp-content/uploads/2018/07/logo-share.png" />
+    <script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.netskope.com\/","name":"Netskope","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.netskope.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+    <!-- / Yoast SEO plugin. -->
+    <link rel='dns-prefetch' href='//qcdn.qordoba.com' />
+    <link rel='dns-prefetch' href='//storage.qordoba.com' />
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
-    <link rel='dns-prefetch' href='//code.jquery.com' />
-    <link rel="alternate" type="application/rss+xml" title="Zerto &raquo; Feed" href="https://www.zerto.com/feed/" />
-    <link rel="alternate" type="application/rss+xml" title="Zerto &raquo; Comments Feed" href="https://www.zerto.com/comments/feed/" />
-    <link rel='stylesheet' id='dashicons-css' href='https://zerto-com.azureedge.net/wp-includes/css/dashicons.min.css?ver=4.9.8' type='text/css' media='all' />
-    <link rel='stylesheet' id='google_fonts-css' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' type='text/css' media='all' />
-    <link rel='stylesheet' id='datepicker-css-css' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css' type='text/css' media='all' />
-    <script type='text/javascript' src='https://zerto-com.azureedge.net/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-    <script type='text/javascript' src='https://zerto-com.azureedge.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/wp-video-lightbox/js/jquery.prettyPhoto.min.js?ver=3.1.6'></script>
-    <script type='text/javascript'>
-        var vlpp_vars = {
-            "prettyPhoto_rel": "wp-video-lightbox",
-            "animation_speed": "fast",
-            "slideshow": "5000",
-            "autoplay_slideshow": "false",
-            "opacity": "0.80",
-            "show_title": "true",
-            "allow_resize": "true",
-            "allow_expand": "true",
-            "default_width": "640",
-            "default_height": "480",
-            "counter_separator_label": "\/",
-            "theme": "pp_default",
-            "horizontal_padding": "20",
-            "hideflash": "false",
-            "wmode": "opaque",
-            "autoplay": "true",
-            "modal": "true",
-            "deeplinking": "false",
-            "overlay_gallery": "true",
-            "overlay_gallery_max": "30",
-            "keyboard_shortcuts": "true",
-            "ie6_fallback": "true"
-        };
-    </script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/wp-video-lightbox/js/video-lightbox.js?ver=3.1.6'></script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/responsive-lightbox/assets/swipebox/js/jquery.swipebox.min.js?ver=2.0.5'></script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/responsive-lightbox/assets/infinitescroll/infinite-scroll.pkgd.min.js?ver=4.9.8'></script>
-    <script type='text/javascript'>
-        var rlArgs = {
-            "script": "swipebox",
-            "selector": "lightbox",
-            "customEvents": "",
-            "activeGalleries": "1",
-            "animation": "1",
-            "hideCloseButtonOnMobile": "0",
-            "removeBarsOnMobile": "0",
-            "hideBars": "1",
-            "hideBarsDelay": "5000",
-            "videoMaxWidth": "1080",
-            "useSVG": "1",
-            "loopAtEnd": "0",
-            "woocommerce_gallery": "0",
-            "ajaxurl": "https:\/\/www.zerto.com\/wp-admin\/admin-ajax.php",
-            "nonce": "886edd56bf"
-        };
-    </script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/responsive-lightbox/js/front.js?ver=2.0.5'></script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/wp-megamenu/addons/wpmm-featuresbox/wpmm-featuresbox.js?ver=1'></script>
-    <script type='text/javascript'>
-        var postgrid_ajax_load = {
-            "ajax_url": "https:\/\/www.zerto.com\/wp-admin\/admin-ajax.php"
-        };
-    </script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/wp-megamenu/addons/wpmm-gridpost/wpmm-gridpost.js?ver=1'></script>
-    <script type='text/javascript' src='//www.zerto.com/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown/script.js?ver=1'></script>
-    <link rel='https://api.w.org/' href='https://www.zerto.com/wp-json/' />
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.zerto.com/xmlrpc.php?rsd" />
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://zerto-com.azureedge.net/wp-includes/wlwmanifest.xml" />
-    <meta name="generator" content="WordPress 4.9.8" />
-    <link rel='shortlink' href='https://www.zerto.com/' />
-    <link rel="alternate" type="application/json+oembed" href="https://www.zerto.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.zerto.com%2F" />
-    <link rel="alternate" type="text/xml+oembed" href="https://www.zerto.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.zerto.com%2F&#038;format=xml" />
-    <meta name="generator" content="WPML ver:4.1.1 stt:65,1,4,3,27,66,44,2;" />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel="alternate" type="application/rss+xml" title="Netskope &raquo; Feed" href="https://www.netskope.com/feed" />
+    <link rel="alternate" type="application/rss+xml" title="Netskope &raquo; Comments Feed" href="https://www.netskope.com/comments/feed" />
     <script type="text/javascript">
-        (function(url) {
-            if (/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)) {
-                return;
-            }
-            var addEvent = function(evt, handler) {
-                if (window.addEventListener) {
-                    document.addEventListener(evt, handler, false);
-                } else if (window.attachEvent) {
-                    document.attachEvent('on' + evt, handler);
-                }
-            };
-            var removeEvent = function(evt, handler) {
-                if (window.removeEventListener) {
-                    document.removeEventListener(evt, handler, false);
-                } else if (window.detachEvent) {
-                    document.detachEvent('on' + evt, handler);
-                }
-            };
-            var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
-            var logHuman = function() {
-                if (window.wfLogHumanRan) {
-                    return;
-                }
-                window.wfLogHumanRan = true;
-                var wfscr = document.createElement('script');
-                wfscr.type = 'text/javascript';
-                wfscr.async = true;
-                wfscr.src = url + '&r=' + Math.random();
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(wfscr);
-                for (var i = 0; i < evts.length; i++) {
-                    removeEvent(evts[i], logHuman);
-                }
-            };
-            for (var i = 0; i < evts.length; i++) {
-                addEvent(evts[i], logHuman);
-            }
-        })('//www.zerto.com/?wordfence_lh=1&hid=CB0F658EE3BF472B8CF3271D48334D1A');
+    window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.netskope.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+    !function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
     </script>
-    <script>
-        WP_VIDEO_LIGHTBOX_VERSION = "1.8.8";
-        WP_VID_LIGHTBOX_URL = "https://www.zerto.com/wp-content/plugins/wp-video-lightbox";
-
-        function wpvl_paramReplace(name, string, value) {
-            // Find the param with regex
-            // Grab the first character in the returned string (should be ? or &)
-            // Replace our href string with our new value, passing on the name and delimeter
-
-            var re = new RegExp("[\?&]" + name + "=([^&#]*)");
-            var matches = re.exec(string);
-            var newString;
-
-            if (matches === null) {
-                // if there are no params, append the parameter
-                newString = string + '?' + name + '=' + value;
-            } else {
-                var delimeter = matches[0].charAt(0);
-                newString = string.replace(re, delimeter + name + "=" + value);
-            }
-            return newString;
-        }
-    </script>
-    <link rel="icon" href="https://zerto-com.azureedge.net/wp-content/uploads/2018/01/cropped-Zerto_FavIcon128x128px-32x32.png" sizes="32x32" />
-    <link rel="icon" href="https://zerto-com.azureedge.net/wp-content/uploads/2018/01/cropped-Zerto_FavIcon128x128px-192x192.png" sizes="192x192" />
-    <link rel="apple-touch-icon-precomposed" href="https://zerto-com.azureedge.net/wp-content/uploads/2018/01/cropped-Zerto_FavIcon128x128px-180x180.png" />
-    <meta name="msapplication-TileImage" content="https://zerto-com.azureedge.net/wp-content/uploads/2018/01/cropped-Zerto_FavIcon128x128px-270x270.png" />
-</head>
-
-<body class="home page-template page-template-templates page-template-template-home-2017 page-template-templatestemplate-home-2017-php page page-id-16914 wp-megamenu">
-    <noscript>
-        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FMFS" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                '//www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-P9FMFS');
-    </script>
-    <header id="header">
-        <div class="row large-uncollapse medium-uncollapse small-collapse">
-            <div class="large-2 medium-3 small-12 columns">
-                <div class="logo small-only-text-center">
-                    <a href="https://www.zerto.com"><img src="https://zerto-com.azureedge.net/wp-content/uploads/2017/09/Zerto-Logo_RGB2.png" /></a>
-                </div>
-            </div>
-            <div class="large-10 medium-9 small-12 columns">
-                <nav class="desctop-menu">
-                    <nav id="wp-megamenu-header-menu" class="wp-megamenu-wrap    ">
-                        <div class="wpmm-fullwidth-wrap"></div>
-                        <div class="wpmm-nav-wrap wpmm-main-wrap-header-menu"><a href="javascript:;" class="wpmm_mobile_menu_btn"><i class="fa fa-bars"></i> Menu</a>
-                            <ul id="menu-main-menu" class="wp-megamenu">
-                                <li id="wp-megamenu-item-21114" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children wp-megamenu-item-21114  wpmm_mega_menu  wpmm-slideinup wpmm-submenu-right"><a href="https://www.zerto.com/zerto-it-resilience-platform/">Platform <b class="fa fa-angle-down"></b> </a>
-                                    <ul class="wp-megamenu-sub-menu">
-                                        <li id="wp-megamenu-item-55686" class="wpmm-row wp-megamenu-item-55686 wpmm-submenu-right">
-                                            <ul class="wp-megamenu-sub-menu">
-                                                <li id="wp-megamenu-item-111376" class="wpmm-col wpmm-col-4 wp-megamenu-item-111376 wpmm-submenu-right">
-                                                    <ul class="wp-megamenu-sub-menu">
-                                                        <li id="wp-megamenu-item-21116" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-21116 wpmm-submenu-right"><a href="https://www.zerto.com/it-resilience/">What is IT Resilience?</a>
-                                                            <ul class="wp-megamenu-sub-menu">
-                                                                <li id="wp-megamenu-item-23058" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-23058 wpmm-submenu-right"><a href="https://www.zerto.com/the-future-of-backup/">The Future of Backup</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li id="wp-megamenu-item-111378" class="wpmm-col wpmm-col-4 wp-megamenu-item-111378 wpmm-submenu-right">
-                                                    <ul class="wp-megamenu-sub-menu">
-                                                        <li id="wp-megamenu-item-690" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-690 wpmm-submenu-right"><a href="https://www.zerto.com/products/on-premises-disaster-recovery/">IT Resilience On-Premises</a>
-                                                            <ul class="wp-megamenu-sub-menu">
-                                                                <li id="wp-megamenu-item-4921" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-4921 wpmm-submenu-right"><a href="https://www.zerto.com/products/on-premises-disaster-recovery/hypervisor-based-replication/">Hypervisor-Based Replication</a></li>
-                                                                <li id="wp-megamenu-item-2728" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2728 wpmm-submenu-right"><a href="https://www.zerto.com/products/on-premises-disaster-recovery/vmware-vsphere-replication-recovery/">VMware vSphere</a></li>
-                                                                <li id="wp-megamenu-item-2729" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2729 wpmm-submenu-right"><a href="https://www.zerto.com/products/on-premises-disaster-recovery/hyper-v-replication-recovery/">Microsoft Hyper-V</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li id="wp-megamenu-item-111380" class="wpmm-col wpmm-col-4 wp-megamenu-item-111380 wpmm-submenu-right">
-                                                    <ul class="wp-megamenu-sub-menu">
-                                                        <li id="wp-megamenu-item-2682" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-2682 wpmm-submenu-right"><a href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/">IT Resilience in the Cloud</a>
-                                                            <ul class="wp-megamenu-sub-menu">
-                                                                <li id="wp-megamenu-item-13288" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-13288 wpmm-submenu-right"><a href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/zerto-virtual-replication-for-microsoft-azure/">Microsoft Azure</a></li>
-                                                                <li id="wp-megamenu-item-10350" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-10350 wpmm-submenu-right"><a href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/complete-disaster-recovery-for-ibm-cloud/">IBM Cloud</a></li>
-                                                                <li id="wp-megamenu-item-2730" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2730 wpmm-submenu-right"><a href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/zerto-virtual-replication-aws-amazon-web-services/">Amazon Web Services</a></li>
-                                                                <li id="wp-megamenu-item-2732" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2732 wpmm-submenu-right"><a href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/draas-disaster-recovery-dr-as-a-service/">DRaaS: DR as a Service</a></li>
-                                                                <li id="wp-megamenu-item-2733" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2733 wpmm-submenu-right"><a href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/multi-cloud-agility/">Multi-Cloud Agility</a></li>
-                                                                <li id="wp-megamenu-item-2731" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2731 wpmm-submenu-right"><a href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/cloud-based-disaster-recovery-dr-service/">Cloud-Based Disaster Recovery</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li id="wp-megamenu-item-10023" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children wp-megamenu-item-10023  wpmm_mega_menu  wpmm-slideinup wpmm-submenu-right"><a href="https://www.zerto.com/disaster-recovery-solutions/">Solutions <b class="fa fa-angle-down"></b> </a>
-                                    <ul class="wp-megamenu-sub-menu">
-                                        <li id="wp-megamenu-item-44596" class="wpmm-row wp-megamenu-item-44596 wpmm-submenu-right">
-                                            <ul class="wp-megamenu-sub-menu">
-                                                <li id="wp-megamenu-item-89197" class="wpmm-col wpmm-col-3 wp-megamenu-item-89197 wpmm-submenu-right">
-                                                    <ul class="wp-megamenu-sub-menu">
-                                                        <li id="wp-megamenu-item-2686" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-2686 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/application/">Application</a>
-                                                            <ul class="wp-megamenu-sub-menu">
-                                                                <li id="wp-megamenu-item-2687" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2687 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/application/oracle-database-replication-offsite-backup-recovery/">Oracle Replication &#038; Recovery</a></li>
-                                                                <li id="wp-megamenu-item-2688" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2688 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/application/sap-data-replication-offsite-backup-dr/">SAP Replication &#038; Recovery</a></li>
-                                                                <li id="wp-megamenu-item-2689" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2689 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/application/sql-server-database-replication-offsite-backup/">SQL Server Replication &#038; Recovery</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li id="wp-megamenu-item-89199" class="wpmm-col wpmm-col-3 wp-megamenu-item-89199 wpmm-submenu-right">
-                                                    <ul class="wp-megamenu-sub-menu">
-                                                        <li id="wp-megamenu-item-2684" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-2684 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/industry/">Industry</a>
-                                                            <ul class="wp-megamenu-sub-menu">
-                                                                <li id="wp-megamenu-item-2690" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2690 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/industry/financial-firm-bc-dr/">BC/DR for Financial Firms</a></li>
-                                                                <li id="wp-megamenu-item-13314" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-13314 wpmm-submenu-right"><a href="https://www.zerto.com/zerto-virtual-replication-for-healthcare/">BC/DR for Healthcare</a></li>
-                                                                <li id="wp-megamenu-item-2692" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2692 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/industry/law-firm-bc-dr/">BC/DR for Law Firms</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li id="wp-megamenu-item-89201" class="wpmm-col wpmm-col-3 wp-megamenu-item-89201 wpmm-submenu-right">
-                                                    <ul class="wp-megamenu-sub-menu">
-                                                        <li id="wp-megamenu-item-2685" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-2685 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/infrastructure/">Infrastructure</a>
-                                                            <ul class="wp-megamenu-sub-menu">
-                                                                <li id="wp-megamenu-item-2695" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2695 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/infrastructure/hybrid-cloud-dr-replication-offsite-backup-migrations/">Hybrid Cloud</a></li>
-                                                                <li id="wp-megamenu-item-2693" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2693 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/infrastructure/private-cloud-dr-replication-offsite-backup-migrations/">On-Premises Cloud (Private Cloud)</a></li>
-                                                                <li id="wp-megamenu-item-2694" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2694 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/infrastructure/public-cloud-dr-replication-offsite-backup-migrations/">DIY Disaster Recovery as a Service (Public Cloud)</a></li>
-                                                                <li id="wp-megamenu-item-13832" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-13832 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/infrastructure/managed-cloud-replication-offsite-backup-migrations/">Managed Cloud</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li id="wp-megamenu-item-89203" class="wpmm-col wpmm-col-3 wp-megamenu-item-89203 wpmm-submenu-right">
-                                                    <ul class="wp-megamenu-sub-menu">
-                                                        <li id="wp-megamenu-item-2683" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-2683 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/">Use Cases</a>
-                                                            <ul class="wp-megamenu-sub-menu">
-                                                                <li id="wp-megamenu-item-21928" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-21928 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/continuous-data-protection/">Continuous Data Protection</a></li>
-                                                                <li id="wp-megamenu-item-2699" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2699 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/replication-disaster-recovery-solutions-dr-software/">Replication &#038; Disaster Recovery</a></li>
-                                                                <li id="wp-megamenu-item-2697" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2697 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/offsite-backup-data-protection-long-term-retention/">Move from Backup to Long-Term Retention</a></li>
-                                                                <li id="wp-megamenu-item-2701" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2701 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/data-center-migration-software/">Data Center Migrations</a></li>
-                                                                <li id="wp-megamenu-item-7767" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-7767 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/automated-dr-testing/">Automated Disaster Recovery Testing</a></li>
-                                                                <li id="wp-megamenu-item-2698" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2698 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/reduce-rto-rpo-recovery-objectives/">Reduce RTO &#038; RPO</a></li>
-                                                                <li id="wp-megamenu-item-20047" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-20047 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/zerto-virtual-replication-one-to-many/">One-to-Many Replication</a></li>
-                                                                <li id="wp-megamenu-item-2703" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2703 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/complete-bcdr-solution-business-continuity-disaster-recovery/">Complete BC/DR Solution</a></li>
-                                                                <li id="wp-megamenu-item-8898" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-8898 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/recovering-from-ransomware-with-zerto-virtual-replication/">Recovering from Ransomware</a></li>
-                                                                <li id="wp-megamenu-item-2700" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2700 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/storage-savings/">Storage Savings</a></li>
-                                                                <li id="wp-megamenu-item-2704" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2704 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/cross-hypervisor-replication-vmware-hyper-v-aws/">Cross-Hypervisor Replication</a></li>
-                                                                <li id="wp-megamenu-item-20609" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-20609 wpmm-submenu-right"><a href="https://www.zerto.com/solutions/use-cases/gdpr-readiness-and-compliance/">General Data Protection Regulation (GDPR)</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li id="wp-megamenu-item-88" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children wp-megamenu-item-88  wpmm_dropdown_menu  wpmm-slideinup wpmm-submenu-right"><a href="https://www.zerto.com/partners/">Partners <b class="fa fa-angle-down"></b> </a>
-                                    <ul class="wp-megamenu-sub-menu">
-                                        <li id="wp-megamenu-item-11002" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-11002 wpmm-submenu-right"><a href="https://www.zerto.com/partners/">Partners</a></li>
-                                        <li id="wp-megamenu-item-10976" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-10976 wpmm-submenu-right"><a href="https://www.zerto.com/partners/the-zerto-alliance-partner-program/">Learn about the Partner Program</a></li>
-                                        <li id="wp-megamenu-item-10984" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-10984 wpmm-submenu-right"><a href="https://www.zerto.com/partners/become-a-partner/">Become a Partner</a></li>
-                                        <li id="wp-megamenu-item-10999" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-10999 wpmm-submenu-right"><a href="https://www.zerto.com/partners/find-a-partner/">Find a Partner</a></li>
-                                        <li id="wp-megamenu-item-11000" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-11000 wpmm-submenu-right"><a href="https://www.zerto.com/partners/technology-partners/">Technology Alliances</a></li>
-                                        <li id="wp-megamenu-item-11001" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-11001 wpmm-submenu-right"><a href="https://www.zerto.com/partners/partner-portals/">Partner Portals &#8211; Get Log In</a></li>
-                                    </ul>
-                                </li>
-                                <li id="wp-megamenu-item-91" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children wp-megamenu-item-91  wpmm_mega_menu  wpmm-slideinup wpmm-submenu-right"><a href="https://www.zerto.com/disaster-recovery-resources/">Resources <b class="fa fa-angle-down"></b> </a>
-                                    <ul class="wp-megamenu-sub-menu">
-                                        <li id="wp-megamenu-item-34663" class="wpmm-row wp-megamenu-item-34663 wpmm-submenu-right">
-                                            <ul class="wp-megamenu-sub-menu">
-                                                <li id="wp-megamenu-item-69330" class="wpmm-col wpmm-col-4 wp-megamenu-item-69330 wpmm-submenu-right">
-                                                    <ul class="wp-megamenu-sub-menu">
-                                                        <li id="wp-megamenu-item-19382" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-19382 wpmm-submenu-right"><a href="#">Learn</a>
-                                                            <ul class="wp-megamenu-sub-menu">
-                                                                <li id="wp-megamenu-item-19391" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-19391 wpmm-submenu-right"><a href="https://www.zerto.com/disaster-recovery-resources/">Resources</a></li>
-                                                                <li id="wp-megamenu-item-19393" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-19393 wpmm-submenu-right"><a href="https://www.zerto.com/myzerto/knowledge-base/">MyZerto Knowledge Base</a></li>
-                                                                <li id="wp-megamenu-item-19396" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-19396 wpmm-submenu-right"><a href="https://www.zerto.com/blog/">Blog</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li id="wp-megamenu-item-69332" class="wpmm-col wpmm-col-4 wp-megamenu-item-69332 wpmm-submenu-right">
-                                                    <ul class="wp-megamenu-sub-menu">
-                                                        <li id="wp-megamenu-item-19383" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-19383 wpmm-submenu-right"><a href="#">Connect</a>
-                                                            <ul class="wp-megamenu-sub-menu">
-                                                                <li id="wp-megamenu-item-19401" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-19401 wpmm-submenu-right"><a href="https://www.zerto.com/myzerto/forums/">MyZerto Forums</a></li>
-                                                                <li id="wp-megamenu-item-19404" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-19404 wpmm-submenu-right"><a href="/zerto-at-industry-events/">Events</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li id="wp-megamenu-item-69334" class="wpmm-col wpmm-col-4 wp-megamenu-item-69334 wpmm-submenu-right">
-                                                    <ul class="wp-megamenu-sub-menu">
-                                                        <li id="wp-megamenu-item-19385" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-19385 wpmm-submenu-right"><a href="#">Discover</a>
-                                                            <ul class="wp-megamenu-sub-menu">
-                                                                <li id="wp-megamenu-item-19408" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-19408 wpmm-submenu-right"><a href="https://www.zerto.com/cio-corner/">CIO Corner</a></li>
-                                                                <li id="wp-megamenu-item-18044" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-18044 wpmm-submenu-right"><a href="https://www.zerto.com/webinar/">Webinars</a></li>
-                                                                <li id="wp-megamenu-item-19409" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-19409 wpmm-submenu-right"><a href="https://www.zerto.com/the-dr-crowd/">The DR Crowd</a></li>
-                                                                <li id="wp-megamenu-item-18076" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-18076 wpmm-submenu-right"><a href="https://www.zerto.com/the-bald-truth/">The Bald Truth</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li id="wp-megamenu-item-2748" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children wp-megamenu-item-2748  wpmm_mega_menu  wpmm-slideinup wpmm-submenu-right"><a href="https://www.zerto.com/about/">Company <b class="fa fa-angle-down"></b> </a>
-                                    <ul class="wp-megamenu-sub-menu">
-                                        <li id="wp-megamenu-item-37320" class="wpmm-row wp-megamenu-item-37320 wpmm-submenu-right">
-                                            <ul class="wp-megamenu-sub-menu">
-                                                <li id="wp-megamenu-item-74644" class="wpmm-col wpmm-col-4 wp-megamenu-item-74644 wpmm-submenu-right">
-                                                    <ul class="wp-megamenu-sub-menu">
-                                                        <li id="wp-megamenu-item-2709" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-2709 wpmm-submenu-right"><a href="https://www.zerto.com/about/">About Zerto</a>
-                                                            <ul class="wp-megamenu-sub-menu">
-                                                                <li id="wp-megamenu-item-2714" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2714 wpmm-submenu-right"><a href="https://www.zerto.com/about/awards/">Awards</a></li>
-                                                                <li id="wp-megamenu-item-2712" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2712 wpmm-submenu-right"><a href="https://www.zerto.com/about/board-members/">Board Members</a></li>
-                                                                <li id="wp-megamenu-item-2715" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2715 wpmm-submenu-right"><a href="https://www.zerto.com/careers/">Careers</a></li>
-                                                                <li id="wp-megamenu-item-2710" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2710 wpmm-submenu-right"><a href="https://www.zerto.com/about/customers/">Customers</a></li>
-                                                                <li id="wp-megamenu-item-2717" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2717 wpmm-submenu-right"><a href="https://www.zerto.com/zerto-in-the-news/">In the News</a></li>
-                                                                <li id="wp-megamenu-item-2713" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2713 wpmm-submenu-right"><a href="https://www.zerto.com/about/investors/">Investors</a></li>
-                                                                <li id="wp-megamenu-item-2711" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-2711 wpmm-submenu-right"><a href="https://www.zerto.com/about/management-team/">Management Team</a></li>
-                                                                <li id="wp-megamenu-item-5267" class="menu-item menu-item-type-taxonomy menu-item-object-category wp-megamenu-item-5267 wpmm-submenu-right"><a href="https://www.zerto.com/category/press-releases/">Press Releases</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li id="wp-megamenu-item-74646" class="wpmm-col wpmm-col-4 wp-megamenu-item-74646 wpmm-submenu-right">
-                                                    <ul class="wp-megamenu-sub-menu">
-                                                        <li id="wp-megamenu-item-17717" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-17717 wpmm-submenu-right"><a href="https://www.zerto.com/support-and-service/">Support and Service</a>
-                                                            <ul class="wp-megamenu-sub-menu">
-                                                                <li id="wp-megamenu-item-5289" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-5289 wpmm-submenu-right"><a href="https://www.zerto.com/myzerto/">MyZerto</a></li>
-                                                                <li id="wp-megamenu-item-2725" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-2725 wpmm-submenu-right"><a href="https://www.zerto.com/myzerto/support/">Support Portal Login</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li id="wp-megamenu-item-74648" class="wpmm-col wpmm-col-4 wp-megamenu-item-74648 wpmm-submenu-right">
-                                                    <ul class="wp-megamenu-sub-menu">
-                                                        <li id="wp-megamenu-item-2716" class="menu-item wpmm-type-widget menu-widget-class wpmm-type-item wp-megamenu-item-2716 wpmm-submenu-right"><a href="https://www.zerto.com/contact/">Contact Us</a>
-                                                            <ul class="wp-megamenu-sub-menu">
-                                                                <li id="wp-megamenu-item-21537" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-21537 wpmm-submenu-right"><a href="/page/how-to-buy-zerto/">How to Buy</a></li>
-                                                                <li id="wp-megamenu-item-4136" class="menu-item menu-item-type-post_type menu-item-object-page wp-megamenu-item-4136 wpmm-submenu-right"><a href="https://www.zerto.com/offices/">Offices</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li id="wp-megamenu-item-37321" class="wpmm-row wp-megamenu-item-37321 wpmm-submenu-right">
-                                            <ul class="wp-megamenu-sub-menu">
-                                                <li id="wp-megamenu-item-74650" class="wpmm-col wpmm-col-3 wp-megamenu-item-74650 wpmm-submenu-right"></li>
-                                                <li id="wp-megamenu-item-74652" class="wpmm-col wpmm-col-3 wp-megamenu-item-74652 wpmm-submenu-right"></li>
-                                                <li id="wp-megamenu-item-74654" class="wpmm-col wpmm-col-3 wp-megamenu-item-74654 wpmm-submenu-right"></li>
-                                                <li id="wp-megamenu-item-74656" class="wpmm-col wpmm-col-3 wp-megamenu-item-74656 wpmm-submenu-right"></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li id="wp-megamenu-item-9784" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children wp-megamenu-item-9784  wpmm_dropdown_menu  wpmm-slideinup wpmm-submenu-right"><a href="https://www.zerto.com/zertocon/">ZertoCON 2019 <b class="fa fa-angle-down"></b> </a>
-                                    <ul class="wp-megamenu-sub-menu">
-                                        <li id="wp-megamenu-item-23101" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-23101 wpmm-submenu-right"><a href="https://www.zerto.com/it-resilience-roadshow/">IT Resilience Roadshows</a></li>
-                                        <li id="wp-megamenu-item-23321" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-23321 wpmm-submenu-right"><a href="https://www.zerto.com/zertocon/2018-highlights/">ZertoCON 2018</a></li>
-                                        <li id="wp-megamenu-item-12509" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-12509 wpmm-submenu-right"><a href="https://www.zerto.com/zertocon/2017-highlights/">ZertoCON 2017</a></li>
-                                        <li id="wp-megamenu-item-10199" class="menu-item menu-item-type-custom menu-item-object-custom wp-megamenu-item-10199 wpmm-submenu-right"><a href="https://www.zerto.com/zertocon-2016/">ZertoCON 2016</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <div class="sales-num mobile"> <a href="tel://1-800-687-9259">Sales: 800-687-9259 ext: 1</a></div>
-                </nav>
-                <div class="header-right">
-                    <div class="search-box"> <i class="fa fa-search"></i> <a class="trial-box" href="https://www.zerto.com/page/zerto-free-trial/">Free Trial</a> <a class="trial-box get-demo" href="https://www.zerto.com/page/get-zerto-demo/">Get A Demo</a>
-                        <form method="get" id="searchform" action="https://www.zerto.com/">
-                            <div class="row collapse">
-                                <div class="small-12 columns">
-                                    <input type="text" name="s" id="s" placeholder="Search" />
-                                    <button class="btn-submit" type="submit" name="submit" id="searchsubmit"></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header-icon-box">
-            <div class='sales-num'> <a href="tel://1-800-687-9259">Sales: 800-687-9259 ext: 1</a></div>
-            <div class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-dropdown js-wpml-ls-legacy-dropdown" id="lang_sel">
-                <ul>
-                    <li tabindex="0" class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-dropdown"> <a href="#" class="js-wpml-ls-item-toggle wpml-ls-item-toggle lang_sel_sel icl-en"><span class="wpml-ls-native icl_lang_sel_native">English</span></a>
-                        <ul class="wpml-ls-sub-menu">
-                            <li class="icl-cn wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-cn"> <a href="https://www.zerto.com/cn/" class="wpml-ls-link"><span class="wpml-ls-native icl_lang_sel_native">中文</span><span class="wpml-ls-display icl_lang_sel_translated"><span class="wpml-ls-bracket icl_lang_sel_bracket"> (</span>Chinese<span class="wpml-ls-bracket icl_lang_sel_bracket">)</span></span></a></li>
-                            <li class="icl-fr wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-fr"> <a href="https://www.zerto.com/fr/" class="wpml-ls-link"><span class="wpml-ls-native icl_lang_sel_native">Français</span><span class="wpml-ls-display icl_lang_sel_translated"><span class="wpml-ls-bracket icl_lang_sel_bracket"> (</span>French<span class="wpml-ls-bracket icl_lang_sel_bracket">)</span></span></a></li>
-                            <li class="icl-de wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-de"> <a href="https://www.zerto.com/de/" class="wpml-ls-link"><span class="wpml-ls-native icl_lang_sel_native">Deutsch</span><span class="wpml-ls-display icl_lang_sel_translated"><span class="wpml-ls-bracket icl_lang_sel_bracket"> (</span>German<span class="wpml-ls-bracket icl_lang_sel_bracket">)</span></span></a></li>
-                            <li class="icl-it wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-it"> <a href="https://www.zerto.com/it/" class="wpml-ls-link"><span class="wpml-ls-native icl_lang_sel_native">Italiano</span><span class="wpml-ls-display icl_lang_sel_translated"><span class="wpml-ls-bracket icl_lang_sel_bracket"> (</span>Italian<span class="wpml-ls-bracket icl_lang_sel_bracket">)</span></span></a></li>
-                            <li class="icl-jp wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-jp"> <a href="https://www.zerto.com/jp/" class="wpml-ls-link"><span class="wpml-ls-native icl_lang_sel_native">日本語</span><span class="wpml-ls-display icl_lang_sel_translated"><span class="wpml-ls-bracket icl_lang_sel_bracket"> (</span>Japanese<span class="wpml-ls-bracket icl_lang_sel_bracket">)</span></span></a></li>
-                            <li class="icl-pt-br wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-pt-br"> <a href="https://www.zerto.com/pt-br/" class="wpml-ls-link"><span class="wpml-ls-native icl_lang_sel_native">Português</span><span class="wpml-ls-display icl_lang_sel_translated"><span class="wpml-ls-bracket icl_lang_sel_bracket"> (</span>Portuguese - Brazil<span class="wpml-ls-bracket icl_lang_sel_bracket">)</span></span></a></li>
-                            <li class="icl-es wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-es wpml-ls-last-item"> <a href="https://www.zerto.com/es/" class="wpml-ls-link"><span class="wpml-ls-native icl_lang_sel_native">Español</span><span class="wpml-ls-display icl_lang_sel_translated"><span class="wpml-ls-bracket icl_lang_sel_bracket"> (</span>Spanish<span class="wpml-ls-bracket icl_lang_sel_bracket">)</span></span></a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="header-link-box">
-                <a class="header-link" href="https://www.zerto.com/page/how-to-buy-zerto/"> <img src="https://zerto-com.azureedge.net/wp-content/uploads/2015/07/buy1.png" /> <span>Buy</span> </a>
-                <a class="header-link" href="https://www.zerto.com/myzerto/"> <img src="https://zerto-com.azureedge.net/wp-content/uploads/2015/09/myzerto-z-icon.png" /> <span>MyZerto</span> </a>
-                <a class="header-link" href="https://www.zerto.com/blog/"> <img src="https://zerto-com.azureedge.net/wp-content/uploads/2015/07/comment1.png" /> <span>Blog</span> </a>
-                <a class="header-link" href="https://www.zerto.com/support/"> <img src="https://zerto-com.azureedge.net/wp-content/uploads/2015/07/headset.png" /> <span>Support</span> </a>
-                <a class="header-link" href="https://www.zerto.com/page/contact/"> <img src="https://zerto-com.azureedge.net/wp-content/uploads/2015/07/phone1.png" /> <span>Contact</span> </a>
-            </div>
-        </div>
-    </header>
-    <div class='clearfix>'></div>
-    <main id="home-2017">
-        <style>
-            header#header,
-            .wp-megamenu-wrap.wpmm-mobile-menu ul.wp-megamenu {
-                background-color: #ffffff;
-            }
+    <style type="text/css">
+    img.wp-smiley,
+    img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+    }
+    </style>
+    <link rel='stylesheet' id='bodhi-svgs-attachment-css'  href='https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/plugins/svg-support/css/svgs-attachment.css?ver=4.9.8' type='text/css' media='all' />
+    <link rel='stylesheet' id='roboto-font-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i&#038;ver=4.9.8' type='text/css' media='all' />
+    <link rel='stylesheet' id='netskope-css'  href='https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/themes/netskope/css/all.css?ver=1544712300' type='text/css' media='all' />
+    <script type='text/javascript' src='https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/themes/netskope/js/serve/jquery.min.js'></script>
+    <script type='text/javascript' src='//qcdn.qordoba.com/qordoba-latest.min.js'></script>
+    <script type='text/javascript' src='//storage.qordoba.com/sdk-settings-4528.js?cachebust=1544712300'></script>
+    <link rel='https://api.w.org/' href='https://www.netskope.com/wp-json/' />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.netskope.com/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.netskope.com/wp-includes/wlwmanifest.xml" />
+    <link rel='shortlink' href='https://www.netskope.com/' />
+    <link rel="alternate" type="application/json+oembed" href="https://www.netskope.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.netskope.com%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://www.netskope.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.netskope.com%2F&#038;format=xml" />
+    <link rel="alternate" href="https://www.netskope.com/" hreflang="en" />
+    <link rel="alternate" href="https://www.netskope.com/de/" hreflang="de" />
+    <link rel="alternate" href="https://www.netskope.com/fr/" hreflang="fr" />
+    <link rel="alternate" href="https://www.netskope.com/jp/" hreflang="ja" />
+    <link rel="alternate" href="https://www.netskope.com/es/" hreflang="es" />
+    <!-- Google Tag Manager -->
+    <script type="text/plain" data-cookieconsent="statistics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PLFRVWX');</script>
+    <!-- End Google Tag Manager -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="4b140262-ec1c-4bad-9de3-68c17c1566cb" type="text/javascript" async></script>
+  </head>
+  <body class="home page-template-default page page-id-135">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLFRVWX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Uberflip Site Engager v1.0 //-->
+    <script src="https://content.cdntwrk.com/components/website-widget/v1/45284/widget.js" async></script>
+    <div id = "MainWrapper">
+      <!-- header of the page -->
+      <header class = "header sticky-header">
+        <div class = "container">
+          <div class = "header-wrap">
             
-            body:not(.sticky) header#header ul li a,
-            body:not(.sticky) header#header ul li a span,
-            .wpmm_mobile_menu_btn,
-            .wpmm_mobile_menu_btn:hover,
-            .wpml-ls-statics-shortcode_actions .wpml-ls-current-language > a,
-            .wpml-ls-statics-shortcode_actions .wpml-ls-current-language > a:hover {
-                color: #393737 !important;
-            }
             
-            body:not(.sticky) .sales-num a {
-                color: #393737 !important;
-            }
+            <div class = "logo">
+              <a href = "https://www.netskope.com">
+              <img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/logo.png" alt="" />             </a>
+            </div>
             
-            body:not(.sticky) header .trial-box,
-            body:not(.sticky) header .fa-search,
-            body:not(.sticky) header .fa-search,
-            body:not(.sticky).trial-box,
-            body:not(.sticky) header .fa-search,
-            body:not(.sticky) .trial-box,
-            body:not(.sticky) .home header .fa-search,
-            body:not(.sticky) .home .trial-box {
-                color: #393737 !important;
-            }
             
-            body:not(.sticky).home header .trial-box {
-                border-color: #393737 !important;
-            }
-            
-            #rtp_home_section_1 {
-                background-image: url('https://zerto-com.azureedge.net/wp-content/uploads/2018/05/MicrosoftTeams-image.png');
-            }
-            
-            @media screen and (max-width: 640px) {
-                #rtp_home_section_1 {
-                    background-image: url('https://zerto-com.azureedge.net/wp-content/uploads/2018/05/MicrosoftTeams-image.png');
-                }
-            }
-        </style>
-        <section id="rtp_home_section_1" class="full_height_section custom_full_height">
-            <div class='row valign-middle'>
-                <div id="rtp_home_section_1_full" class='large-12 medium-12 columns display-table'>
-                    <div class="small-12 medium-6 large-6 columns custom_img_holder">
-                        <h4 class="mobile-middle" style="padding-bottom: 5px;"><img class="alignnone size-full wp-image-22468" src="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/Zerto_ITresilience_Lockup_Web_RBG_640x420-002.png" alt="" width="650" height="420" /></h4></div>
-                    <div class="small-12 medium-6 large-6 columns bump-me">
-                        <h4 class="mobile-middle" style="padding-bottom: 15px; text-align: right;">The Zerto IT Resilience Platform</h4>
-                        <p class="mobile-middle" style="padding-bottom: 15px; text-align: right;">Introducing 6.5, Advancing Continuous Backup, Cloud Mobility and Analytics</p>
-                        <div class="mobile-middle" style="text-align: right;"><a class="full_height_cta hvr-grow" href="https://www.zerto.com/the-future-of-backup/" rel="noopener"><span class="cta-text">Learn More</span></a></div>
-                    </div>
-                </div>
-        </section>
-        <section id="rtp_home_section_2" class="cc_section animate-section " data-animate-class="fadeInUp">
-            <div class="row animate-me">
-                <h4 id="rtp_home_section_2_header" class="cc_header text-center" style="color:#191b1c;"></h4></div>
-            <div class="row animate-me">
-                <div id="rtp_home_section_2_paragraph" class="cc_main_text_area" style="color:#191b1c;"></div>
-            </div>
-            <div class="row flex-holder animate-me">
-                <div id="rtp_home_section_2_subsection_1" class="columns cc_columns large-12">
-                    <div id="rtp_home_section_2_subsection_1_html" class="cc_html">
-                        <h4>Move Beyond Backup and Recovery, to IT Resilience</h4>
-                        <p>Zerto’s IT Resilience Platform™ delivers disaster recovery, data protection, and workload mobility whether on-premises or to, from and between hybrid and multi-clouds. The platform is built on a foundation of continuous data protection (CDP) with built-in orchestration and automation providing IT leaders with simplicity, enterprise scale, and agile data protection to save time, resource, and costs. Zerto Analytics, with intelligent dashboards and live reports, provides complete visibility across multi-site and multi-cloud environments giving companies the confidence to know business SLAs and compliance needs are met.</p>
-                    </div>
-                    <div class="cc_btn_holder button-style-button"> <a id="rtp_home_section_2_subsection_1_button" href="https://www.zerto.com/it-resilience/" class="full_height_cta hvr-grow" target="_blank"><span class="cta-text">Get Resilient</span></a></div>
-                </div>
-                <div id="rtp_home_section_2_subsection_2" class="columns cc_columns large-12">
-                    <div id="rtp_home_section_2_subsection_2_html" class="cc_html">
-                        <p>
-                            <video class="hidden-xs" muted="">
-                                <source src="https://zerto-com.azureedge.net/wp-content/uploads/2017/12/IS-07987_Zerto.com_Homepage_ResilienceWheel.mp4" type="video/mp4" />
-                            </video>
-                            <br /> <img class="visible-xs" src="https://zerto-com.azureedge.net/wp-content/uploads/2017/08/CircleImage.png" /></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="rtp_home_section_3" class="cc_section animate-section " data-animate-class="fadeInUp">
-            <div class="row animate-me">
-                <h4 id="rtp_home_section_3_header" class="cc_header text-center" style="color:#FFFFFF;">IT Resilience By the Numbers</h4></div>
-            <div class="row animate-me">
-                <div id="rtp_home_section_3_paragraph" class="cc_main_text_area" style="color:#FFFFFF;"></div>
-            </div>
-            <div class="row flex-holder animate-me">
-                <div id="rtp_home_section_3_subsection_1" class="columns cc_columns large-12">
-                    <div id="rtp_home_section_3_subsection_1_html" class="cc_html">
-                        <p>
-                            <center>
-                                <video class="hidden-xs" muted="">
-                                    <source src="https://zerto-com.azureedge.net/wp-content/uploads/2017/08/Final_Circle_A_1-1.mp4" />
-                                </video><img class="visible-xs" src="https://zerto-com.azureedge.net/wp-content/uploads/2017/08/circleb-1.png" /></center>
-                        </p>
-                    </div>
-                </div>
-                <div id="rtp_home_section_3_subsection_2" class="columns cc_columns large-12">
-                    <div id="rtp_home_section_3_subsection_2_html" class="cc_html">
-                        <p>
-                            <center>
-                                <video class="hidden-xs" muted="">
-                                    <source src="https://zerto-com.azureedge.net/wp-content/uploads/2017/08/Final_Circle_B_1-1.mp4" />
-                                </video><img class="visible-xs" src="https://zerto-com.azureedge.net/wp-content/uploads/2017/08/circlea.png" /></center>
-                        </p>
-                    </div>
-                </div>
-                <div id="rtp_home_section_3_subsection_3" class="columns cc_columns large-12">
-                    <div id="rtp_home_section_3_subsection_3_html" class="cc_html">
-                        <p>
-                            <center>
-                                <video class="hidden-xs" muted="">
-                                    <source src="https://zerto-com.azureedge.net/wp-content/uploads/2017/08/Final_Circle_C_1-1.mp4" />
-                                </video><img class="visible-xs" src="https://zerto-com.azureedge.net/wp-content/uploads/2017/08/ciclec.png" /></center>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="rtp_home_section_4" class="cc_section animate-section " data-animate-class="fadeInUp">
-            <div class="row animate-me">
-                <h4 id="rtp_home_section_4_header" class="cc_header text-center" style="color:#000000;">Start Your IT Resilience Journey</h4></div>
-            <div class="row animate-me">
-                <div id="rtp_home_section_4_paragraph" class="cc_main_text_area" style="color:#000000;">
-                    <p style="text-align: center; font-size: 23px;">Application protection, migration and disaster recovery that is easy to implement, manage and test.</p>
-                    <p style="text-align: center;">
-                </div>
-            </div>
-            <div class="row flex-holder animate-me">
-                <div id="rtp_home_section_4_subsection_1" class="columns cc_columns large-12">
-                    <div id="rtp_home_section_4_subsection_1_html" class="cc_html">
-                        <p style="text-align: center; font-size: 30px;">
-                            <a href="https://www.zerto.com/products/on-premise-disaster-recovery/"><img class="alignnone size-full wp-image-14181" src="https://zerto-com.azureedge.net/wp-content/uploads/2017/09/on-premise-icon-home-page.png" alt="" width="140" height="120" /></a>
-                            <br /> <strong>ON-PREMISES </strong></p>
-                        <p>Zerto makes replication and recovery between two datacenters simple and flexible. With Continuous Data Protection(CDP) and built in Orchestration and Automation managed through a single pane of glass, Zerto delivers the protection simplicity IT teams require for demanding service levels management needs.</p>
-                    </div>
-                    <div class="cc_btn_holder button-style-text"> <a id="rtp_home_section_4_subsection_1_button" style="color:#BA0C25;" href="https://www.zerto.com/products/on-premise-disaster-recovery/" class="cc_btn hvr-grow " target=""><span class="cta-text">Data Protection Has Never Been This Easy</span><span class="cta-icon"><i class="fa fa-chevron-right fa-fw"></i></span></a></div>
-                </div>
-                <div id="rtp_home_section_4_subsection_2" class="columns cc_columns large-12">
-                    <div id="rtp_home_section_4_subsection_2_html" class="cc_html">
-                        <p style="text-align: center; font-size: 30px;">
-                            <a href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/"><img class="alignnone size-full wp-image-14182" src="https://zerto-com.azureedge.net/wp-content/uploads/2017/09/cloud-icon-home-page.png" alt="" width="140" height="120" /></a>
-                            <br /> <strong>CLOUD</strong></p>
-                        <p>Public, private, multi-cloud or hybrid cloud – it’s your choice. Whatever datacenter permutation meets your needs, Zerto will help you get there, with applications migrated to and protected across clouds easily and effectively. Choose from over 350 cloud service providers for DRaaS, or public clouds like Microsoft Azure, IBM Cloud and AWS.</p>
-                    </div>
-                    <div class="cc_btn_holder button-style-text"> <a id="rtp_home_section_4_subsection_2_button" style="color:#BA0C25;" href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/" class="cc_btn hvr-grow " target=""><span class="cta-text">Right This Way, Your Cloud Awaits</span><span class="cta-icon"><i class="fa fa-chevron-right fa-fw"></i></span></a></div>
-                </div>
-            </div>
-        </section>
-        <section id="rtp_home_section_5" class="cc_section animate-section tile_link" data-animate-class="fadeInUp">
-            <div class="row animate-me">
-                <h4 id="rtp_home_section_5_header" class="cc_header text-center" style="color:#000000;">The Latest from Zerto</h4></div>
-            <div class="row animate-me">
-                <div id="rtp_home_section_5_paragraph" class="cc_main_text_area" style="color:#000000;"></div>
-            </div>
-            <div class="row flex-holder animate-me">
-                <div id="rtp_home_section_5_subsection_1" class="columns cc_columns large-12">
-                    <div id="rtp_home_section_5_subsection_1_html" class="cc_html">
-                        <p>
-                            <a href="https://www.zerto.com/page/future-of-backup-from-periodic-to-continuous/"><img class="alignnone size-full wp-image-23396" src="https://zerto-com.azureedge.net/wp-content/uploads/2018/11/IS-11744_FutureBackup_Webtile_350x200-1.png" alt="" width="350" height="200" srcset="https://zerto-com.azureedge.net/wp-content/uploads/2018/11/IS-11744_FutureBackup_Webtile_350x200-1.png 350w, https://zerto-com.azureedge.net/wp-content/uploads/2018/11/IS-11744_FutureBackup_Webtile_350x200-1-300x171.png 300w" sizes="(max-width: 350px) 100vw, 350px" /></a>
-                        </p>
-                        <p><strong>Backup is evolving. The future is continuous data protection combining backup, disaster recovery, and cloud mobility in one. Learn More!</strong></p>
-                    </div>
-                    <div class="cc_btn_holder button-style-text"> <a id="rtp_home_section_5_subsection_1_button" style="color:#f3f3f3;" href="https://www.zerto.com/page/future-of-backup-from-periodic-to-continuous/" class="cc_btn hvr-grow " target=""><span class="cta-text">Download Now</span><span class="cta-icon"><i class="fa fa-chevron-right fa-fw"></i></span></a></div>
-                </div>
-                <div id="rtp_home_section_5_subsection_2" class="columns cc_columns large-12">
-                    <div id="rtp_home_section_5_subsection_2_html" class="cc_html">
-                        <p>
-                            <a id="homepage-tile-click" href="https://www.zerto.com/page/the-state-of-it-resilience-report-2018/"><img class="size-full wp-image-22621 aligncenter" src="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/350x200_webtile_IDC-report.png" alt="" width="350" height="200" srcset="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/350x200_webtile_IDC-report.png 350w, https://zerto-com.azureedge.net/wp-content/uploads/2018/09/350x200_webtile_IDC-report-300x171.png 300w" sizes="(max-width: 350px) 100vw, 350px" /></a>
-                        </p>
-                        <p><strong>Download this new report by Zerto and IDC to get the pulse of the state of IT resilience and its correlation to business and digital transformation. </strong></p>
-                    </div>
-                    <div class="cc_btn_holder button-style-text"> <a id="rtp_home_section_5_subsection_2_button" style="color:#f3f3f3;" href="https://www.zerto.com/page/the-state-of-it-resilience-report-2018/" class="cc_btn hvr-grow " target=""><span class="cta-text">Download Now</span><span class="cta-icon"><i class="fa fa-chevron-right fa-fw"></i></span></a></div>
-                </div>
-                <div id="rtp_home_section_5_subsection_3" class="columns cc_columns large-12">
-                    <div id="rtp_home_section_5_subsection_3_html" class="cc_html">
-                        <p>
-                            <a id="homepage-tile-click" href="https://www.zerto.com/page/the-gorilla-guide-to-moving-beyond-disaster-recovery-to-it-resilience/"><img class="size-full wp-image-22648 aligncenter" src="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/IS-11114_WebTile_02.png" alt="" width="350" height="200" srcset="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/IS-11114_WebTile_02.png 350w, https://zerto-com.azureedge.net/wp-content/uploads/2018/09/IS-11114_WebTile_02-300x171.png 300w" sizes="(max-width: 350px) 100vw, 350px" /></a>
-                        </p>
-                        <p><strong>Download the Gorilla Guide and take steps to move beyond just protecting your business from disasters and focus on IT Resilience.</strong></p>
-                    </div>
-                    <div class="cc_btn_holder button-style-text"> <a id="rtp_home_section_5_subsection_3_button" style="color:#f3f3f3;" href="https://www.zerto.com/page/the-gorilla-guide-to-moving-beyond-disaster-recovery-to-it-resilience/" class="cc_btn hvr-grow " target=""><span class="cta-text">Download Now</span><span class="cta-icon"><i class="fa fa-chevron-right fa-fw"></i></span></a></div>
-                </div>
-            </div>
-        </section>
-        <section id="rtp_home_section_6" class="img-slider animate-section" data-animate-class="none">
-            <div class="row animate-me">
-                <div class="large-12 columns">
-                    <h4 id="rtp_home_section_6_header" class="logo_header text-center">Building IT Resilience for Great Brands</h4>
-                    <div id="rtp_home_section_6_paragraph" class="logo_paragraph"></div>
-                </div>
-            </div>
-            <div class="continous-slider" data-num-to-show="5">
-                <div class="slick-slide"> <img class='logo-img hvr-grow' src="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/Carefirst_Logo.png"></div>
-                <div class="slick-slide"> <img class='logo-img hvr-grow' src="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/Kronos_Logo.png"></div>
-                <div class="slick-slide"> <img class='logo-img hvr-grow' src="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/McKesson_Logo.png"></div>
-                <div class="slick-slide"> <img class='logo-img hvr-grow' src="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/Cosmopolitan_Logo.png"></div>
-                <div class="slick-slide"> <img class='logo-img hvr-grow' src="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/XPOlogistics_Logo.png"></div>
-                <div class="slick-slide"> <img class='logo-img hvr-grow' src="https://zerto-com.azureedge.net/wp-content/uploads/2018/09/Braves_Logo.png"></div>
-            </div>
-        </section>
-        <section id="rtp_home_section_experience" class="home-experience-section animate-section" data-animate-class="fadeInUp" style="background-color:#eef0f2;">
-            <div class='row animate-me'>
-                <div class='large-12 columns'>
-                    <h4 id="rtp_home_section_experience_header" class="text-center experience-header text-center">Simple, Fast Data Protection: Get Proof!</h4>
-                    <div id="rtp_home_section_experience_paragraph" class='experience-content'>
-                        <form id="mktoForm_2075"></form>
-                    </div>
-                    <div id="rtp_home_section_experience_thankyou">
-                        <h3 style="text-align: center;"><span style="color: #ba0c25;">Thank you! Please check your email for Free Trial instructions.</span></h3></div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <script>
-        jQuery(document).ready(function() {
-
-            var custom_link_selectors = [{
-                "section": null,
-                "class": "tile_link"
-            }];
-            if (custom_link_selectors.length > 0) {
-                jQuery.each(custom_link_selectors, function(index, value) {
-
-                    jQuery("#cc_" + value.section + " a").each(function(e) {
-                        jQuery(this).addClass(value.class);
-                    });
-                });
-            }
-
-            // jQuery(document).ready(function () {
-
-            jQuery("body").on("click", ".dropdown", function(e) {
-                e.preventDefault();
-
-                $cta_icon = jQuery(this).find(".cta-icon i");
-
-                if ($cta_icon.hasClass("fa-caret-down")) {
-                    $cta_icon.removeClass("fa-caret-down").addClass("fa-caret-up");
-                } else {
-                    $cta_icon.removeClass("fa-caret-up").addClass("fa-caret-down");
-                }
-
-                dropdown_to_toggle = jQuery(this).data("target");
-
-                jQuery("#" + dropdown_to_toggle).slideToggle();
-            });
-
-            jQuery('.animate-section .animate-me').css('opacity', 0);
-
-            jQuery('.animate-section .animate-me').waypoint(function() {
-                jQuery(this.element).addClass(jQuery(this.element).closest('.animate-section').data('animate-class') + ' animated');
-                jQuery(this.element).css('opacity', 1);
-
-            }, {
-                offset: '85%'
-            });
-
-            jQuery('video').each(function() {
-                var $vid = jQuery(this);
-                jQuery(this).waypoint(function() {
-                    $vid[0].play();
-                }, {
-                    offset: '45%'
-                });
-            });
-
-            jQuery('.slick-slider').slick({
-                dots: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 7000,
-                responsive: [{
-                    breakpoint: 600,
-                    settings: {
-                        dots: false
-                    }
-                }, {
-                    breakpoint: 480,
-                    settings: {
-                        dots: false
-                    }
-                }]
-            })
-
-            jQuery('.continous-slider').each(function() {
-
-                num_to_show = jQuery(this).data('num-to-show');
-
-                jQuery(this).slick({
-                    dots: false,
-                    slidesToShow: num_to_show,
-                    slidesToScroll: 1,
-                    arrows: false,
-                    autoplay: true,
-                    autoplaySpeed: 0,
-                    speed: 3000,
-
-                    responsive: [{
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: num_to_show,
-                            slidesToScroll: 1,
-                            infinite: true,
-                            dots: false
-                        }
-                    }, {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1
-                        }
-                    }, {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1
-                        }
-                    }]
-                });
-            });
-
-            if (MktoForms2) {
-                MktoForms2.whenReady(function(m_form) {
-                    m_form.onSuccess(function() {
-                        jQuery("#rtp_home_section_experience_thankyou").slideDown();
-                        jQuery("#mktoForm_2075").slideUp();
-                        window.location.hash = "mktoForm_2075";
-                    });
-                });
-            }
-        });
-    </script>
-    <script src="https://pages.zerto.com/js/forms2/js/forms2.min.js"></script>
-    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBuw0zemIm3W92lL__tFD7u-PwdAcDAtME"></script>
-    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion_async.js" charset="utf-8"></script>
-    <script>
-        var global_marketo_form = {};
-        MktoForms2.loadForm("//pages.zerto.com", "743-HBR-773", "2075", function(m_form) {
-
-            global_marketo_form = m_form;
-            var stored_continent = readCookie("user_continent_code");
-            var is_page_template = false;
-            var attempt_auto_submit = null;
-            var auto_submit_txt = null;
-
-            if (is_page_template && attempt_auto_submit) {
-
-                form_params = m_form.getFormElem();
-                form_params = form_params[0];
-
-                jQuery("#marketo-wrapper").append("<div class='loading'><i class='fa fa-spinner fa-spin fa-2x'></i></div>");
-                jQuery(".loading").show();
-
-                valuesToGet = [];
-
-                for (var i = 0, element; element = form_params.elements[i++];) {
-                    if (element.type !== "hidden" && element.type !== "submit") {
-                        valuesToGet.push(element.name.replace(" ", ""));
-                    }
-                }
-                var ajaxurl = "https:\/\/www.zerto.com\/wp-admin\/admin-ajax.php";
-                var marketo_cookie = null;
-                var security = "Az7YAUnQLRdI3KIl2VXyMWjS7sVRspiHyPEbZWeOSMUxlUQyzGgdPHHYatTBqErDMTQFIoqIH5/BRhLp9lnQIxHsXkSe4CfrzqltB4LAHNo=";
-
-                var sendRequest = jQuery.post(ajaxurl, {
-                    values: valuesToGet,
-                    action: "get_m_data",
-                    sec: security,
-                    cookie: ""
-                }, function(response) {
-                    try {
-                        var result = JSON.parse(response);
-                    } catch (e) {
-                        console.log("Error parsing json: ", e);
-                        jQuery(".loading").hide('fast');
-                        jQuery("#marketo-wrapper form").slideDown('fast');
-
-                        return false;
-                    }
-
-                    console.log(result);
-
-                    if (result.success === false || result.result === null) {
-                        jQuery(".loading").hide('fast');
-                        jQuery("#marketo-wrapper form").slideDown('fast');
-
-                        return false;
-                    }
-
-                    var marketo_values = result.result;
-                    var partial_results = result.partial;
-
-                    delete marketo_values.id;
-                    delete marketo_values.cookies;
-
-                    Object.keys(marketo_values).forEach(function(key, index) {
-
-                        modified_key = key[0].toUpperCase() + key.substr(1);
-
-                        var input_type = (jQuery("input[name='" + key + "'").attr('type'));
-
-                        if (input_type !== "checkbox") {
-                            if (marketo_values[key] === true) {
-                                marketo_values[key] = "True";
-                            } else if (marketo_values[key] === false) {
-                                marketo_values[key] = "False";
-                            }
-                        }
-
-                        m_form.vals(_defineProperty({}, key, marketo_values[key]));
-                        m_form.vals(_defineProperty({}, modified_key, marketo_values[key]));
-                    });
-
-                    jQuery(".loading").hide('fast');
-
-                    if (partial_results === false && m_form.validate() === true) {
-                        jQuery("#marketo-wrapper form").slideUp('fast');
-                        jQuery("#marketo-wrapper").append("<div id='marketo-auto-holder'><h4>Welcome Back, " + marketo_values.firstName.charAt(0).toUpperCase() + marketo_values.firstName.slice(1) + "!</h4><a style='text-align:center' class='mktoButton' href='#' id='marketo-auto-submit'>" + auto_submit_txt + "</a><div style='margin-top:100px;text-align:center'><a style='color:#ba0c25;' href='#' id='edit-marketo-form'>This isn't me</a></div></div>");
-
-                        jQuery('body').on('click', '#edit-marketo-form', function(e) {
-                            jQuery("#marketo-wrapper form").find("input[type=text], input[type=email], select").val("");
-                            jQuery("#marketo-wrapper form").slideDown();
-                            jQuery("#marketo-auto-holder").slideUp('fast');
-
-                            return false;
-                        });
-
-                        jQuery('body').on('click', '#marketo-auto-submit', function(e) {
-
-                            m_form.vals({
-                                "formAutocomplete": "true"
-                            });
-
-                            m_form.submit();
-                            if (m_form.validate() === false) {
-                                jQuery("#marketo-wrapper form").slideDown();
-                                jQuery("#marketo-auto-holder").slideUp();
-                            }
-
-                            return false;
-                        });
-                    } else {
-                        m_form.vals({
-                            optinPrivacyPolicy: false,
-                            optinCommunicationsAll: false
-                        });
-                        jQuery("#marketo-wrapper form").slideDown('fast');
-                    }
-                });
-            }
-
-            jQuery("#zertoCONLocalRegion").change(function() {
-                jQuery("#zertoCONLocalUnitedStates").attr('autocomplete', 'false');
-            });
-
-            var email_input = document.getElementById('Email');
-            email_input.onchange = function() {
-                m_form.submittable(true)
-            };
-
-            var allow_all_email_domains = 0;
-
-            var origin_url = "";
-            var cookieFields = JSON.parse('{"jstrackingasset":"z_asset","jstrackingcampaign":"z_campaign","jstrackingcontent":"z_content","jstrackinggcid":"z_gcid","jstrackingleadsource":"z_leadsource","jstrackingname":"z_name","jstrackingreferrer":"z_referrer","jstrackingsfid":"z_sfid","jstrackingsource":"z_source","jstrackingtype":"z_type","jsutmcampaign":"utm_campaign","jsutmname":"utm_name","jsutmsource":"utm_source","jsutmmedium":"utm_medium","jstrackingfirstpage":"z_origin_url"}');
-
-            console.log(cookieFields);
-
-            for (var key in cookieFields) {
-                var cookie_value = getCookie(cookieFields[key]);
-                var marketo_key = key;
-
-                if (cookie_value !== undefined && cookie_value.length > 0) {
-                    console.log("Applied " + marketo_key + " as " + cookie_value);
-
-                    m_form.vals(_defineProperty({}, marketo_key, cookie_value));
-                }
-            }
-
-            m_form.vals({
-                "jstrackinglastpage": window.location.href,
-                "jstrackingfirstpage": origin_url,
-                "jstrackingIP": "1.202.78.247"
-            });
-
-            // Setup Google Maps
-
-            var company_input = document.getElementById('Company');
-            var autocomplete = new google.maps.places.Autocomplete(company_input);
-
-            var countries_with_states = ['United States', 'Canada', 'Australia'];
-
-            var street_number = '';
-            var street1 = '';
-            var street2 = '';
-            var city = '';
-            var state = '';
-            var country = '';
-            var zip_code = '';
-
-            autocomplete.addListener('place_changed', function() {
-
-                var place = autocomplete.getPlace();
-
-                company_input.value = place.name;
-
-                console.log(place);
-
-                var company_phone = place.international_phone_number;
-
-                if (typeof place.formatted_phone_number != 'undefined' && place.formatted_phone_number.length > 0) {
-                    company_phone = place.formatted_phone_number;
-                }
-
-                var company_website = place.website;
-
-                var company_address_components = place.address_components;
-
-                for (var i = 0; i < company_address_components.length; i++) {
-
-                    var this_component = company_address_components[i];
-
-                    switch (this_component.types[0]) { // first types is always the one we want
-                        case 'route':
-                            street1 = this_component.short_name;
-                            break;
-
-                        case 'street_number':
-                            street_number = this_component.short_name;
-                            break;
-
-                        case 'subpremise':
-                            street2 = this_component.short_name;
-                            break;
-
-                        case 'locality':
-                            city = this_component.short_name;
-                            break;
-
-                        case 'administrative_area_level_1':
-                            state = this_component.short_name;
-                            break;
-
-                        case 'country':
-                            country = this_component.long_name;
-                            break;
-                        case 'postal_code':
-                            zip_code = this_component.short_name;
-                            break;
-                    }
-                }
-
-                var company_address = street_number + " " + street1 + " " + street2;
-                var company_state = "";
-
-                if (countries_with_states.indexOf(country) > -1) {
-                    company_state = state;
-                }
-
-                m_form.vals({
-                    "Address": company_address,
-                    "City": city,
-                    "Postal Code": zip_code,
-                    "Country": country,
-                    "Website": company_website,
-                    "Phone": company_phone,
-                    "State": company_state
-                });
-            });
-
-            m_form.onSubmit(function(this_form) {
-                email_input = document.getElementById("Email");
-
-                email_domain = email_input.value.replace(/.*@/, "");
-
-                var invalid_email_domains = [
-                    /* Default domains included */
-                    "att.net", "comcast.net", "facebook.com", "gmail.com", "gmx.com", "googlemail.com", "google.com", "hotmail.com", "hotmail.co.uk", "mac.com", "me.com", "msn.com", "live.com", "sbcglobal.net", "verizon.net", "yahoo.com", "yahoo.co.uk",
-                    /* Other global domains */
-                    "email.com", "games.com" /* AOL */ , "gmx.net", "hush.com", "hushmail.com", "icloud.com", "inbox.com", "lavabit.com", "love.com" /* AOL */ , "outlook.com", "pobox.com", "rocketmail.com" /* Yahoo */ , "safe-mail.net", "wow.com" /* AOL */ , "ygm.com" /* AOL */ , "ymail.com" /* Yahoo */ , "zoho.com", "fastmail.fm", "yandex.com",
-                    /* United States ISP domains */
-                    "bellsouth.net", "charter.net", "comcast.net", "cox.net", "earthlink.net", "juno.com", /* British ISP domains */ "btinternet.com", "virginmedia.com", "blueyonder.co.uk", "freeserve.co.uk", "live.co.uk", "ntlworld.com", "o2.co.uk", "orange.net", "sky.com", "talktalk.co.uk", "tiscali.co.uk", "virgin.net", "wanadoo.co.uk", "bt.com",
-                    /* Domains used in Asia */
-                    "sina.com", "qq.com", "daum.net", "nate.com", "yahoo.co.kr", "yahoo.co.id", "yahoo.co.in", "yahoo.com.sg", "yahoo.com.ph", /* French ISP domains */ "hotmail.fr", "live.fr", "laposte.net", "yahoo.fr", "wanadoo.fr", "orange.fr", "gmx.fr", "sfr.fr", "neuf.fr", "free.fr",
-                    /* German ISP domains */
-                    "gmx.de", "hotmail.de", "live.de", "online.de", "t-online.de" /* T-Mobile */ , "web.de", "yahoo.de", /* Russian ISP domains */ "mail.ru", "rambler.ru", "yandex.ru", "ya.ru", "list.ru", /* Belgian ISP domains */ "hotmail.be", "live.be", "skynet.be", "voo.be", "tvcablenet.be", "telenet.be", /* Argentinian ISP domains */ "hotmail.com.ar", "live.com.ar", "yahoo.com.ar", "fibertel.com.ar", "speedy.com.ar", "arnet.com.ar",
-                    /* Domains used in Mexico */
-                    "yahoo.com.mx", "live.com.mx", "yahoo.com", "hotmail.es", "hotmail.com.mx", "prodigy.net.mx"
-                ];
-
-                console.log(stored_continent);
-                if (stored_continent == "AS" || stored_continent == "OC") {
-                    // Allow these domains for Asia only
-                    allowed_domains = ["hotmail.com", "gmail.com", "outlook.com", "yahoo.com", "live.com", "msn.com"];
-
-                    for (var i = 0; i < allowed_domains.length; i++) {
-                        invalid_email_domains.splice(jQuery.inArray(allowed_domains[i], invalid_email_domains), 1);
-                    }
-
-                    console.log(invalid_email_domains);
-                }
-
-                if (invalid_email_domains.indexOf(email_domain) > -1 && allow_all_email_domains == false) {
-                    this_form.submittable(false);
-                    var emailElem = this_form.getFormElem().find("#Email");
-                    this_form.showErrorMessage("Must be a businesss email address.", emailElem);
-
-                    setTimeout(function() {
-                        this_form.submittable(true);
-                    }, 1000);
-                }
-
-            });
-
-            m_form.onSuccess(function() {
-
-                //Google Code for Whitepaper Download Conversion Page
-
-                try {
-                    window.google_trackConversion({
-                        google_conversion_id: 1008696500,
-                        google_conversion_language: "en",
-                        google_conversion_format: "1",
-                        google_conversion_color: "ffffff",
-                        google_conversion_label: "VIjgCOfdqFkQtPn94AM",
-                        google_remarketing_only: false
-                    });
-                } catch (e) {}
-                //
-
-                try {
-                    window.dataLayer = window.dataLayer || [];
-                    window.dataLayer.push({
-                        'event': 'marketoSuccessfulSubmit',
-                        'formId': 'marketo_embed_form'
-                    });
-                } catch (e) {}
-
-                var img = document.createElement("img");
-                img.src = "https://insight.adsrvr.org/track/conv/?adv=3td7qc5&ct=0:5osifub&fmt=3";
-                img.height = 1;
-                img.width = 1;
-                img.style = "border-style:none;";
-
-                var src = document.getElementById("header");
-                src.appendChild(img);
-
-                _linkedin_partner_id = "14745";
-                window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-                window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-
-                (function() {
-                    var s = document.getElementsByTagName("script")[0];
-                    var b = document.createElement("script");
-                    b.type = "text/javascript";
-                    b.async = true;
-                    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-                    s.parentNode.insertBefore(b, s);
-                })();
-
-                var redirect_url = "";
-
-                if (redirect_url.length > 0) {
-                    setTimeout(function() {
-                        window.location.href = redirect_url;
-                    }, 1000);
-                } else {
-                    page_header = document.getElementById("page-title");
-
-                    if (page_header) {
-                        page_header.textContent = "THANK YOU!";
-                    }
-
-                    page_tag_text = document.getElementById("bannerText");
-
-                    if (page_tag_text) {
-                        page_tag_text.textContent = "";
-                    }
-
-                    var init_display = document.getElementById('init-display');
-                    var thank_you_text = document.getElementById('thank-you-text');
-
-                    if (init_display) {
-                        init_display.style.display = 'none';
-                    }
-
-                    if (thank_you_text) {
-                        thank_you_text.style.display = 'block';
-                    }
-
-                    box_flex = document.getElementById('box_flex_container');
-
-                    if (box_flex) {
-                        box_flex.style.display = 'none';
-                    }
-
-                    marketo_wrapper = document.getElementById('marketo-wrapper');
-
-                    if (marketo_wrapper) {
-                        marketo_wrapper.style.display = 'none';
-                    }
-
-                    window.scrollTo(0, 0);
-
-                }
-
-                return false;
-            });
-        });
-
-        function getCookie(name) {
-            var value = "; " + document.cookie;
-            var parts = value.split("; " + name + "=");
-            if (parts.length == 2) return parts.pop().split(";").shift();
-        }
-
-        function readCookie(name) {
-            var nameEQ = name + "=";
-            var ca = document.cookie.split(';');
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-            }
-            return null;
-        }
-
-        function _defineProperty(obj, key, value) {
-            if (key in obj) {
-                Object.defineProperty(obj, key, {
-                    value: value,
-                    enumerable: true,
-                    configurable: true,
-                    writable: true
-                });
-            } else {
-                obj[key] = value;
-            }
-            return obj;
-        }
-    </script>
-    <div id="wonderpluginlightbox_options" data-skinsfoldername="skins/default/" data-jsfolder="https://www.zerto.com/wp-content/plugins/wonderplugin-lightbox/engine/" data-responsive="true" data-autoplay="true" data-html5player="true" data-overlaybgcolor="#000" data-overlayopacity="0.8" data-defaultvideovolume="1" data-bgcolor="#FFF" data-borderradius="0" data-thumbwidth="96" data-thumbheight="72" data-thumbtopmargin="12" data-thumbbottommargin="12" data-barheight="48" data-showtitle="true" data-titlebottomcss="{color:#333; font-size:14px; font-family:Armata,sans-serif,Arial; overflow:hidden; text-align:left;}" data-showdescription="true" data-descriptionbottomcss="{color:#333; font-size:12px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left; margin:4px 0px 0px; padding: 0px;}" style="display:none;"></div>
-    <div class="wonderplugin-engine"><a href="http://www.wonderplugin.com/wordpress-lightbox/" title="WordPress Lightbox Plugin">WordPress Lightbox Plugin</a></div>
-    <link rel='stylesheet' id='animate-css-css' href='//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css?ver=4.9.8' type='text/css' media='all' />
-    <script type='text/javascript'>
-        var alm_localize = {
-            "ajaxurl": "https:\/\/www.zerto.com\/wp-admin\/admin-ajax.php",
-            "alm_nonce": "d0af0ab48e",
-            "pluginurl": "https:\/\/www.zerto.com\/wp-content\/plugins\/ajax-load-more",
-            "scrolltop": "true",
-            "ajax_object": {
-                "is_single": true,
-                "is_singular": true
-            }
-        };
-    </script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/ajax-load-more/core/dist/js/ajax-load-more.min.js?ver=3.2.0'></script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/ajax-load-more-seo/js/alm-seo.js?ver=1.0'></script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/wonderplugin-lightbox/engine/wonderpluginlightbox.js?ver=2.7'></script>
-    <script type='text/javascript'>
-        var wpmm_object = {
-            "ajax_url": "https:\/\/www.zerto.com\/wp-admin\/admin-ajax.php",
-            "wpmm_responsive_breakpoint": "640px",
-            "wpmm_disable_mobile": "false"
-        };
-    </script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/plugins/wp-megamenu/assets/js/wpmm.js?ver=1.1.7'></script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/themes/foundation/js/foundation.min.js'></script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/themes/foundation/js/plugins/jquery.simpleselect.min_.js'></script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/themes/foundation/js/plugins/respond.js'></script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/themes/foundation/js/plugins/slick.min.js'></script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/themes/foundation/js/foundation.magellan.js'></script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/themes/foundation/js/plugins/jquery.mixitup.js'></script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/themes/foundation/js/global.js'></script>
-    <script type='text/javascript' src='https://use.fontawesome.com/f4026424d0.js'></script>
-    <script type='text/javascript' src='https://zerto-com.azureedge.net/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
-    <script type='text/javascript' src='https://zerto-com.azureedge.net/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4'></script>
-    <script type='text/javascript'>
-        jQuery(document).ready(function(jQuery) {
-            jQuery.datepicker.setDefaults({
-                "closeText": "Close",
-                "currentText": "Today",
-                "monthNames": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-                "monthNamesShort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-                "nextText": "Next",
-                "prevText": "Previous",
-                "dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-                "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-                "dayNamesMin": ["S", "M", "T", "W", "T", "F", "S"],
-                "dateFormat": "MM d, yy",
-                "firstDay": 1,
-                "isRTL": false
-            });
-        });
-    </script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/themes/foundation/js/plugins/jquery.modal.min.js'></script>
-    <script type='text/javascript' src='https://cdn.evgnet.com/beacon/zerto/engage/scripts/evergage.min.js'></script>
-    <script type='text/javascript'>
-        var lc_vars = {
-            "ajaxurl": "https:\/\/www.zerto.com\/wp-admin\/admin-ajax.php"
-        };
-    </script>
-    <script type='text/javascript' src='https://www.zerto.com/wp-content/themes/foundation/js/plugins/livechat.js?ver=2.0'></script>
-    <script type='text/javascript' src='https://zerto-com.azureedge.net/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
-    <script type='text/javascript' src='//code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
-    <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js'></script>
-    <script>
-        ! function($) {
-            $(document).foundation();
-        }(window.jQuery);
-    </script>
-    <script>
-        function createCookie(name, value, days) {
-            var expires = "";
-            if (days) {
-                var date = new Date();
-                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                expires = "; expires=" + date.toUTCString();
-            }
-
-            document.cookie = name + "=" + value + expires + "; path=/";
-        }
-
-        function readCookie(name) {
-            var nameEQ = name + "=";
-            var ca = document.cookie.split(';');
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-            }
-            return null;
-        }
-    </script>
-    <footer>
-        <div class="row">
-            <div class="large-8 medium-8 small-12 columns">
-                <div class="row footer-menu">
-                    <div class="large-4 medium-4 small-6 columns">
-                        <aside id="nav_menu-24" class="widget widget_nav_menu">
-                            <div class="menu-footer-column-1-container">
-                                <ul id="menu-footer-column-1" class="menu">
-                                    <li id="menu-item-19276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19276"><a href="https://www.zerto.com/products/">Products</a>
-                                        <ul class="sub-menu">
-                                            <li id="menu-item-19277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19277"><a href="https://www.zerto.com/products/on-premises-disaster-recovery/">On-Premises Disaster Recovery</a></li>
-                                            <li id="menu-item-19278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19278"><a href="https://www.zerto.com/products/disaster-recovery-to-the-cloud/">Disaster Recovery to the Cloud</a></li>
-                                        </ul>
-                                    </li>
-                                    <li id="menu-item-19279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19279"><a href="https://www.zerto.com/solutions/">Solutions</a>
-                                        <ul class="sub-menu">
-                                            <li id="menu-item-19280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19280"><a href="https://www.zerto.com/solutions/application/">Application</a></li>
-                                            <li id="menu-item-19281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19281"><a href="https://www.zerto.com/solutions/industry/">Industry</a></li>
-                                            <li id="menu-item-19282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19282"><a href="https://www.zerto.com/solutions/infrastructure/">Infrastructure</a></li>
-                                            <li id="menu-item-19283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19283"><a href="https://www.zerto.com/solutions/use-cases/">Use Cases</a></li>
-                                        </ul>
-                                    </li>
-                                    <li id="menu-item-19284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19284"><a href="https://www.zerto.com/disaster-recovery-resources/">Resources</a>
-                                        <ul class="sub-menu">
-                                            <li id="menu-item-19285" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19285"><a href="https://www.zerto.com/the-bald-truth/">The Bald Truth</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </aside>
-                    </div>
-                    <div class="large-4 medium-4 small-6 columns">
-                        <aside id="nav_menu-19" class="widget widget_nav_menu">
-                            <div class="menu-footer-column-2-container">
-                                <ul id="menu-footer-column-2" class="menu">
-                                    <li id="menu-item-19286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19286"><a href="https://www.zerto.com/partners/">Partners</a>
-                                        <ul class="sub-menu">
-                                            <li id="menu-item-19287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19287"><a href="https://www.zerto.com/partners/become-a-partner/">Become a Partner</a></li>
-                                            <li id="menu-item-19288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19288"><a href="https://www.zerto.com/partners/find-a-partner/">Find a Partner</a></li>
-                                            <li id="menu-item-19289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19289"><a href="http://zap.zerto.com/wp-login.php">Partner Login</a></li>
-                                            <li id="menu-item-19290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19290"><a href="https://www.zerto.com/partners/request-login/">Request Login</a></li>
-                                        </ul>
-                                    </li>
-                                    <li id="menu-item-19291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19291"><a href="https://www.zerto.com/company/">Company</a>
-                                        <ul class="sub-menu">
-                                            <li id="menu-item-19293" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19293"><a href="https://www.zerto.com/about/">About Zerto</a></li>
-                                            <li id="menu-item-19294" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19294"><a href="https://www.zerto.com/about/customers/">Customers</a></li>
-                                            <li id="menu-item-19295" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19295"><a href="https://www.zerto.com/about/management-team/">Management Team</a></li>
-                                            <li id="menu-item-19296" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19296"><a href="https://www.zerto.com/about/board-members/">Board Members</a></li>
-                                            <li id="menu-item-19297" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19297"><a href="https://www.zerto.com/about/investors/">Investors</a></li>
-                                            <li id="menu-item-19298" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19298"><a href="https://www.zerto.com/about/awards/">Awards</a></li>
-                                            <li id="menu-item-19299" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19299"><a href="https://www.zerto.com/careers/">Careers</a></li>
-                                            <li id="menu-item-19300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19300"><a href="https://www.zerto.com/zerto-in-the-news/">In the News</a></li>
-                                            <li id="menu-item-19301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19301"><a href="https://www.zerto.com/zerto-at-industry-events/">Industry Events</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </aside>
-                    </div>
-                    <div class="large-4 medium-4 small-12 columns">
-                        <aside id="nav_menu-21" class="widget widget_nav_menu">
-                            <div class="menu-footer-column-3-container">
-                                <ul id="menu-footer-column-3" class="menu">
-                                    <li id="menu-item-19303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19303"><a href="https://www.zerto.com/professional-services/">Support and Services</a>
-                                        <ul class="sub-menu">
-                                            <li id="menu-item-19306" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19306"><a href="https://www.zerto.com/support/">Overview</a></li>
-                                            <li id="menu-item-19307" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19307"><a href="/myzerto/">MyZerto</a></li>
-                                            <li id="menu-item-19308" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19308"><a href="/myzerto/support/">Portal Login</a></li>
-                                        </ul>
-                                    </li>
-                                    <li id="menu-item-19309" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19309"><a href="https://www.zerto.com/blog/">Blog</a></li>
-                                    <li id="menu-item-19310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19310"><a href="https://www.zerto.com/the-dr-crowd/">The DR Crowd</a></li>
-                                    <li id="menu-item-19311" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19311"><a href="https://www.zerto.com/zerto-mobile/">Zerto Mobile</a></li>
-                                    <li id="menu-item-19312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19312"><a href="https://www.zerto.com/cio-corner/">The CIO Corner</a></li>
-                                </ul>
-                            </div>
-                        </aside>
-                    </div>
-                </div>
-            </div>
-            <div class="large-4 medium-4 small-12 columns">
-                <div class="footer-sidebar">
-                    <div class="search-box"> <i class="fa fa-search"> <span> Search </span> </i>
-                        <form method="get" id="searchform" action="https://www.zerto.com/">
-                            <div class="row collapse">
-                                <div class="small-12 columns">
-                                    <input type="text" name="s" id="s" placeholder="Search" />
-                                    <button class="btn-submit" type="submit" name="submit" id="searchsubmit"></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="social-icons text-right">
-                        <div class="soc-networks">
-                            <a class="soc-network-item" href="https://www.linkedin.com/company/zerto" target="_blank"> <i class="fa fa-linkedin"></i> </a>
-                            <a class="soc-network-item" href="https://twitter.com/Zerto" target="_blank"> <i class="fa fa-twitter"></i> </a>
-                            <a class="soc-network-item" href="https://www.facebook.com/ZertoCorp" target="_blank"> <i class="fa fa-facebook"></i> </a>
-                            <a class="soc-network-item" href="https://www.youtube.com/user/ZeRTOcorp" target="_blank"> <i class="fa fa-youtube"></i> </a>
-                            <a class="soc-network-item" href="https://plus.google.com/+Zerto/about" target="_blank"> <i class="fa fa-google-plus"></i> </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row row-bottom">
-            <div class="large-6 medium-6 small-12 columns">
-                <div class="footer-menu-line">
-                    <div class="row">
-                        <div class="large-12 columns text-left"> <span> Copyright &copy; 2010-2018</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="large-5 medium-5 small-12 columns small-menu">
-                <div class="menu-footer-small-menu-container">
-                    <ul id="menu-footer-small-menu" class="menu">
-                        <li id="menu-item-19268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19268"><a href="https://www.zerto.com/privacy-policy/">Privacy Policy</a></li>
-                        <li id="menu-item-20618" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20618"><a href="https://www.zerto.com/cookie-policy/">Cookie Policy</a></li>
-                        <li id="menu-item-19269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19269"><a href="https://www.zerto.com/terms-of-use/">Terms of Use</a></li>
+            <a href="#" class="nav-opener"><span>Menu</span></a>
+            <div class="nav-drop">
+              <nav id="nav">
+                <ul id="main-menu" class="main-menu list-unstyled"><li id="menu-item-175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-175"><a href="https://www.netskope.com/why-netskope">Why Netskope</a>
+                <div class="sub-menu"><div class="sub-menu-wrap">
+                  <div class="sub-menu-column menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12 sub-menu-title col-2"><strong id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12 sub-menu-title">Why Netskope</strong>
+                    <ul class="list-unstyled ">
+                      <li id="menu-item-720" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-720"><a href="https://www.netskope.com/why-netskope">Overview</a></li>
+                      <li id="menu-item-10057" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10057"><a href="https://www.netskope.com/platform/timeline">Innovation Timeline</a></li>
                     </ul>
+                  </div>
+                  <div class="sub-menu-column menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11666 sub-menu-title col-2"><strong id="menu-item-11666" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11666 sub-menu-title">Netskope Difference</strong>
+                    <ul class="list-unstyled ">
+                      <li id="menu-item-11488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11488"><a href="https://www.netskope.com/why-netskope/eliminate-blind-spots">Eliminate blind spots</a></li>
+                      <li id="menu-item-11491" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11491"><a href="https://www.netskope.com/why-netskope/guard-data-everywhere">Guard data everywhere</a></li>
+                      <li id="menu-item-11493" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11493"><a href="https://www.netskope.com/why-netskope/stop-elusive-attacks">Stop elusive attacks</a></li>
+                      <li id="menu-item-11496" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11496"><a href="https://www.netskope.com/why-netskope/full-control-one-cloud">Full control, one cloud</a></li>
+                    </ul>
+                  </div>
+                  <div class="sub-menu-column menu-item menu-item-type-gs_sim menu-item-object-gs_sim menu-item-11880 col-2"><div class="banner banner-large"><a href="/cloud-security-maturity-model"><img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2018/08/Netskope-main-nav-2.png"></a></div></div>
+                </div></div>
+              </li>
+              <li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-153"><a href="https://www.netskope.com/platform">Platform</a>
+              <div class="sub-menu"><div class="sub-menu-wrap">
+                <div class="sub-menu-column menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-25 sub-menu-title col-2"><strong id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-25 sub-menu-title">Netskope Security Cloud</strong>
+                  <ul class="list-unstyled ">
+                    <li id="menu-item-721" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-721"><a href="https://www.netskope.com/platform">Overview</a></li>
+                    <li id="menu-item-9442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9442"><a href="https://www.netskope.com/platform/timeline">Innovation Timeline</a></li>
+                  </ul>
                 </div>
-            </div>
-            <div class="large-1 medium-1 small-12 columns"></div>
-        </div>
-    </footer>
-    <a href="#chat-chooser" id='chat-init'> <img alt="Chat with Zerto Now!" src="https://www.zerto.com/wp-content/themes/foundation/images/chat_with_us_red.png"> </a>
-    <div id="chat-chooser">
-        <div class='chat-loading'> <i class='fa fa-spin fa-spinner fa-5x'></i></div>
-        <div class='chat-text'>
-            <h1>How Can We Help?</h1>
-            <div class='row'>
-                <div id='sales-chat-init' class='chat-holder columns large-4 medium-4 small-12'> <img src="https://www.zerto.com/wp-content/themes/foundation/images/bullseye.png">
-                    <h4>I'm Interested in Learning More About Zerto</h4> <small> If you’d like to learn more about Zerto, whether you’re looking for product information, are looking to purchase Zerto, or just have questions about how the software works – We’re here to  help! </small>
-                    <a id="sales_chat_starter" class='chat-starter lc-support-btn' data-group-type="Sales"> </a>
+                <div class="sub-menu-column menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-26 sub-menu-title col-2"><strong id="menu-item-26" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-26 sub-menu-title">Capabilities</strong>
+                  <ul class="list-unstyled ">
+                    <li id="menu-item-437" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-437"><a href="https://www.netskope.com/platform/access-control">Access Control</a></li>
+                    <li id="menu-item-474" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-474"><a href="https://www.netskope.com/platform/machine-learning-anomaly-detection">Anomaly Detection</a></li>
+                    <li id="menu-item-458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458"><a href="https://www.netskope.com/platform/flexible-deployment-options">Deployment Flexibility</a></li>
+                    <li id="menu-item-461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-461"><a href="https://www.netskope.com/platform/discovery">Discovery</a></li>
+                    <li id="menu-item-468" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-468"><a href="https://www.netskope.com/platform/dlp">DLP</a></li>
+                    <li id="menu-item-470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-470"><a href="https://www.netskope.com/platform/encryption">Encryption</a></li>
+                    <li id="menu-item-472" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-472"><a href="https://www.netskope.com/platform/incident-management">Incident Management</a></li>
+                    <li id="menu-item-703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-703"><a href="https://www.netskope.com/platform/technology-integrations">Technology Integrations</a></li>
+                    <li id="menu-item-476" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-476"><a href="https://www.netskope.com/platform/threat-protection">Threat Protection</a></li>
+                    <li id="menu-item-12523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12523"><a href="https://www.netskope.com/solutions/shadow-it">Unsanctioned/Shadow IT</a></li>
+                  </ul>
                 </div>
-                <div id="support-chat-init" class='chat-holder columns large-4 medium-4 small-12'> <img src="https://www.zerto.com/wp-content/themes/foundation/images/headset.png">
-                    <h4>I'm a Current Zerto Customer with a Support Request</h4> <small> At Zerto, we have a round-the-clock support team and many helpful resources available to you. Head to <a href="/myzerto">MyZerto</a> for forums, technical documentation, and a robust knowledge base. If you need support, Click the link below to get started. </small> <a class='lc-support-btn' href="/myzerto/support/">Begin a Support Request</a></div>
-                <div id="partners-chat-init" class='chat-holder columns large-4 medium-4 small-12'> <img src="https://www.zerto.com/wp-content/themes/foundation/images/users_crosshair.png">
-                    <h4>I am, or Hope to be, a Zerto Partner</h4> <small> Whether you’re looking to become a new Zerto partner, or have questions around your existing partnership or the ZAP Program in general, we’re here to answer your questions! </small> <a class='chat-starter lc-support-btn' data-group-type="Partner" data-group-id="7"> Chat Now </a></div>
+                <div class="sub-menu-column menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27 sub-menu-title col-2"><strong id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27 sub-menu-title">Netskope for SaaS</strong>
+                  <ul class="list-unstyled ">
+                    <li id="menu-item-478" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-478"><a href="https://www.netskope.com/platform/netskope-for-box">Box</a></li>
+                    <li id="menu-item-495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-495"><a href="https://www.netskope.com/platform/netskope-for-dropbox">Dropbox</a></li>
+                    <li id="menu-item-497" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-497"><a href="https://www.netskope.com/platform/netskope-for-egnyte">Egnyte</a></li>
+                    <li id="menu-item-499" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-499"><a href="https://www.netskope.com/platform/netskope-for-google-g-suite">G Suite</a></li>
+                    <li id="menu-item-501" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-501"><a href="https://www.netskope.com/platform/netskope-for-jive">Jive</a></li>
+                    <li id="menu-item-447" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-447"><a href="https://www.netskope.com/platform/netskope-for-office-365">Office 365</a></li>
+                    <li id="menu-item-503" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-503"><a href="https://www.netskope.com/platform/netskope-for-salesforce">Salesforce</a></li>
+                    <li id="menu-item-505" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-505"><a href="https://www.netskope.com/platform/netskope-for-servicenow">ServiceNow</a></li>
+                    <li id="menu-item-507" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-507"><a href="https://www.netskope.com/platform/netskope-for-slack">Slack</a></li>
+                    <li id="menu-item-10519" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10519"><a href="https://www.netskope.com/platform/netskope-for-facebook-workplace">Workplace by Facebook</a></li>
+                    <li id="menu-item-511" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-511"><a href="https://www.netskope.com/platform/netskope-for-sanctioned-it">Any Sanctioned App</a></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-column menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28 sub-menu-title col-2"><strong id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28 sub-menu-title">Netskope for IaaS/PaaS</strong>
+                  <ul class="list-unstyled ">
+                    <li id="menu-item-513" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-513"><a href="https://www.netskope.com/platform/netskope-for-aws">Amazon Web Services (AWS)</a></li>
+                    <li id="menu-item-515" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-515"><a href="https://www.netskope.com/platform/google-cloud-platform">Google Cloud Platform</a></li>
+                    <li id="menu-item-517" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-517"><a href="https://www.netskope.com/platform/microsoft-azure">Microsoft Azure</a></li>
+                    <li id="menu-item-11668" class="menu-item menu-item-type-gs_sim menu-item-object-gs_sim menu-item-11668"><strong class="sub-menu-title" style="padding-top: 25px; margin-bottom: 15px;">Netskope for Web</strong>
+                      <ul class="list-unstyled ">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-515"><a href="http://www.netskope.com/platform/netskope-for-web/">Web Security</a></li>
+                      </ul></li>
+                    </ul>
+                  </div>
+                </div></div>
+              </li>
+              <li id="menu-item-170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-170"><a href="https://www.netskope.com/solutions">Solutions</a>
+              <div class="sub-menu"><div class="sub-menu-wrap">
+                <div class="sub-menu-column two-columns menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-55 sub-menu-title col-6"><strong id="menu-item-55" class="two-columns menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-55 sub-menu-title">Challenge</strong>
+                  <ul class="list-unstyled two-columns">
+                    <li id="menu-item-723" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-723"><a href="https://www.netskope.com/solutions">Overview</a></li>
+                    <li id="menu-item-463" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-463"><a href="https://www.netskope.com/solutions/data-loss-prevention">Data Loss Prevention</a></li>
+                    <li id="menu-item-699" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-699"><a href="https://www.netskope.com/solutions/insider-threats">Insider Threats</a></li>
+                    <li id="menu-item-700" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-700"><a href="https://www.netskope.com/solutions/cloud-malware-and-ransomware">Malware and Ransomware</a></li>
+                    <li id="menu-item-698" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-698"><a href="https://www.netskope.com/solutions/cloud-storage-security">Cloud Storage Security</a></li>
+                    <li id="menu-item-727" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-727"><a href="https://www.netskope.com/solutions/cloud-encryption">Cloud Encryption</a></li>
+                    <li id="menu-item-726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-726"><a href="https://www.netskope.com/solutions/common-cloud-blind-spots">Common Cloud Blind Spots</a></li>
+                    <li id="menu-item-725" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-725"><a href="https://www.netskope.com/solutions/shadow-it">Shadow IT</a></li>
+                    <li id="menu-item-724" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-724"><a href="https://www.netskope.com/solutions/cloud-service-ecosystems">Cloud Service Ecosystems</a></li>
+                    <li id="menu-item-732" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-732"><a href="https://www.netskope.com/solutions/govern-external-access">External Access Governance</a></li>
+                    <li id="menu-item-731" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-731"><a href="https://www.netskope.com/solutions/governance-risk-compliance-grc">GRC</a></li>
+                    <li id="menu-item-730" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-730"><a href="https://www.netskope.com/solutions/vendor-assurance">Vendor Assurance</a></li>
+                    <li id="menu-item-729" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-729"><a href="https://www.netskope.com/solutions/eliminate-redundancy">Redundancy Elimination</a></li>
+                    <li id="menu-item-728" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-728"><a href="https://www.netskope.com/solutions/frictionless-casb-deployment">Agent-less Deployments</a></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-column menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-70 sub-menu-title col-2"><strong id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-70 sub-menu-title">Industry</strong>
+                  <ul class="list-unstyled ">
+                    <li id="menu-item-466" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-466"><a href="https://www.netskope.com/solutions/automotive-manufacturing">Automotive and Manufacturing</a></li>
+                    <li id="menu-item-1106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1106"><a href="https://www.netskope.com/solutions/financial-services-and-insurance">Financial Services and Insurance</a></li>
+                    <li id="menu-item-12675" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12675"><a href="https://www.netskope.com/solutions/federal-government">Government</a></li>
+                    <li id="menu-item-1101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1101"><a href="https://www.netskope.com/solutions/healthcare-and-life-sciences">Healthcare and Life Sciences</a></li>
+                    <li id="menu-item-1102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1102"><a href="https://www.netskope.com/solutions/legal">Legal</a></li>
+                    <li id="menu-item-1103" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1103"><a href="https://www.netskope.com/solutions/oil-and-gas">Oil and Gas</a></li>
+                    <li id="menu-item-1104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1104"><a href="https://www.netskope.com/solutions/retail-and-hospitality">Retail and Hospitality</a></li>
+                    <li id="menu-item-1105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1105"><a href="https://www.netskope.com/solutions/utilities">Utilities</a></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-column menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12748 sub-menu-title col-2"><strong id="menu-item-12748" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12748 sub-menu-title">Compliance</strong>
+                  <ul class="list-unstyled ">
+                    <li id="menu-item-12749" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12749"><a href="https://www.netskope.com/solutions/gdpr-cloud-compliance">GDPR</a></li>
+                    <li id="menu-item-12750" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12750"><a href="https://www.netskope.com/solutions/glba-cloud-compliance">GLBA</a></li>
+                    <li id="menu-item-12751" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12751"><a href="https://www.netskope.com/solutions/hipaa-cloud-compliance">HIPAA</a></li>
+                    <li id="menu-item-12752" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12752"><a href="https://www.netskope.com/solutions/pci-dss-cloud-compliance">PCI DSS</a></li>
+                  </ul>
+                </div>
+              </div></div>
+            </li>
+            <li id="menu-item-176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-176"><a href="https://www.netskope.com/customers">Customers</a>
+            <div class="sub-menu"><div class="sub-menu-wrap">
+              <div class="sub-menu-column menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-53 sub-menu-title col-2"><strong id="menu-item-53" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-53 sub-menu-title">Customers</strong>
+                <ul class="list-unstyled ">
+                  <li id="menu-item-54" class="customers-menu-custom menu-item menu-item-type-gs_sim menu-item-object-gs_sim menu-item-54"><span class="customers-text">Leading enterprises around the world trust Netskope for cloud security</span>
+                  <strong class="sub-menu-title" style="padding-top: 25px; margin-bottom: 15px;"><a href = "https://www.netskope.com/customers">Sample Customers</a></strong>
+                  <a href = "https://resources.netskope.com/case-studies">Case Studies</a>
+                  <a href = "https://resources.netskope.com/cloud-trailblazers">Cloud Trailblazer Videos</a></li>
+                </ul>
+              </div>
+              <div class="sub-menu-column three-columns menu-item menu-item-type-gs_sim menu-item-object-gs_sim menu-item-52 col-10"><ul class="customer-logos-list list-unstyled"><li><a><img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/City-of-San-Diego-Logo-260px.png" alt=""></a></li><li><a><img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/cleveland-clinic-logo-260px-1.png" alt=""></a></li><li><a><img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/12/IHG-logo-260px.png" alt=""></a></li><li><a><img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Levis-Logo-260px.png" alt=""></a></li><li><a><img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Yamaha-Logo-260px.png" alt=""></a></li><li><a><img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Nvidia-Logo-260px.png" alt=""></a></li><li><a><img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/stearns-logo-260px.png" alt=""></a></li><li><a><img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/Pandora-Logo-260px.png" alt=""></a></li></ul></div>
+            </div></div>
+          </li>
+          <li id="menu-item-1378" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1378"><a href="https://resources.netskope.com/h/">Resources</a>
+          <div class="sub-menu"><div class="sub-menu-wrap">
+            <div class="sub-menu-column two-columns menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-80 sub-menu-title col-6"><strong id="menu-item-80" class="two-columns menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-80 sub-menu-title">Cloud Security Resources</strong>
+              <ul class="list-unstyled two-columns">
+                <li id="menu-item-81" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-81"><a href="https://resources.netskope.com/h/">Overview</a></li>
+                <li id="menu-item-82" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82"><a href="https://www.netskope.com/blog">Blog</a></li>
+                <li id="menu-item-83" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83"><a href="https://resources.netskope.com/h/c/206993-case-studies">Case Studies</a></li>
+                <li id="menu-item-84" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-84"><a href="https://resources.netskope.com/h/c/151088-netskope-data-sheets">Data Sheets</a></li>
+                <li id="menu-item-85" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-85"><a href="https://resources.netskope.com/h/c/162842-cloud-security-demos-videos">Demos and Videos</a></li>
+                <li id="menu-item-8482" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8482"><a href="https://resources.netskope.com/h/c/159077-ebooks">eBooks</a></li>
+                <li id="menu-item-88" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88"><a href="https://resources.netskope.com/h/c/146775-cloud-security-events-conferences-expos">Events</a></li>
+                <li id="menu-item-8483" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8483"><a href="https://resources.netskope.com/h/c/162467-cloud-security-reports">Analyst Reports</a></li>
+                <li id="menu-item-87" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-87"><a href="https://resources.netskope.com/h/c/151109-cloud-reports">Cloud Reports</a></li>
+                <li id="menu-item-89" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-89"><a href="https://resources.netskope.com/h/c/151091-solution-briefs">Solution Briefs</a></li>
+                <li id="menu-item-86" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86"><a href="https://resources.netskope.com/h/c/146097-webinars-on-demand">Webinars</a></li>
+                <li id="menu-item-90" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90"><a href="https://resources.netskope.com/h/c/146838-cloud-security-solution-white-papers">White Papers</a></li>
+              </ul>
             </div>
+            <div class="sub-menu-column menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-91 sub-menu-title col-2"><strong id="menu-item-91" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-91 sub-menu-title">Research</strong>
+              <ul class="list-unstyled ">
+                <li id="menu-item-979" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-979"><a href="https://www.netskope.com/resources/netskope-cci-audit">Netskope Cloud Confidence Audit</a></li>
+                <li id="menu-item-93" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-93"><a href="https://resources.netskope.com/h/c/151109-cloud-reports">Netskope Cloud Report</a></li>
+                <li id="menu-item-292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-292"><a href="https://www.netskope.com/resources/netskope-threat-research-labs">Netskope Threat Research Labs</a></li>
+                <li id="menu-item-96" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96"><a href="https://resources.netskope.com/h/c/162467-cloud-security-reports">Third-party Research</a></li>
+              </ul>
+            </div>
+            <div class="sub-menu-column menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-97 sub-menu-title col-2"><strong id="menu-item-97" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-97 sub-menu-title">Netskope Learning Center</strong>
+              <ul class="list-unstyled ">
+                <li id="menu-item-540" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-540"><a href="https://www.netskope.com/company/about-casb">About CASB</a></li>
+              </ul>
+            </div>
+          </div></div>
+        </li>
+        <li id="menu-item-178" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-178"><a href="https://www.netskope.com/company">Company</a>
+        <div class="sub-menu"><div class="sub-menu-wrap">
+          <div class="sub-menu-column menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-102 sub-menu-title col-2"><strong id="menu-item-102" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-102 sub-menu-title">Company</strong>
+            <ul class="list-unstyled ">
+              <li id="menu-item-722" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-722"><a href="https://www.netskope.com/company">About Netskope</a></li>
+              <li id="menu-item-1262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1262"><a href="https://www.netskope.com/company/careers">Careers</a></li>
+              <li id="menu-item-291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-291"><a href="https://www.netskope.com/company/leadership-team">Leadership Team</a></li>
+              <li id="menu-item-8164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8164"><a href="https://www.netskope.com/company/press">Press Releases</a></li>
+              <li id="menu-item-7832" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7832"><a href="https://www.netskope.com/contact-us">Contact Us</a></li>
+              <li id="menu-item-453" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-453"><a href="https://www.netskope.com/company/security-assurance">Security and Assurance</a></li>
+              <li id="menu-item-7685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7685"><a href="https://www.netskope.com/company/affiliations-and-awards">Affiliations and Awards</a></li>
+            </ul>
+          </div>
+          <div class="sub-menu-column menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-109 sub-menu-title col-2"><strong id="menu-item-109" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-109 sub-menu-title">Partners</strong>
+            <ul class="list-unstyled ">
+              <li id="menu-item-824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-824"><a href="https://www.netskope.com/partner-program">Channel Partner Program</a></li>
+              <li id="menu-item-933" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-933"><a href="https://www.netskope.com/company/technology-partners">Technology Partners</a></li>
+            </ul>
+          </div>
+          <div class="sub-menu-column menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-117 sub-menu-title col-2"><strong id="menu-item-117" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-117 sub-menu-title">Customer Success</strong>
+            <ul class="list-unstyled ">
+              <li id="menu-item-294" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-294"><a href="https://www.netskope.com/company/customer-success">Overview</a></li>
+              <li id="menu-item-283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-283"><a href="https://www.netskope.com/company/support">Support</a></li>
+              <li id="menu-item-1400" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1400"><a href="https://www.netskope.com/company/training">Training</a></li>
+              <li id="menu-item-449" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-449"><a href="https://www.netskope.com/company/professional-services">Professional Services</a></li>
+            </ul>
+          </div>
+          <div class="sub-menu-column menu-item menu-item-type-gs_sim menu-item-object-gs_sim menu-item-7871 col-2"><div class="banner banner-large"><a href="/request-demo/"><img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Netskope-main-nav-1.png"></a></div>
         </div>
+      </div></div>
+    </li>
+  </ul>           </nav>
+  <div class = "header-panel">
+    <div class = "header-panel-holder">
+      <div id = "site-search" class = "header-link-wrap">
+        <a id = "site-search-link" href = "#" class = "header-link">
+          <span class = "glyphicon glyphicon-search"></span> <span class = "header-text">Search</span>
+        </a>
+        <form role = "search" method = "GET" id = "searchform" class = "hide" action = "https://www.netskope.com">
+          <input type = "text" name = "s" placeholder = "Search" />
+          <span class = "close-form">x</span>
+        </form>
+      </div>
+      <div class = "header-link-wrap support">
+        <a href = "https://support.netskope.com/hc/en-us" class = "header-link" target = "_blank">
+          <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/themes/netskope/images/support-icon.png" /><span class = "header-text">Support</span>
+        </a>
+      </div>
+      <div id = "site-language" class = "header-link-wrap">
+        <ul class = "nav">
+          <li class = "dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <span class = "glyphicon glyphicon-globe"></span> <span class = "header-text">Language</span>
+            </a>
+            <ul class = "dropdown-menu">
+              <li class="lang-item lang-item-181 lang-item-en lang-item-first current-lang"><a lang="en-US" hreflang="en-US" href="https://www.netskope.com/">English</a></li>
+              <li class="lang-item lang-item-188 lang-item-fr"><a lang="fr-FR" hreflang="fr-FR" href="https://www.netskope.com/fr/">Français</a></li>
+              <li class="lang-item lang-item-192 lang-item-jp"><a lang="ja" hreflang="ja" href="https://www.netskope.com/jp/">日本語</a></li>
+              <li class="lang-item lang-item-483 lang-item-es"><a lang="es-ES" hreflang="es-ES" href="https://www.netskope.com/es/">Español</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      
+      <a href="/cloud-risk-assessment/" class="btn btn-warning">Cloud Risk Assessment</a>             </div>
+      <div id = "header-panel-holder-responsive">
+        <ul>
+          <li class="lang-item lang-item-181 lang-item-en lang-item-first current-lang"><a lang="en-US" hreflang="en-US" href="https://www.netskope.com/">English</a></li>
+          <li class="lang-item lang-item-188 lang-item-fr"><a lang="fr-FR" hreflang="fr-FR" href="https://www.netskope.com/fr/">Français</a></li>
+          <li class="lang-item lang-item-192 lang-item-jp"><a lang="ja" hreflang="ja" href="https://www.netskope.com/jp/">日本語</a></li>
+          <li class="lang-item lang-item-483 lang-item-es"><a lang="es-ES" hreflang="es-ES" href="https://www.netskope.com/es/">Español</a></li>
+        </ul>
+      </div>
     </div>
-    <script>
-        page_uri = "https://www.zerto.com/";
-        partner_lc_group_id = "7";
-    </script>
-    <div id="wonderpluginlightbox_options" data-skinsfoldername="skins/default/" data-jsfolder="https://www.zerto.com/wp-content/plugins/wonderplugin-lightbox/engine/" data-responsive="true" data-autoplay="true" data-html5player="true" data-overlaybgcolor="#000" data-overlayopacity="0.8" data-defaultvideovolume="1" data-bgcolor="#FFF" data-borderradius="0" data-thumbwidth="96" data-thumbheight="72" data-thumbtopmargin="12" data-thumbbottommargin="12" data-barheight="48" data-showtitle="true" data-titlebottomcss="{color:#333; font-size:14px; font-family:Armata,sans-serif,Arial; overflow:hidden; text-align:left;}" data-showdescription="true" data-descriptionbottomcss="{color:#333; font-size:12px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left; margin:4px 0px 0px; padding: 0px;}" style="display:none;"></div>
-    <div class="wonderplugin-engine"><a href="http://www.wonderplugin.com/wordpress-lightbox/" title="WordPress Lightbox Plugin">WordPress Lightbox Plugin</a></div>
-    <script>
-        ! function($) {
-            $(document).foundation();
-        }(window.jQuery);
-    </script>
-</body>
+  </div>
+</div>
+</div>
+</header>
+<div id = "cookie-banner">
+<div class = "container">
+<img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/themes/netskope/images/exclamation.png" />
+<p>This website uses cookies for advertising and analytics purposes as described in our cookie policy. For more information and to set preferences, please <a href = "https://www.netskope.com/cookies-policy">click here</a>. By continuing to browse this website, you accept our use of cookies.</p>
+<span id = "cookie-banner-close">&times;</span>
+</div>
+</div>
 
+<div class = "visual  home-visual no-subnav" style = "background-image: url(https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2018/11/PLANES-10-22-v6.jpg);">
+
+<div class = "container">
+<div class = "jumbotron homepage align-left">
+  <h1>Gartner names Netskope a leader again</h1>
+  <p>Company positioned furthest overall for completeness of vision in Gartner Magic Quadrant for Cloud Access Security Brokers</p>
+  
+  <div class = "btn-holder">
+    
+    <a href="https://resources.netskope.com/cloud-security-reports/2018-gartner-magic-quadrant-for-casb" class="btn btn-warning">Read the report</a>
+    
+    
+  </div>
+</div>
+</div>
+
+
+<div class = "credibility-block credibility-homepage opacity-0">
+<div class = "container">
+  <div class = "row">
+    
+    <div class = "col-sm-4">
+      <h4>The most awarded CASB</h4>
+      <p>Highest ranked CASB in the Forbes Cloud 100, Network World Clear Choice Test winner, named CRN's Product of the Year</p>
+    </div>
+    
+    <div class = "col-sm-4">
+      <h4>Trusted by the biggest customers</h4>
+      <p>Three of the top five retailers, the largest hospital provider, the top auto manufacturer — all trust Netskope for cloud security</p>
+    </div>
+    
+    <div class = "col-sm-4">
+      <h4>Recognized by industry analysts</h4>
+      <p>Leading industry analysts like Doug Cahill from the Enterprise Strategy Group recommend evaluating Netskope for our product's breadth and depth</p>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+<div class="story-section">
+<div class="story-container">
+<div class="story-wrap">
+  <svg class="line" xmlns="http://www.w3.org/2000/svg">
+  <path d="" stroke-width="2" stroke="#ff8200" fill="transparent"></path>
+</svg>
+<div class="story-title">
+  <span class="story-symbol">
+    <img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/themes/netskope/images/symbol.png" alt="image description">
+  </span>
+  <h2 class = "text-center" style = "background: #fff;">It’s time for smart cloud security</h2>
+</div>
+<div class="step-1 steps">
+  <div class="steps-column-wrap">
+    <div class="graph-holder steps-column" style = "transition: transform 0.4s ease-in-out,
+      opacity 0.4s ease-in-out,
+      visibility 0.4s ease-in-out;">
+    <img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/img-step01-new.png" alt="" />         </div>
+    <div class="story-content steps-column" style = "transition: transform 0.4s ease-in-out,
+      opacity 0.4s ease-in-out,
+      visibility 0.4s ease-in-out;">
+      <h5>People don’t work the way they used to.</h5>
+      <p>The way people work with information<br />
+      technology has changed.</p>
+    </div>
+  </div>
+</div>
+<div class="step-2 steps">
+  <div class="steps-column-wrap">
+    <div class="graph-holder steps-column" style = "transition: transform 0.4s ease-in-out,
+      opacity 0.4s ease-in-out,
+      visibility 0.4s ease-in-out;">
+    <img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/img-step02-new-1.png" alt="" />         </div>
+    <div class="story-content steps-column" style = "transition: transform 0.4s ease-in-out,
+      opacity 0.4s ease-in-out,
+      visibility 0.4s ease-in-out;">
+      <h5>Cloud and mobile have made it easier to work and collaborate.</h5>
+      <p>This is great for people and organizations.</p>
+    </div>
+  </div>
+</div>
+<div class="step-3 steps">
+  <div class="steps-column-wrap">
+    <div class="graph-holder steps-column" style = "transition: transform 0.4s ease-in-out,
+      opacity 0.4s ease-in-out,
+      visibility 0.4s ease-in-out;">
+    <img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/step3-1-1.png" alt="" />          </div>
+    <div class="story-content steps-column" style = "transition: transform 0.4s ease-in-out,
+      opacity 0.4s ease-in-out,
+      visibility 0.4s ease-in-out;">
+      <h5>But the cloud uses APIs and mobile devices to bypass the perimeter.</h5>
+      <p>These factors are having a profound impact on information security. </p>
+    </div>
+  </div>
+</div>
+<div class="step-4 steps">
+  <div class="steps-column-wrap">
+    <div class="graph-holder steps-column" style = "transition: transform 0.4s ease-in-out,
+      opacity 0.4s ease-in-out,
+      visibility 0.4s ease-in-out;">
+    <img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/img-step04-new-e1484272612525.png" alt="" />          </div>
+    <div class="story-content steps-column" style = "transition: transform 0.4s ease-in-out,
+      opacity 0.4s ease-in-out,
+      visibility 0.4s ease-in-out;">
+      <h5>Unfortunately, old security tools haven’t kept up.</h5>
+      <p>They don’t understand APIs and were programmed to “allow” or “block.”<br />
+      That doesn’t work with the cloud.</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="security-section">
+<div class="container">
+<div class="image-holder">
+<img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/Netskope-new-ui-homepage.png" alt="" />   </div>
+<h4 class="text-center">Netskope is the leader in cloud security.</h4>
+<div class="row">
+<div class="col-sm-12 text-center">
+  <p><span style="font-weight: 400;">We help the world’s largest organizations take advantage of cloud and web without sacrificing security. Our patented Cloud XD technology targets and controls activities across any cloud service or website and customers get 360-degree data and threat protection that works everywhere. We call this smart cloud security.</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="content-offer-section ">
+<div class="container">
+<div class="row">
+<div class="col-sm-4">
+  <div class="thumbnail">
+    <img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2018/11/homepage-tile-CTA-Gartner-MQ-2018.png" alt="" />                            <div class="caption">
+      <h3>Gartner Magic Quadrant for CASB</h3>
+      
+      
+      <div>
+        <a href="https://resources.netskope.com/cloud-security-reports/2018-gartner-magic-quadrant-for-casb" class="btn btn-warning">Read the report</a>                </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="thumbnail">
+      <img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2018/08/homepage-tile-get-to-know-netskope.png" alt="" />                           <div class="caption">
+        <h3>Get to know Netskope in 2 minutes</h3>
+        
+        
+        <div>
+          <a href="https://resources.netskope.com/company-videos/get-to-know-netskope-in-two-minutes" class="btn btn-warning">Watch the video</a>               </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/homepage-tile-CTA-allow-is-new-block-01.png" alt="" />                            <div class="caption">
+          <h3>Get the 10 Requirements</h3>
+          
+          
+          <div>
+            <a href="https://resources.netskope.com/cloud-security-solution-white-papers/allow-is-the-new-block-10-requirements-to-safely-say-yes-to-shadow-it" class="btn btn-warning">DOWNLOAD THE WHITEPAPER</a>               </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class = "customer-logos-section ">
+<div class = "container">
+  <h3 class = "text-center">Trusted by leading companies</h3>
+  <ul class = "customer-logos-list customer-logos-list-display list-unstyled" data-items = "#items" data-delay = "5000">
+    <li class = "changeable" data-logo-id = "741">
+    <img width="260" height="100" src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Apria-Healthcare-Logo-260px.png" class="attachment-full size-full" alt="" />     </li>
+    <li class = "" data-logo-id = "754">
+    <img width="260" height="100" src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Council-European-Union-Logo-260px.png" class="attachment-full size-full" alt="" />     </li>
+    <li class = "changeable" data-logo-id = "749">
+    <img width="260" height="100" src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/City-of-San-Diego-Logo-260px.png" class="attachment-full size-full" alt="" />      </li>
+    <li class = "" data-logo-id = "758">
+    <img width="260" height="100" src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Genomic-Health-Logo-260px.png" class="attachment-full size-full" alt="" />     </li>
+    <li class = "" data-logo-id = "820">
+    <img width="260" height="100" src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Juniper-Networks-Logo-260px.png" class="attachment-full size-full" alt="" />     </li>
+    <li class = "changeable" data-logo-id = "772">
+    <img width="260" height="100" src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Levis-Logo-260px.png" class="attachment-full size-full" alt="" />      </li>
+    <li class = "" data-logo-id = "780">
+    <img width="260" height="100" src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/New-York-Life-NYL-Logo-260px.png" class="attachment-full size-full" alt="" />      </li>
+    <li class = "changeable" data-logo-id = "812">
+    <img width="260" height="100" src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Yamaha-Logo-260px.png" class="attachment-full size-full" alt="" />     </li>
+  </ul>
+  
+  <ul id = "items" style = "display: none;">
+    <li data-logo-id = "749">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/City-of-San-Diego-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "12525">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/cleveland-clinic-logo-260px-1.png " />
+    </li>
+    <li data-logo-id = "10514">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/12/IHG-logo-260px.png " />
+    </li>
+    <li data-logo-id = "772">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Levis-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "812">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Yamaha-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "783">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Nvidia-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "12526">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/stearns-logo-260px.png " />
+    </li>
+    <li data-logo-id = "10256">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/Pandora-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "739">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Allen-Company-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "741">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Apria-Healthcare-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "742">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Ashland-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "827">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Aspen-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "745">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Boston-Scientific-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "746">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Castlight-Health-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "750">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Clicktale-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "752">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Connecticut-Water-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "755">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Creuna-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "825">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Edwards-Lifesciences-logo-260px.png " />
+    </li>
+    <li data-logo-id = "759">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Gilead-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "760">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Hawaiian-Electric-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "763">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Human-Longevity-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "764">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/ICAP-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "767">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/iRobot-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "809">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/John-Hopkins-Medicine-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "770">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/K2-Intelligence-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "774">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/LightStream-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "778">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Natixis-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "777">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/National-Hockey-League-NHL-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "781">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Noble-Group-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "782">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Nuna-Health-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "810">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Oakhill-Advisors-logo-260px.png " />
+    </li>
+    <li data-logo-id = "785">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Oiko-Credit-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "786">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/One-Gas-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "790">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Radpoint-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "788">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Pearson-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "792">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Ross-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "10253">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/Rocky-Mountain-Health-Plans-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "793">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/San-Diego-Blood-Bank-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "795">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Silicon-Valley-Bank-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "796">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/SolarWinds-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "797">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/St-Joseph-Health-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "808">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Rovi-TIVO-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "802">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Williams-Sonoma-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "803">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Woodsize-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "801">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Verisign-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "805">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Idaho-Department-Health-Welfare-Logo-260px-1.png " />
+    </li>
+    <li data-logo-id = "828">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Industrial-Light-Magic-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "807">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Sempra-USGP-260px.png " />
+    </li>
+    <li data-logo-id = "885">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Salt-River-Project-logo-260px.png " />
+    </li>
+    <li data-logo-id = "1194">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Betfair-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "737">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Accell-Group-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "10443">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/FutureAdvisor-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "10442">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/Manulife-Financial-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "10434">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/Airbnb-logo-260px.png " />
+    </li>
+    <li data-logo-id = "10441">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/Tripwire-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "10440">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/QVC-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "10439">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/Virtual-gaming-worlds-logo-260px.png " />
+    </li>
+    <li data-logo-id = "10438">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/The-AA-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "10437">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/BDO-logo-260px.png " />
+    </li>
+    <li data-logo-id = "10435">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/UCB-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "10436">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/GSMA-Logo-260px.png " />
+    </li>
+    <li data-logo-id = "13197">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/VA.png " />
+    </li>
+    <li data-logo-id = "13196">
+      <img src = "https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/HHS-ACL.png " />
+    </li>
+  </ul>
+</div>
+</div>
+<div class="video-quote-section">
+<div class="carousel">
+  <div class="mask">
+    <div class="slideset">
+      <div class="slide active" data-video='{"id":"6asY1B9qJL0","width":1280,"height": 720,"start": 50,"end": 65}'>
+        <div class="customer-quote-holder">
+          <p>“Using Netskope you can affect change and provide usability and transparency to the business.”</p>
+          <a href="#6asY1B9qJL0" class="btn-play"><i class="icon-play"></i></a>
+        </div>
+      </div>
+      <div class="slide " data-video='{"id":"Wzsp21A2VkM","width":1280,"height": 720,"start": 50,"end": 65}'>
+        <div class="customer-quote-holder">
+          <p>“Netskope helps us find out what users are doing, and put controls around those activities.”</p>
+          <a href="#Wzsp21A2VkM" class="btn-play"><i class="icon-play"></i></a>
+        </div>
+      </div>
+      <div class="slide " data-video='{"id":"2-X2dnjyjUU","width":1280,"height": 720,"start": 50,"end": 65}'>
+        <div class="customer-quote-holder">
+          <p>“I've been very impressed with Netskope. They have a very clear vision of what the future of cloud security looks like.”</p>
+          <a href="#2-X2dnjyjUU" class="btn-play"><i class="icon-play"></i></a>
+        </div>
+      </div>
+      <div class="slide " data-video='{"id":"4M8tmbBqzsY","width":1280,"height": 720,"start": 50,"end": 65}'>
+        <div class="customer-quote-holder">
+          <p>“People always ask me how we're dealing with cloud — I tell them we've got Netskope.”</p>
+          <a href="#4M8tmbBqzsY" class="btn-play"><i class="icon-play"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="btn-prev" href="#"><i class="icon-arrow-left"></i></a>
+  <a class="btn-next" href="#"><i class="icon-arrow-right"></i></a>
+  <div class="pagination">
+    <!-- pagination generated here -->
+  </div>
+</div>
+</div><div class="use-cases-section">
+<div class="container">
+<h2 class="text-center">Unique Capabilities</h2>
+<div class="row">
+  <div class="col-sm-2">
+    <div class="ico-holder">
+      <img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/NS_PNG-40-OR-Eliminate-blind-spots.png" alt="" />         <span>Eliminate Blind Spots</span>
+    </div>
+  </div>
+  <div class="col-sm-10">
+    <div class="text-holder">
+      <p class="p1"><span style="font-weight: 400;">Patented and built in the cloud, Netskope Cloud XD™ understands SaaS, IaaS, and web in extreme definition and performs big data analytics in real time. This eliminates the blind spots across thousands of SaaS and IaaS services, and millions of websites. </span></p>
+      <a href="/why-netskope/cloud-xd/" class="learn-more">Learn more</a>       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="ico-holder">
+        <img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/NS_PNG-40-OR-Guard-Data-Everywhere-.png" alt="" />          <span>Guard Data Everywhere</span>
+      </div>
+    </div>
+    <div class="col-sm-10">
+      <div class="text-holder">
+        <p class="p1"><span style="font-weight: 400;">Award-winning 360º data protection guards sensitive data everywhere through advanced cloud DLP and encryption across SaaS, IaaS, and web. Built in the cloud, Netskope works regardless of location or device and handles the direct-to-cloud and direct-to-web traffic that others miss.</span></p>
+        <a href="/why-netskope/360-data-protection/" class="learn-more">Learn more</a>        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="ico-holder">
+          <img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/40px-Ethical-wall-netskope.png" alt="" />         <span>Stop Elusive Attacks</span>
+        </div>
+      </div>
+      <div class="col-sm-10">
+        <div class="text-holder">
+          <p class="p1"><span style="font-weight: 400;">Only Netskope advanced threat protection stops elusive attacks across SaaS, IaaS, and web. Built in the cloud with real-time and deep detection engines, Netskope finds malware and ransomware that evade legacy tools when they traverse both cloud and web to inflict damage.</span></p>
+          <a href="/why-netskope/advanced-threat-protection/" class="learn-more">Learn more</a>       </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+          <div class="ico-holder">
+            <img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/40px-for-any-app-netskope.png" alt="" />          <span>Full Control, One Cloud</span>
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <div class="text-holder">
+            <p class="p1"><span style="font-weight: 400;">The industry’s only SaaS, IaaS, and web security platform built from the start in one cloud. Unlike other tools, Netskope eliminates policy conflict through standardized categories across SaaS, IaaS and web. Built in the cloud, Netskope scales automatically to meet your needs.</span></p>
+            <a href="/why-netskope/one-cloud-native-platform/" class="learn-more">Learn more</a>        </div>
+          </div>
+        </div>
+      </div>
+    </div><div class="bottom-section" style="background-image: url(https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/img-bottom-section.png);">
+    <div class="bottom-section-wrap">
+      <div class="bottom-section-holder">
+        <p>Want to see Netskope in action?</p>
+        <a href="/request-demo/" class="btn btn-warning" target="_blank">Request a Demo</a>   </div>
+      </div>
+      </div>    <!-- footer of the page -->
+      <footer id="footer">
+        <div class="container">
+          <div class="footer-primary">
+            <div class="row">
+              <div class="col-sm-4">
+                <a href="https://www.netskope.com" class="footer-logo">
+                <img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/logo.png" alt="" />             </a>
+              </div>
+              <div class="col-sm-4">
+                <h4>Explore</h4>
+                <ul id="main-menu" class="list-unstyled"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-175"><a href="https://www.netskope.com/why-netskope">Why Netskope</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-153"><a href="https://www.netskope.com/platform">Platform</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-170"><a href="https://www.netskope.com/solutions">Solutions</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-176"><a href="https://www.netskope.com/customers">Customers</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1378"><a href="https://resources.netskope.com/h/">Resources</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-178"><a href="https://www.netskope.com/company">Company</a></li>
+              </ul>           </div>
+              <div class="col-sm-4">
+                <h4>Get Social</h4>
+                <ul class="list-unstyled social-networks">
+                  <li><a href="https://www.linkedin.com/company/netskope"><i class="icon-linkedin"></i> LinkedIn</a></li>
+                  <li><a href="https://twitter.com/netskope"><i class="icon-twitter"></i> Twitter</a></li>
+                  <li><a href="https://www.facebook.com/netskope"><i class="icon-facebook"></i> Facebook</a></li>
+                  <li><a href="https://www.netskope.com/blog/"><i class="icon-rss"></i> Blog</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="copyright-section">
+            <ul class="list-unstyled">
+              <li><a href="tel:1-800-979-6988" target="_blank">1-800-979-6988</a></li>
+              <li><a href="/contact-us/">Contact Us</a></li>
+            </ul>
+            <ul class="list-unstyled footer-links">
+              <li><a href="/company/support/">Netskope Cloud Support</a></li>
+              <li><a href="/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="/terms-of-use/">Terms of Use</a></li>
+              <li>&copy; 2018, All rights reserved.</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <div class="popup-container">
+        <div class="popup-holder">
+          <div class="loading-holder">
+            <img src="https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/themes/netskope/images/loading.gif" alt="Loading">
+          </div>
+          <a href="#" class="close-popup"><i class="icon-close"></i></a>
+          <div id="player" class="video"></div>
+        </div>
+      </div>
+    </div>
+    <script type='text/javascript' src='https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-content/themes/netskope/js/serve/scripts.min.js?ver=1544712300'></script>
+    <script type='text/javascript' src='https://18xjlp2n8tju1gxbu348ktdl-wpengine.netdna-ssl.com/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
+  </body>
 </html>
-<!-- Dynamic page generated in 0.595 seconds. -->
-<!-- Cached page generated by WP-Super-Cache on 2018-12-11 16:26:43 -->
-
-<!-- super cache -->
