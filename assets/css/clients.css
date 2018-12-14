@@ -1,88 +1,76 @@
 @charset "UTF-8";
 
-/*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-
-
-
 .customer-logos-list a,
 .open-btn .ico-holder,
 .open-btn:after {
-    transform: translateY(-50%);
-    top: 50%
+  transform: translateY(-50%);
+  top: 50%;
 }
-
 
 .carousel,
 .customer-logos-list a,
 .mask {
-    position: relative
+  position: relative;
 }
 
 .customer-logos-section {
-    padding: 40px 0 20px
+  padding: 40px 0 20px;
 }
 
 .customer-logos-section h3 {
-    margin: 0 0 8px
+  margin: 0 0 8px;
 }
 
 @media (min-width:992px) {
-    .customer-logos-section {
-        padding: 82px 0 92px
-    }
-    .customer-logos-section h3 {
-        margin: 0 0 20px
-    }
+  .customer-logos-section {
+    padding: 82px 0 92px;
+  }
+  .customer-logos-section h3 {
+    margin: 0 0 20px;
+  }
 }
 
 .customer-logos-section.has-top-border {
-    border-top: 1px solid #CFCFCF
+  border-top: 1px solid #CFCFCF;
 }
 
 .customer-logos-section.has-bottom-border {
-    border-bottom: 1px solid #CFCFCF
+  border-bottom: 1px solid #CFCFCF;
 }
 
 .customer-logos-list {
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .customer-logos-list li {
-    padding: 25px 20px;
-    width: 50%;
-    text-align: center;
-    position: relative
+  padding: 25px 20px;
+  width: 50%;
+  text-align: center;
+  position: relative;
 }
 
 .customer-logos-list a {
-    display: block;
-    text-align: center
+  display: block;
+  text-align: center;
 }
 
 .customer-logos-list img {
-    display: block;
-    max-width: 85%;
-    height: auto;
-    margin: 0 auto
+  display: block;
+  max-width: 85%;
+  height: auto;
+  margin: 0 auto;
 }
 
 @media (min-width:768px) {
-    .customer-logos-list li {
-        width: 25%
-    }
-    .customer-logos-list img {
-        max-width: 100%
-    }
+  .customer-logos-list li {
+    width: 25%;
+  }
+  .customer-logos-list img {
+    max-width: 100%;
+  }
 }
 
