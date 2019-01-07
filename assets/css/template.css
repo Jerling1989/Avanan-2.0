@@ -12433,7 +12433,7 @@ img.img-shadow,
 .header.header-transparent .extra-nav > ul > li > a.active,
 .header.header-transparent .inner-nav > ul > li > a:hover,
 .header.header-transparent .inner-nav > ul > li > a.active {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(83, 133, 189, 1);
 }
 
 .header.header-transparent .extra-nav > ul > li:first-child {
