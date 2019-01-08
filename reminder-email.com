@@ -2,12 +2,12 @@ Hi ${(userName!'')?html}, <br>
 <br>
 This is a reminder that "${topic?html}" will begin in ${reminderTime} on:<br>
 <#if meetingTime??>
-	Date Time: ${meetingTime} <br>
+	<span style="font-weight: bold;">Date & Time:</span> ${meetingTime} <br>
 </#if>
 <br>
 Join from a PC, Mac, iPad, iPhone or Android device: <br>
 <div class="cssTab">
-    Please click this URL to join. <a href="${joinUrl}">${joinUrl}</a>  <br>
+    Please click this URL to join. <a href="${joinUrl}">${joinUrl}</a>  <br><br>
     Note: This link should not be shared with others; it is unique to you.<br>
     <#if password??>
 		Password: ${password}<br>
