@@ -12269,7 +12269,7 @@ img.img-shadow,
     height: 100%;
     float: right;
     text-align: right;
-    background-color: #dc3545;
+    background: transparent;
     padding-right: 15px;
     margin-right: -15px;
 }
