@@ -8116,7 +8116,7 @@ var css = {
     }
   },
   images: function() {
-    var $images = that.$container.find('img')
+    var $images = that.$container.find('.top-img')
                                  .not(that.options.elements.preserve)
 
     $images.removeAttr('width').removeAttr('height')
