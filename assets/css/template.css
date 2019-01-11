@@ -10667,7 +10667,7 @@ a.text-dark:focus {
     top: 50%;
     font-size: 20px;
     display: block;
-    color: #fff;
+    color: #222;
     transition: all .3s ease-in-out;
 }
 
@@ -10705,7 +10705,7 @@ a.text-dark:focus {
     letter-spacing: 1.5px;
     font-weight: bold;
     font-size: .75rem;
-    color: #fff;
+    color: #222;
     opacity: .5;
     transition: all ease-in .5s;
 }
@@ -10715,7 +10715,7 @@ a.text-dark:focus {
 }
 
 .slides-pagination > a:after {
-    background: #fff;
+    background: #222;
     content: "";
     height: 1px;
     width: 0;
