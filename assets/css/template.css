@@ -13040,7 +13040,7 @@ img.img-shadow,
 
 .module-cover h5,
 .module-cover-slides h5 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .module-cover h6,
@@ -13078,7 +13078,7 @@ img.img-shadow,
 .fullscreen,
 .module-cover-slides {
     padding: 0;
-    height: 600px !important;
+    height: 550px !important;
 }
 
 .fullscreen .container,
