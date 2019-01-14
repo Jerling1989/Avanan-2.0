@@ -88,21 +88,23 @@
 
         module_slides.each(function () {
             $(this).superslides($.extend({
-                play:            10000,
+                play:            4000,
                 animation:       'slide',
                 animation_speed: 1000,
                 pagination:      true,
                 scrollable:      true,
             }, $(this).data('module-cover-slides-options'))); 
 
-            
-            $('#slides').on('mouseenter', function() {
-              $(this).superslides('stop');
+            $('.slide-three').on('mouseenter', function() {
+              $('#slides').superslides('stop');
             });
-            $('#slides').on('mouseleave', function() {
-              $(this).superslides('start');
+            $('.slide-three').on('mouseleave', function() {
+              $('#slides').superslides('start');
             }); 
         });
+
+
+        
 
 
 
