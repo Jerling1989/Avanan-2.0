@@ -88,9 +88,9 @@
 
         module_slides.each(function () {
             $(this).superslides($.extend({
-                play:            4000,
+                play:            8000,
                 animation:       'slide',
-                animation_speed: 1000,
+                animation_speed: 1250,
                 pagination:      true,
                 scrollable:      true,
             }, $(this).data('module-cover-slides-options'))); 
