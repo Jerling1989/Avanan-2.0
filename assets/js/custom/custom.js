@@ -90,11 +90,21 @@
             $(this).superslides($.extend({
                 play:            10000,
                 animation:       'slide',
-                animation_speed: 800,
+                animation_speed: 1000,
                 pagination:      true,
                 scrollable:      true,
-            }, $(this).data('module-cover-slides-options')));
+            }, $(this).data('module-cover-slides-options'))); 
+
+            
+            $('#slides').on('mouseenter', function() {
+              $(this).superslides('stop');
+            });
+            $('#slides').on('mouseleave', function() {
+              $(this).superslides('start');
+            }); 
         });
+
+
 
         /* ---------------------------------------------- /*
          * Setting background of modules
