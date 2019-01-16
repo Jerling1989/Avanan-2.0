@@ -99,12 +99,12 @@
         });
 
 
-        $('.slide-three').on('mouseenter', function() {
-          $('#slides').superslides('stop');
-        });
-        $('.slide-three').on('mouseleave', function() {
-          $('#slides').superslides('start');
-        }); 
+        // $('.slide-three').on('mouseenter', function() {
+        //   $('#slides').superslides('stop');
+        // });
+        // $('.slide-three').on('mouseleave', function() {
+        //   $('#slides').superslides('start');
+        // }); 
 
 
         /* ---------------------------------------------- /*
