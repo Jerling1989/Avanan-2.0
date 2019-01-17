@@ -101,20 +101,24 @@
         // STOP SLIDE THREE ON HOVER
         var hoverTimer = 0; 
 
-        $('.slide-three').on('mouseenter', function() {
-            $('#slides').superslides('stop');
-            clearTimeout(hoverTimer);
-        });
-        $('.slide-three').on('mouseleave', function() {
-            hoverTimer = setTimeout(function(){
-              $('#slides').superslides('start');
-            }, 2000); 
-        });
+        // $('.slide-three').on('mouseenter', function() {
+        //     $('#slides').superslides('stop');
+        //     clearTimeout(hoverTimer);
+        // });
+        // $('.slide-three').on('mouseleave', function() {
+        //     hoverTimer = setTimeout(function(){
+        //       $('#slides').superslides('start');
+        //     }, 2000); 
+        // });
 
 
         $('.wistia_responsive_wrapper').on('click', function(e) {
             e.preventDefault();
-            alert('test');
+            // alert('test');
+            $('#slides').superslides('stop');
+            
+            var symbol = $("#video1")[0].src.indexOf("?") > -1 ? "&" : "?";
+            $("#video1")[0].src += symbol + "autoplay=1";
         });
 
 

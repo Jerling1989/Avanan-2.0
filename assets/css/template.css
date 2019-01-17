@@ -14563,6 +14563,7 @@ body.off-canvas-sidebar-open:after {
 }
 
 
+/* NECCESARY CSS FOR IFRAME VIDEO CLICK EVENT */
 .wistia_responsive_wrapper{
   display:inline-block;
   position:relative;
