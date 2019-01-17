@@ -112,6 +112,12 @@
         });
 
 
+        $('.wistia_responsive_wrapper').on('click', function(e) {
+            e.preventDefault();
+            alert('test');
+        });
+
+
 
         // STOP ALL SLIDES ON HOVER
         // var hoverTimer = 0; 

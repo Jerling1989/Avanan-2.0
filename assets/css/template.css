@@ -14563,4 +14563,13 @@ body.off-canvas-sidebar-open:after {
 }
 
 
+.wistia_responsive_wrapper{
+  display:inline-block;
+  position:relative;
+}
+
+.wistia_responsive_wrapper iframe{
+  vertical-align:top;
+  pointer-events: none; /* let any clicks go trough me */
+}
 
