@@ -14563,14 +14563,4 @@ body.off-canvas-sidebar-open:after {
 }
 
 
-/* NECCESARY CSS FOR IFRAME VIDEO CLICK EVENT */
-.video-div {
-  display: inline-block;
-  position: relative;
-}
-
-.video-div iframe{
-  vertical-align: top;
-  pointer-events: none;
-}
 

@@ -97,43 +97,11 @@
         });
 
 
-
-        // STOP SLIDE THREE ON HOVER
-        // var hoverTimer = 0; 
-        // $('.slide-three').on('mouseenter', function() {
-        //     $('#slides').superslides('stop');
-        //     clearTimeout(hoverTimer);
-        // });
-        // $('.slide-three').on('mouseleave', function() {
-        //     hoverTimer = setTimeout(function(){
-        //       $('#slides').superslides('start');
-        //     }, 2000); 
-        // });
-
-
-        $('.video-div').on('click', function(e) {
+        // PAUSE SLIDER WHEN MOUSE GOES OVER VIDEO DIV
+        $('.video-div').on('mouseenter', function(e) {
             e.preventDefault();
-            // alert('test');
-            // $("#video")[0].src += "autoplay=1";
-            var symbol = $("#video")[0].src.indexOf("?") > -1 ? "&" : "?";
-            $("#video")[0].src += symbol + "autoplay=1";
-
             $('#slides').superslides('stop');
         });
-
-
-
-        // STOP ALL SLIDES ON HOVER
-        // var hoverTimer = 0; 
-        // $('#slides').on('mouseenter', function() {
-        //     $(this).superslides('stop');
-        //     clearTimeout(hoverTimer);
-        // });
-        // $('#slides').on('mouseleave', function() {
-        //     hoverTimer = setTimeout(function(){
-        //         $(this).superslides('start');
-        //     }, 2000); 
-        // });
 
 
 
