@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <body>
+  	<script src="assets/js/custom/jquery-3.2.1.min.js"></script>
+		<script>
+		$(document).ready(function() {
+		  var api_url='https://customer-info.avanan.net/avanan-info';
+		  var key='20TeAh8NOpkpjIYMiOJ1KVZ1CdzWGSDx';
+		  
+		  $.ajax({
+		    // type: 'GET',
+		    url: api_url, 
+		    headers: {
+		      "x-api-key":key
+		    },
+		    contentType: "application/json",
+		    dataType: 'json', 
+		    success: function(result) { 
+		      console.log(JSON.stringify(result[0].title));
+		    },
+		    error: function(e) {
+		      console.log(JSON.stringify(e));
+		    }
+		  })
+
+		});
+		</script>
+
+	<script src="assets/js/custom/jquery-3.2.1.min.js"></script>
+	</body>
+</html>
