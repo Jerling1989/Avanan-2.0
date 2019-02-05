@@ -1,0 +1,5 @@
+- For Emails Scanned
+-- While number is less than total number of seconds in day
+-- Set interval add per second fraction to number
+---- Add every second
+-- When total number of seconds in a day is hit, restart
