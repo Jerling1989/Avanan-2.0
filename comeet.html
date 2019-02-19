@@ -1,0 +1,84 @@
+<div id="job-postings" class="text-center">
+  <h1 class="text-center">Job Openings</h1>
+</div>
+<div id="root"></div>
+
+
+
+<style>
+	#job-postings {
+  margin-top: 160px;
+	}
+
+	#root {
+	  margin-top: 60px;
+	  margin-bottom: 180px;
+	}
+
+	.job-link {
+	  font-size: 16px;
+	  text-decoration: underline;
+	}
+
+	.no-jobs-error {
+	  color: #dc3545;
+	}
+</style>
+
+
+
+<script>
+	const app = document.getElementById('root');
+
+	const container = document.createElement('div');
+	container.setAttribute('class', 'container');
+
+	app.appendChild(container);
+
+	var request = new XMLHttpRequest();
+	request.open('GET', 'https://www.comeet.co/careers-api/2.0/company/43.00B/positions?token=34B107769634B34B34B34B696D2C9E1', true);
+	request.onload = function () {
+
+	  // Begin accessing JSON data here
+	  var data = JSON.parse(this.response);
+	  if (request.status >= 200 && request.status < 400) {
+	    data.forEach(job => {
+	      console.log(job);
+	      
+	      const br = document.createElement('br');
+	      
+	      const jobCard = document.createElement('div');
+	      
+	      const h2 = document.createElement('h2');
+	      h2.textContent = job.name;
+	      
+	      const h5 = document.createElement('h5');
+	      h5.textContent = job.location.name;
+	      
+	      const a = document.createElement('a');
+	      a.setAttribute('href', job.url_active_page);
+	      a.setAttribute('target', '_blank');
+	      a.setAttribute('class', 'job-link');
+	      a.textContent = 'More Info';
+	      
+	      const hr = document.createElement('hr');
+	      
+	      container.appendChild(jobCard);
+	      jobCard.appendChild(br);
+	      jobCard.appendChild(h2);
+	      jobCard.appendChild(h5);
+	      jobCard.appendChild(a);
+	      jobCard.appendChild(hr);
+	      
+	      
+	    });
+	  } else {
+	    const errorMessage = document.createElement('h2');
+	    errorMessage.textContent = `No job positions listed, check back later.`;
+	    errorMessage.setAttribute('class', 'text-center no-jobs-error');
+	    container.appendChild(errorMessage);
+	  }
+	}
+
+	request.send();
+</script>
