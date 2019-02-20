@@ -1,0 +1,12 @@
+body {
+  font-family: "Poppins", Arial;
+  color: #222;
+}
+
+.positionLink {
+	color: #5385bd;
+}
+
+.positionDetails {
+	color: #788487;
+}
