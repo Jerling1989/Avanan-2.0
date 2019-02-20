@@ -11615,7 +11615,7 @@ img.img-shadow,
 }
 
 .team-wrap {
-    background: rgba(34, 34, 34, .6);
+    background: rgba(83, 133, 189, .65);
     position: absolute;
     border-radius: .1875rem;
     top: 0;
@@ -11641,13 +11641,18 @@ img.img-shadow,
 
 .team-role {
     font-size: .85rem;
-    opacity: .6;
-    font-weight: bold;
+    opacity: 1;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .team-name,
 .team-role {
     color: #fff;
+}
+
+.team-desc {
+    color: #f7f7f7;
 }
 
 .team-content-social {
