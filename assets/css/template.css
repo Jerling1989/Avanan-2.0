@@ -11655,6 +11655,10 @@ img.img-shadow,
     color: #f7f7f7;
 }
 
+.team-desc a {
+    text-decoration: underline !important;
+}
+
 .team-content-social {
     text-align: center;
     list-style: none;
