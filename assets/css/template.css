@@ -11635,15 +11635,15 @@ img.img-shadow,
 }
 
 .team-name {
-    font-size: .95rem;
+    font-size: .975rem;
     margin-bottom: 2px;
 }
 
 .team-role {
-    font-size: .85rem;
+    font-size: .875rem;
     opacity: 1;
     font-weight: 500;
-    font-style: italic;
+    /*font-style: italic;*/
 }
 
 .team-name,
