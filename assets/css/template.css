@@ -11605,8 +11605,12 @@ img.img-shadow,
 .team-item {
     position: relative;
     border-radius: .1875rem;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, .1);
+    /*box-shadow: 0 8px 24px rgba(0, 0, 0, .1);*/
     margin: 0 0 30px;
+}
+
+#team .portfolio-item {
+    filter: drop-shadow(0 5px 4px #d3d3d3);
 }
 
 .team-item img {
