@@ -13214,6 +13214,7 @@ img.img-shadow,
     padding: 5px;
     float: left;
     width: 50%;
+    padding: 0 15px;
 }
 
 .row-portfolio[data-columns="3"] .grid-sizer,
