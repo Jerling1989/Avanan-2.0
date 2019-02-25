@@ -138,8 +138,8 @@
                 <ul class="sub-menu">
                   <li><a href="about.html">About Us</a></li>
                   <li><a href="partners.html">Parnterships</a></li>
-                  <li><a href="about.html#team/">Management Team</a></li>
-                  <li><a href="about.html#board/">Board of Directors</a></li>
+                  <li><a class="reload" href="about.html#team/">Management Team</a></li>
+                  <li><a class="reload" href="about.html#board/">Board of Directors</a></li>
                   <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
               </li>
@@ -871,13 +871,19 @@
     <script>
       
       $(document).ready(function () {
+
         console.log(document.location.hash);
-        if (document.location.hash == '#board/' || document.location.hash == '#team/') {
+        if (document.location.hash === '#board/' || document.location.hash === '#team/') {
+          // location.reload();
           // Handler for .ready() called.
           $('html, body').animate({
             scrollTop: $('.test').offset().top
           }, 'slow');
         }
+
+        $('.reload').on('click', function() {
+          location.reload();
+        });
       });
 
     </script>
