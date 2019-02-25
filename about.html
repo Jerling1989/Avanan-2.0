@@ -871,10 +871,13 @@
     <script>
       
       $(document).ready(function () {
-        // Handler for .ready() called.
-        $('html, body').animate({
-          scrollTop: $('.test').offset().top
-        }, 'slow');
+        console.log(document.location.hash);
+        if (document.location.hash == '#board/' || document.location.hash == '#team/') {
+          // Handler for .ready() called.
+          $('html, body').animate({
+            scrollTop: $('.test').offset().top
+          }, 'slow');
+        }
       });
 
     </script>
