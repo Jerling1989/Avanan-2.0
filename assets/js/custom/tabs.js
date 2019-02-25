@@ -25,7 +25,7 @@ $(document).ready(() => {
 
   if (document.location.hash === '#board/' || document.location.hash === '#team/') {
     $('html, body').animate({
-      scrollTop: $('.test').offset().top
+      scrollTop: $('.test').offset().top+85
     }, 'slow');
   }
 
