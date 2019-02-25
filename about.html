@@ -138,8 +138,8 @@
                 <ul class="sub-menu">
                   <li><a href="about.html">About Us</a></li>
                   <li><a href="partners.html">Parnterships</a></li>
-                  <li><a href="about.html#team">Management Team</a></li>
-                  <li><a href="about.html#board">Board of Directors</a></li>
+                  <li><a href="about.html#team/">Management Team</a></li>
+                  <li><a href="about.html#board/">Board of Directors</a></li>
                   <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
               </li>
@@ -195,9 +195,10 @@
             </div>
           </div>
         </div>
+        <div class="test"></div>
       </section>
       <!-- END ABOUT BASIC INFO -->
-
+      
 
       <!-- EMPLOYEER INFO TABS -->
       <section class="module" style="margin-top: -100px; margin-bottom: 100px;">
@@ -866,5 +867,16 @@
     <script src="assets/js/custom/plugins.js"></script>
     <script src="assets/js/custom/custom.js"></script>
     <script src="assets/js/custom/tabs.js"></script>
+
+    <script>
+      
+      $(document).ready(function () {
+        // Handler for .ready() called.
+        $('html, body').animate({
+          scrollTop: $('.test').offset().top
+        }, 'slow');
+      });
+
+    </script>
   </body>
 </html>

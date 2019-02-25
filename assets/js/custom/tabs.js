@@ -22,4 +22,5 @@ $(document).ready(() => {
     newUrl += "/";
     history.replaceState(null, null, newUrl);
   });
+
 });
