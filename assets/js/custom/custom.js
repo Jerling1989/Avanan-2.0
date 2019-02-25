@@ -193,18 +193,44 @@
             return false;
         });
 
-        // $(window).on('resize', function() {
-        //     worksgrid.imagesLoaded(function() {
-        //         worksgrid.isotope({
-        //             layoutMode: 'masonry',
-        //             itemSelector: '.portfolio-item',
-        //             transitionDuration: '0.4s',
-        //             masonry: {
-        //                 columnWidth: '.grid-sizer',
-        //             },
-        //         });
-        //     });
-        // });
+        $(window).on('resize', function() {
+            worksgrid.imagesLoaded(function() {
+                worksgrid.isotope({
+                    layoutMode: 'masonry',
+                    itemSelector: '.portfolio-item',
+                    transitionDuration: '0.4s',
+                    masonry: {
+                        columnWidth: '.grid-sizer',
+                    },
+                });
+            });
+        });
+
+        $(window).on('resize', function() {
+            worksgrid.imagesLoaded(function() {
+                worksgrid.isotope({
+                    layoutMode: 'masonry',
+                    itemSelector: '.portfolio-item',
+                    transitionDuration: '0.4s',
+                    masonry: {
+                        columnWidth: '.grid-sizer',
+                    },
+                });
+            });
+        });
+
+        $(window).on('click', function() {
+            worksgrid.imagesLoaded(function() {
+                worksgrid.isotope({
+                    layoutMode: 'masonry',
+                    itemSelector: '.portfolio-item',
+                    transitionDuration: '0.4s',
+                    masonry: {
+                        columnWidth: '.grid-sizer',
+                    },
+                });
+            });
+        });
 
         /* ---------------------------------------------- /*
          * Blog masonry
