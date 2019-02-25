@@ -867,25 +867,5 @@
     <script src="assets/js/custom/plugins.js"></script>
     <script src="assets/js/custom/custom.js"></script>
     <script src="assets/js/custom/tabs.js"></script>
-
-    <script>
-      
-      $(document).ready(function () {
-
-        console.log(document.location.hash);
-        if (document.location.hash === '#board/' || document.location.hash === '#team/') {
-          // location.reload();
-          // Handler for .ready() called.
-          $('html, body').animate({
-            scrollTop: $('.test').offset().top
-          }, 'slow');
-        }
-
-        $('.reload').on('click', function() {
-          location.reload();
-        });
-      });
-
-    </script>
   </body>
 </html>

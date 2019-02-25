@@ -23,4 +23,14 @@ $(document).ready(() => {
     history.replaceState(null, null, newUrl);
   });
 
+  if (document.location.hash === '#board/' || document.location.hash === '#team/') {
+    $('html, body').animate({
+      scrollTop: $('.test').offset().top
+    }, 'slow');
+  }
+
+  $('.reload').on('click', function() {
+    location.reload();
+  });
+
 });
