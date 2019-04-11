@@ -16,6 +16,432 @@
     <link href="assets/css/plugins.min.css" rel="stylesheet">
     <!-- CUSTOM CSS-->
     <link href="assets/css/template.css" rel="stylesheet">
+
+    <style type="text/css">
+      .menu-item-has-children li img {
+        display: inline;
+      }
+
+      .menu-item-has-children h6 {
+        color: #222;
+      }
+
+      .solutions-nav-icon {
+        margin-left: -10px;
+        margin-right: 10px;
+        display: inline;
+        width: 25px;
+        height: auto;
+      }
+
+      #popular-on-nav {
+        display: inline-block;
+      }
+
+      header .menu-item-span {
+        font-size: 12px !important;
+        line-height: 21px !important;
+        letter-spacing: 0.5px !important;
+        font-weight: bold !important;
+      }
+
+      header {
+        margin-left: -15px !important;
+      }
+
+      #desktop-all {
+        position: relative;
+        margin-top: 100px;
+        margin-bottom: -20px;
+      }
+
+      #main-nav {
+         margin-left: 90px;
+      }
+
+      #side-cta {
+        margin-right: -15px;
+        display: block;
+         -webkit-transform: translateY(-45%);
+        transform: translateY(-45%);
+        position: relative;
+        display: block;
+        top: 49%;
+        margin-top: -2px;
+        border-left: 1px solid #f7f7f7;
+      }
+
+      .header.header-transparent #side-cta > ul > li > a::after {
+          position: absolute;
+          background: rgba(255, 255, 255, 0);
+          display: block;
+          height: 1px;
+          width: 20px;
+          bottom: -1px;
+          left: 50%;
+          margin-left: -10px;
+          content: "";
+          transition: all .3s ease-out;
+      }
+
+      #side-cta .menu-item-span {
+        color: #FFF;
+        background-color: #dc3545;
+        font-size: 11px;
+         -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        position: relative;
+        display: block;
+        top: 50%;
+        border: 1px #dc3545 solid;
+        border-radius: .1825rem;
+        padding-right: 5px;
+        padding-left: 5px;
+        filter: drop-shadow(0px 0px 1.5px #95a5a6);
+      }
+
+      #side-cta .menu-item-span:hover {
+        color: #CED2CC;
+        border: 1px #CED2CC solid;
+        cursor: pointer;
+      }
+
+      #mobile-cta {
+        border-top: 1px solid #fff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #dc3545;
+        color: #fff;
+        font-size: 12px;
+        font-weight: bolder;
+      }
+
+      #mobile-cta a {
+        color: #fff;
+      }
+
+      #mobile-cta a:hover {
+        color: #CED2CC;
+      }
+
+
+      /* PHONES IN PORTRAIT col-3 */
+      @media (max-width: 576px) {
+        
+        .menu-item-has-children li img {
+          display: none;
+        }
+        
+        .menu-item-has-children h6 {
+          color: #fff;
+        }
+        
+        #main-nav {
+           margin-left: 10px;
+        }
+        
+        #side-cta {
+          display: none;
+        }
+        
+        #desktop-all {
+          display: none;
+        }
+        
+        #solutions-view-all {
+          display: none;
+        }
+        
+        #platform-view-all {
+          display: none;
+        }
+        
+        #mobile-all {
+          display: block;
+        }
+        
+        .solutions-nav-icon {
+          display: none;
+        }
+        
+        #popular-on-nav {
+          display: none;
+        }
+        
+        #pricing {
+          display: block;
+        }
+      }
+
+
+      /* PHONES IN LANDSCAPE col-sm-3 */
+      @media (min-width: 576px) and (max-width: 768px) {
+        
+        .menu-item-has-children li img {
+          display: none;
+        }
+        
+        .menu-item-has-children h6 {
+          color: #fff;
+        }
+        
+        #main-nav {
+           margin-left: 0px;
+        }
+        
+        #side-cta {
+          display: none;
+        }
+        
+        #desktop-all {
+          display: none;
+        }
+        
+        #solutions-view-all {
+          display: none;
+        }
+        
+        #platform-view-all {
+          display: none;
+        }
+        
+        #mobile-all {
+          display: block;
+        }
+        
+        .solutions-nav-icon {
+          display: none;
+        }
+        
+        #popular-on-nav {
+          display: none;
+        }
+        
+        #pricing {
+          display: block;
+        }
+      }
+
+
+      /* TABLETS col-md-3 */
+      @media (min-width: 768px) and (max-width: 992px) {
+        
+        .menu-item-has-children li img {
+          display: none;
+        }
+        
+        .menu-item-has-children h6 {
+          color: #fff;
+        }
+        
+        #main-nav {
+           margin-left: 0px;
+        }
+        
+        #side-cta {
+          display: none;
+        }
+        
+        #desktop-all {
+          display: none;
+        }
+        
+        #solutions-view-all {
+          display: none;
+        }
+        
+        #platform-view-all {
+          display: none;
+        }
+        
+        #mobile-all {
+          display: block;
+        }
+        
+        .solutions-nav-icon {
+          display: none;
+        }
+        
+        #popular-on-nav {
+          display: none;
+        }
+        
+        #pricing {
+          display: block;
+        }
+      }
+
+
+      /* LAPTOPS  col-lg-3 */
+      @media (min-width: 992px) and (max-width: 1200px) {
+        
+        .menu-item-has-children li img {
+          display: inline;
+        }
+        
+        .menu-item-has-children h6 {
+          color: #222;
+        }
+        
+        header .menu-item-span {
+          font-size: 12px !important;
+          line-height: 21px !important;
+          letter-spacing: 0px !important;
+          font-weight: bold !important;
+        }
+        
+        #side-cta {
+          display: block;
+        }
+        
+        #desktop-all {
+          display: block;
+        }
+        
+        #solutions-view-all {
+          display: block;
+        }
+        
+        #platform-view-all {
+          display: block;
+        }
+        
+        #mobile-all {
+          display: none;
+        }
+        
+        .solutions-nav-icon {
+          display: inline;
+        }
+        
+        #popular-on-nav {
+          display: inline-block;
+        }
+        
+        #mobile-cta {
+          display: none;
+        }
+        
+        #pricing {
+          display: none;
+        }
+       
+      }
+
+
+      /* DESKTOPS col-xl-3 */
+      @media (min-width: 1200px) and (max-width: 1500px) {
+        
+        .menu-item-has-children li img {
+          display: inline;
+        }
+        
+        .menu-item-has-children h6 {
+          color: #222;
+        }
+        
+        header .menu-item-span {
+          font-size: 12px !important;
+          line-height: 21px !important;
+          letter-spacing: 0.5px !important;
+          font-weight: bold !important;
+        }
+        
+        #side-cta {
+          display: block;
+        }
+        
+        #desktop-all {
+          display: block;
+        }
+        
+        #solutions-view-all {
+          display: block;
+        }
+        
+        #platform-view-all {
+          display: block;
+        }
+        
+        #mobile-all {
+          display: none;
+        }
+        
+        .solutions-nav-icon {
+          display: inline;
+        }
+        
+        #popular-on-nav {
+          display: inline-block;
+        }
+        
+        #mobile-cta {
+          display: none;
+        }
+        
+        #pricing {
+          display: none;
+        }
+        
+      }
+
+
+      /* LARGE DESKTOPS */
+      @media (min-width: 1500px) {
+        
+        .menu-item-has-children li img {
+          display: inline;
+        }
+        
+        .menu-item-has-children h6 {
+          color: #222;
+        }
+        
+        header .menu-item-span {
+          font-size: 12px !important;
+          line-height: 21px !important;
+          letter-spacing: 0.5px !important;
+          font-weight: bold !important;
+        }
+        
+         #side-cta {
+          display: block;
+        }
+        
+        #desktop-all {
+          display: block;
+        }
+        
+        #solutions-view-all {
+          display: block;
+        }
+        
+        #platform-view-all {
+          display: block;
+        }
+        
+        #mobile-all {
+          display: none;
+        }
+        
+        .solutions-nav-icon {
+          display: inline;
+        }
+        
+        #popular-on-nav {
+          display: inline-block;
+        }
+        
+        #mobile-cta {
+          display: none;
+        }
+        
+        #pricing {
+          display: none;
+        }
+        
+      }
+    </style>
   </head>
   <body>
 
@@ -31,119 +457,198 @@
     <!-- END LOADING ICON-->
 
     <!-- PAGE HEADER-->
-    <header class="header header-transparent">
+    <header class="header">
       <div class="container-fluid">
         <!-- BRAND/LOGO-->
-        <div class="inner-header">
-          <a class="inner-brand" href="index.html">
-            <img id="clear-logo" src="assets/images/clear-logo.png">
-            <img id="white-logo" src="assets/images/white-logo.png">
+        <div class="inner-header" style="display: block;">
+          <a class="inner-brand" href="https://www.avanan.com/">
+            <img style="" id="white-logo" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/logos/avanan-logo-small.png">
           </a>
         </div>
 
         <!-- NAVIGATION-->
         <div class="inner-navigation collapse">
-          <div class="inner-nav">
+          <div class="inner-nav" id="main-nav">
             <ul>
-              <!-- ANY SAAS TOP NAV -->
-              <li class="menu-item-has-children menu-item-has-mega-menu"><a href="#"><span class="menu-item-span">Any SaaS</span></a>
+              <!-- PLATFORM TOP NAV TAB -->
+              <li class="menu-item-has-children menu-item-has-mega-menu"><a href="#"><span class="menu-item-span">Platform</span></a>
                 <div class="mega-menu">
-                  <ul class="sub-menu mega-menu-row">
-                    <!-- BUSINESS SUB NAV -->
-                    <li class="menu-item-has-children mega-menu-col"><a href="#">BUSINESS</a>
-                      <ul class="sub-menu">
-                        <li><a href="office-365-cloud-security.html">Office 365</a></li>
-                        <li><a href="g-suite-security-software.html">G Suite</a></li>
-                        <li><a href="business-apps.html">Salesforce</a></li>
-                        <li><a href="business-apps.html">ServiceNow</a></li>
-                        <li><a href="business-apps.html">Workday</a></li>
-                        <li><a href="any-saas.html" class="view-all">VIEW ALL</a></li>
-                      </ul>
-                    </li>
+                  <ul class="sub-menu mega-menu-row" style="width: 480px;">
                     <!-- EMAIL & MESSAGING SUB NAV -->
-                    <li class="menu-item-has-children mega-menu-col"><a href="#">EMAIL & MESSAGING</a>
+                    <li class="menu-item-has-children mega-menu-col" style="width: 220px;">
+                      <h6 style="font-weight: 600; margin-left: -10px">Email & Messaging</h6>
                       <ul class="sub-menu">
-                        <li><a href="office-365-email.html">Office 365 Email</a></li>
-                        <li><a href="office-365-email.html">Mircosoft Outlook</a></li>
-                        <li><a href="gmail.html">Gmail</a></li>
-                        <li><a href="messaging.html">Skype for Business</a></li>
-                        <li><a href="messaging.html">Slack</a></li>
+                        <li style="margin-bottom: 10px;">
+                          <img style="margin-left: -10px; margin-right: 10px; width: 20px; height: auto;" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/any-saas/transparent/tiny/office-365-tiny.png" />
+                          <a style="display:inline;" href="/office-365-cloud-security">Office 365 Security</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                          <img style="margin-left: -9px; margin-right: 11px; width: 18px; height: auto;" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/any-saas/transparent/tiny/google-tiny.png" />
+                          <a style="display:inline;" href="/g-suite-security-software">G Suite Security</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                          <img style="margin-left: -9px; margin-right: 9px; width: 20px; height: auto;" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/any-saas/transparent/tiny/new_slack_logo_sm.png" />
+                          <a style="display:inline;" href="/slack-security">Slack Security</a>
+                        </li>
+                        <li style="margin-bottom: 10px;" class="text-center">
+                          <a id="platform-view-all" class="btn btn-primary btn-small" style="width: 100px; color: #fff; font-size: 10px; margin-top: 100px; margin-bottom: -20px; margin-left: 150px;" href="/any-saas">VIEW ALL</a>
+                        </li>
                       </ul>
                     </li>
                     <!-- FILE SHARING SUB NAV -->
-                    <li class="menu-item-has-children mega-menu-col"><a href="#">FILE SHARING</a>
+                    <li class="menu-item-has-children mega-menu-col">
+                      <h6 style="font-weight: 600;">File Sharing</h6>
                       <ul class="sub-menu">
-                        <li><a href="file-sharing.html">Box</a></li>
-                        <li><a href="file-sharing.html">Citrix ShareFile</a></li>
-                        <li><a href="file-sharing.html">Dropbox</a></li>
-                        <li><a href="file-sharing.html">Egnyte</a></li>
-                        <li><a href="file-sharing.html">Google Drive</a></li>
-                        <li><a href="file-sharing.html">OneDrive</a></li>
+                        <li style="margin-bottom: 10px;">
+                          <img style="margin-right: 10px; width: 25px; height: auto;" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/any-saas/transparent/tiny/onedrive-transparent-tiny.png" />
+                          <a style="display:inline;" href="/file-sharing">OneDrive Security</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                          <img style="margin-left: 4px; margin-right: 11px; width: 20px; height: auto;" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/any-saas/transparent/tiny/google-drive-transparent-tiny.png" />
+                          <a style="display:inline;" href="/file-sharing">Google Drive Security</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                          <img style="margin-left: 4px; margin-right: 10px; width: 21px; height: auto;" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/any-saas/transparent/tiny/dropbox-transparent-tiny.png" />
+                          <a style="display:inline;" href="/file-sharing">Dropbox Security</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                          <img style="margin-left: 1px; margin-right: 8px; width: 26px; height: auto;" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/any-saas/transparent/tiny/box-transparent-tiny.png" />
+                          <a style="display:inline;" href="/file-sharing">Box Security</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                          <img style="margin-left: 7px; margin-right: 13px; width: 15px; height: auto;" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/any-saas/transparent/tiny/sharefile-transparent-tiny.png" />
+                          <a style="display:inline;" href="/file-sharing">Citrix ShareFile Security</a>
+                        </li>
                       </ul>
                     </li>
-                    <!-- IAAS SUB NAV -->
-                    <li class="menu-item-has-children mega-menu-col"><a href="#">IAAS</a>
+                    <li id="mobile-all" class="mega-menu-col view-all"><a href="/any-saas">VIEW ALL</a></li>
+                  </ul>
+                </div>
+              </li> 
+              <!-- SOLUTIONS TOP NAV TAB -->
+              <li class="menu-item-has-children"><a href="#"><span class="menu-item-span">Security</span></a>
+                <div class="mega-menu">
+                  <ul class="sub-menu mega-menu-row" style="width: 505px;">
+                    <!-- SECURITY SUB NAV -->
+                    <li class="menu-item-has-children mega-menu-col"style="width: 260px; border-right: 1px solid #222;">
                       <ul class="sub-menu">
-                        <li><a href="iaas.html">Amazon Web Services</a></li>
-                        <li><a href="iaas.html">Google Cloud Platform</a></li>
-                        <li><a href="iaas.html">Microsoft Azure</a></li>
+                        <li style="margin-bottom: 10px;">
+                          <img class="solutions-nav-icon" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/any-saas/transparent/tiny/antiphishing.png" />
+                          <a style="display:inline;" href="/anti-phishing">Anti-Phishing</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                          <img class="solutions-nav-icon" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/any-saas/transparent/tiny/malware.png" />
+                          <a style="display:inline;" href="/malware-ransomware">Malware & Ransomware</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                          <img class="solutions-nav-icon" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/any-saas/transparent/tiny/account-takeover.png" />
+                          <a style="display:inline;" href="/account-takeover-protection">Account Takeover Protection</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                          <img class="solutions-nav-icon" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/any-saas/transparent/tiny/dlp.png" />
+                          <a style="display:inline;" href="/data-leakage-prevention">DLP & Compliance</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                          <img class="solutions-nav-icon" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/any-saas/transparent/tiny/casb.png" />
+                          <a style="display:inline;" href="/cloud-access-security-broker">CASB/Shadow IT</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                          <img class="solutions-nav-icon" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/any-saas/transparent/tiny/siem.png" />
+                          <a style="display:inline;" href="/siem">SIEM Integration</a>
+                        </li>
+                        <li id="mobile-all" class="mega-menu-col view-all"><a href="/any-security">VIEW ALL</a></li>
+                        <li style="margin-bottom: 10px;">
+                          <a id="solutions-view-all" class="btn btn-primary btn-small" style="width: 100px; color: #fff; font-size: 10px; margin-right: auto; margin-left: auto; margin-top: 25px; margin-bottom: -20px;" href="/any-security">VIEW ALL</a>
+                        </li>
                       </ul>
                     </li>
+                    <!-- VENDORS SUB NAV -->
+                    <div id="popular-on-nav">
+                      <li class="menu-item-has-children mega-menu-col" style="margin-top: 2px; margin-left: 25px;"><h6 style="font-weight: 600;">Popular on Avanan</h6>
+                        <ul class="sub-menu">
+                          <li style="">
+                            <a href="https://www.avanan.com/fireeye-etp">FireEye ETP</a>
+                          </li>
+                          <li style="">
+                            <a href="https://www.avanan.com/lastline-sandbox">Lastline Sandbox</a>
+                          </li>
+                          <li style="">
+                            <a href="https://www.avanan.com/check-point-sandblast">Check Point Sandblast</a>
+                          </li>
+                          <li style="">
+                            <a href="https://www.avanan.com/symantec-dlp">Symantec DLP</a>
+                          </li>
+                          <!-- <li style="">
+                            <a href="https://www.avanan.com/check-point-antivirus">Check Point Antivirus</a>
+                          </li> -->
+                          <!-- <li style="">
+                            <a href="https://www.avanan.com/check-point-dlp">Check Point DLP</a>
+                          </li> -->
+                          <li style="">
+                            <a href="https://www.avanan.com/gtb-dlp">GTB DLP</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </div>               
                   </ul>
                 </div>
               </li>
-              <!-- ANY SECURITY TOP NAV -->
-              <li class="menu-item-has-children"><a href="#"><span class="menu-item-span">Any Security</span></a>
-                <ul class="sub-menu">
-                  <li><a href="anti-phishing.html">Anti-Phishing</a></li>
-                  <li><a href="malware-ransomware.html">Malware & Ransomware</a></li>
-                  <li><a href="account-takeover-protection.html">Account Takeover</a></li>
-                  <li><a href="data-leakage-prevention.html">DLP & Compliance</a></li>
-                  <li><a href="cloud-access-security-broker.html">CASB/Shadow IT</a></li>
-                  <li><a href="siem.html">Siem Integration</a></li>
-                  <li><a href="any-security.html" class="view-all">VIEW ALL</a></li>
-                </ul>
-              </li>
               <!-- HOW IT WORKS -->
-              <li><a href="how-it-works.html"><span class="menu-item-span">How It Works</span></a></li>
+              <li><a href="https://www.avanan.com/how-it-works"><span class="menu-item-span">How It Works</span></a></li>
+              <!-- PRICING -->
+              <li id="pricing"><a href="/pricing"><span class="menu-item-span">Pricing</span></a></li>
               <!-- RESOURCES TOP NAV -->
-              <li class="menu-item-has-children"><a href="#"><span class="menu-item-span">Resources</span></a>
+              <li class="menu-item-has-children"><a><span class="menu-item-span">Resources</span></a>
                 <ul class="sub-menu">
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="case-studies.html">Case Studies</a></li>
-                  <li><a href="webinars.html">Webinars</a></li>
-                  <li><a href="white-papers.html">White Papers</a></li>
-                  <li><a href="videos.html">Videos</a></li>
-                  <li><a href="resources.html" class="view-all">VIEW ALL</a></li>
+                  <li><a href="/resources/topic/blog">Blog</a></li>
+                  <li><a href="/comics">Comics</a></li>
+                  <li><a href="/resources/topic/case-study">Case Studies</a></li>
+                  <li><a href="/resources/topic/webinars">Webinars</a></li>
+                  <li><a href="/resources/topic/documents">White Papers</a></li>
+                  <li><a href="/resources/topic/videos">Videos</a></li>
+                  <li id="mobile-all" class="mega-menu-col view-all"><a href="https://www.avanan.com/resources">VIEW ALL</a></li>
+                  <li style="margin-bottom: 10px;">
+                    <a id="solutions-view-all" class="btn btn-primary btn-small" style="width: 100px; color: #fff; font-size: 10px; margin-right: auto; margin-left: auto; margin-top: 15px; margin-bottom: -5px;" href="https://www.avanan.com/resources">VIEW ALL</a>
+                  </li>
                 </ul>
               </li>
               <!-- COMPANY TOP NAV -->
               <li class="menu-item-has-children"><a><span class="menu-item-span">Company</span></a>
                 <ul class="sub-menu">
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="partners.html">Parnterships</a></li>
-                  <li><a href="about.html#team">Management Team</a></li>
-                  <li><a href="about.html#board">Board of Directors</a></li>
-                  <li><a href="contact-us.html">Contact Us</a></li>
+                  <li><a href="https://www.avanan.com/about">About Us</a></li>
+                  <li><a href="https://www.avanan.com/partners">Partnerships</a></li>
+                  <li><a href="/about#team">Management Team</a></li>
+                  <li><a href="/about#board">Board of Directors</a></li>
+                  <li><a href="https://www.avanan.com/contact-us">Contact Us</a></li>
                 </ul>
               </li>
             </ul>
           </div>
+          
+          <!--    CTA FOR DESKTOP AND MED LAPTOP      -->
+          <div id="side-cta" class="inner-nav float-right" style="padding-left: 3px; padding-right: 0px;">
+            <ul>
+              <li style="margin-right: -15px;"><a href="/trial"><span class="menu-item-span">FREE TRIAL</span></a></li>
+              <li><a href="/demo"><span class="menu-item-span">GET A DEMO</span></a></li>
+              <li style="margin-left: -15px;"><a href="/pricing"><span class="menu-item-span">PRICING</span></a></li>
+            </ul>
+          </div>
+          
+          <div class="row" id="mobile-cta">
+            <div style="border-right: 1px solid #fff;" class="col-6 text-center"><a href="/trial">FREE TRIAL</a></div>
+            <div class="col-6 text-center"><a href="/demo">GET A DEMO</a></div>
+          </div>
+          
         </div>
         <!-- MOBILE NAV TOGGLER -->
         <div class="extra-nav">
           <ul>
-            <li><a href="trial.html"><span class="menu-item-span">Free Trial</span></a></li>
-
-            <li><a href="demo.html"><span class="menu-item-span">Get a Demo</span></a></li>
-
-            <li><a href="pricing.html"><span class="menu-item-span">Pricing</span></a></li>
-
-            <li class="nav-toggle"><a href="#" data-toggle="collapse" data-target=".inner-navigation"><span class="menu-item-span"><i class="ti-menu"></i></span></a></li>
+            <li class="nav-toggle"><a href="#" data-toggle="collapse" data-target=".inner-navigation"><span class="menu-item-span"><img style="" src="https://www.avanan.com/hubfs/jacob_redesign/page_icons/menu.svg" /></span></a></li>
           </ul>
         </div>
       </div>
       <!-- END NAVIGATION -->
+      
     </header>
     <!-- END PAGE HEADER-->
 
