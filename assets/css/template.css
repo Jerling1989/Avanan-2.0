@@ -2943,8 +2943,8 @@ fieldset:disabled a.btn {
 
 .btn-brand.disabled,
 .btn-brand:disabled {
-    background-color: #505cfd;
-    border-color: #505cfd;
+    background-color: #569bbe;
+    border-color: #569bbe;
 }
 
 .btn-brand:not([disabled]):not(.disabled):active,
@@ -2953,7 +2953,7 @@ fieldset:disabled a.btn {
     color: #fff;
     background-color: #1e2dfc;
     border-color: #1121fc;
-    box-shadow: 0 0 0 .2rem rgba(80, 92, 253, .5);
+    box-shadow: 0 0 0 .2rem rgba(86, 155, 190, .5);
 }
 
 .btn-new-gray {
