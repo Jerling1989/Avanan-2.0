@@ -3315,10 +3315,10 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-brand {
-    color: #505cfd;
+    color: #569bbe;
     background-color: transparent;
     background-image: none;
-    border-color: #505cfd;
+    border-color: #569bbe;
 }
 
 .btn-outline-brand:hover {
