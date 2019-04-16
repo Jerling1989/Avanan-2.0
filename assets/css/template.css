@@ -18,7 +18,7 @@
     --gray: #6c757d;
     --gray-dark: #343a40;
     --black: #222;
-    --brand: #505cfd;
+    --brand: #569bbe;
     --new-gray: #d8d8d8;
     --new-white: #fff;
     --primary: #5385bd;
@@ -2926,19 +2926,19 @@ fieldset:disabled a.btn {
 
 .btn-brand {
     color: #fff;
-    background-color: #505cfd;
-    border-color: #505cfd;
+    background-color: #569bbe;
+    border-color: #569bbe;
 }
 
 .btn-brand:hover {
     color: #fff;
-    background-color: #2a39fd;
-    border-color: #2a39fd;
+    background-color: #5292b2;
+    border-color: #5292b2;
 }
 
 .btn-brand:focus,
 .btn-brand.focus {
-    box-shadow: 0 0 0 .2rem rgba(80, 92, 253, .5);
+    box-shadow: 0 0 0 .2rem rgba(86, 155, 190, .5);
 }
 
 .btn-brand.disabled,
